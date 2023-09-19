@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Layout, Dropdown } from 'antd';
 import { Menu, theme } from 'antd';
-
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   UserOutlined,
@@ -80,35 +80,49 @@ const HeaderBar = () => {
 
   const mainItems: MenuProps['items'] = [
     {
-      label: 'OVERVIEW',
+      label: <Link to={'/overview'}>OVERVIEW</Link>,
       key: 'mainItem1',
     },
     {
-      label: 'BATTERY & MANUFACTURER INFO',
+      label: <Link to={'/general-battery'}>BATTERY & MANUFACTURER INFO</Link>,
       key: 'mainItem2',
     },
     {
-      label: 'COMPLIANCE & LABELS & CERTIRICATIONS',
+      label: (
+        <Link to={'/compliance-labels-certirications'}>
+          COMPLIANCE & LABELS & CERTIRICATIONS
+        </Link>
+      ),
       key: 'mainItem3',
     },
     {
-      label: 'CARBON FOOTPRINT',
+      label: <Link to={'/carbon-footprint'}>CARBON FOOTPRINT</Link>,
       key: 'mainItem4',
     },
     {
-      label: 'SUPPLY CHAIN DUE DILIGENCET',
+      label: (
+        <Link to={'/supply-chain-due-diligentcet'}>
+          SUPPLY CHAIN DUE DILIGENCET
+        </Link>
+      ),
       key: 'mainItem5',
     },
     {
-      label: 'MATERIALS & COMPOSITION',
+      label: <Link to={'/materials-composition'}>MATERIALS & COMPOSITION</Link>,
       key: 'mainItem6',
     },
     {
-      label: 'CIRCULARITY & RESOURCE EFFICIENCY',
+      label: (
+        <Link to={'/circularity-resource-efficiency'}>
+          CIRCULARITY & RESOURCE EFFICIENCY
+        </Link>
+      ),
       key: 'mainItem7',
     },
     {
-      label: 'PERFORMANCE & DURABILITY',
+      label: (
+        <Link to={'/performance-durability'}>PERFORMANCE & DURABILITY</Link>
+      ),
       key: 'mainItem8',
     },
   ];

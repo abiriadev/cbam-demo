@@ -7,6 +7,7 @@ import DppLayout from 'layouts/DppLayout';
 import DppInitLayout from 'layouts/DppInitLayout';
 import QrReader from '../pages/qr/QrReader';
 import Overview from 'pages/overview/Overview';
+import GeneralBattery from 'pages/generalBattery/GeneralBattery';
 
 export function DefaultRouter() {
   return (
@@ -16,6 +17,9 @@ export function DefaultRouter() {
       </Route>
       <Route element={<DppLayout />}>
         <Route path="/overview" element={<Overview />} />
+      </Route>
+      <Route element={<DppLayout />}>
+        <Route path="/general-battery" element={<GeneralBattery />} />
       </Route>
     </Routes>
   );
