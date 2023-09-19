@@ -5,23 +5,20 @@ import { Menu, theme } from 'antd';
 import { useTranslation } from 'react-i18next';
 import {
   UserOutlined,
-  QrcodeOutlined,
+  CaretRightOutlined,
   CaretLeftOutlined,
   GlobalOutlined,
   MailOutlined,
-  AppstoreOutlined,
+  QrcodeOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
 import { AuthService } from '../../services/AuthService';
 import LogoPath from '../../assets/images/aipim_logo.png';
 import type { MenuProps } from 'antd';
-import { useNavigate } from 'react-router-dom';
 
 const { Header } = Layout;
 
 const HeaderBar = () => {
-  const navigate = useNavigate();
-
   //   const [collapsed, setCollapsed] = useRecoilState<boolean>(collapsedState);
   const onClickCollapsed = () => {
     // setCollapsed(!collapsed);
@@ -78,43 +75,9 @@ const HeaderBar = () => {
     },
   ];
 
-  const mainItems: MenuProps['items'] = [
-    {
-      label: 'OVERVIEW',
-      key: 'mainItem1',
-    },
-    {
-      label: 'BATTERY & MANUFACTURER INFO',
-      key: 'mainItem2',
-    },
-    {
-      label: 'COMPLIANCE & LABELS & CERTIRICATIONS',
-      key: 'mainItem3',
-    },
-    {
-      label: 'CARBON FOOTPRINT',
-      key: 'mainItem4',
-    },
-    {
-      label: 'SUPPLY CHAIN DUE DILIGENCET',
-      key: 'mainItem5',
-    },
-    {
-      label: 'MATERIALS & COMPOSITION',
-      key: 'mainItem6',
-    },
-    {
-      label: 'CIRCULARITY & RESOURCE EFFICIENCY',
-      key: 'mainItem7',
-    },
-    {
-      label: 'PERFORMANCE & DURABILITY',
-      key: 'mainItem8',
-    },
-  ];
-
   return (
     <Header id="header" style={{ display: 'flex', alignItems: 'center' }}>
+      {/* <div className="demo-logo" /> */}
       <div
         className="logo"
         style={{
@@ -132,22 +95,8 @@ const HeaderBar = () => {
           <img src={LogoPath} alt="logo" />
         </a> */}
       </div>
-      <Menu
-        // theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['mainItem1']}
-        items={mainItems}
-        disabledOverflow={false}
-      />
+
       <div className="header-right">
-        <div
-          className="icon"
-          onClick={() => {
-            navigate('/qr');
-          }}
-        >
-          <QrcodeOutlined />
-        </div>
         <div className="icon">
           <SettingOutlined />
         </div>

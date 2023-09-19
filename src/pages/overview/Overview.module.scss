@@ -1,0 +1,138 @@
+.page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    padding: 0px 450px;
+    > {
+      flex: 1;
+    }
+  }
+
+  .content {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .mBox,
+    .boxContainer {
+      display: flex;
+      flex: 1;
+    }
+  }
+}
+
+.boxContainer {
+  display: flex;
+  .sBox {
+    display: flex;
+    flex: 1;
+  }
+}
+
+.sBox {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content > .boxContainer:nth-child(4) > .sBox {
+  margin-bottom: 0px;
+}
+
+.rBox {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 10px;
+}
+
+.mBox {
+  background-color: #fff;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  // height: 250px;
+  margin: 0px 10px 10px 10px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.starIcon {
+  //   width: 60px;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.rTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.innerText {
+  text-align: center;
+}
+
+.alertIcon {
+  margin-left: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.titleEffect {
+  display: flex;
+}
+
+.titleEffect:hover {
+  text-decoration: underline;
+}
+
+.mBox {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  flex-direction: column;
+}
+.batteryImg {
+  border: 1px solid black;
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.tooltip {
+}
+
+.battery {
+  width: 90px;
+  height: 45px;
+  border: 1px solid black;
+}

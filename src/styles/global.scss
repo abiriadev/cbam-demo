@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style: none;
+}
+
 html {
   font-size: 12px;
 }
@@ -38,18 +42,25 @@ a {
   justify-content: space-between;
 }
 
+.ant-layout-header {
+  background-color: #ffffff;
+}
+.site-layout-content {
+  height: 100%;
+}
 #header .title {
   margin-left: 30px;
 }
 
 #header .header-right {
-  color: #ffffff;
+  color: black;
   display: flex;
   font-size: 28px;
   padding-right: 30px;
 }
 
 #header .header-right > .icon {
+  // border: 1px solid black;
   cursor: pointer;
 }
 
@@ -58,6 +69,19 @@ a {
   transition: all 300ms ease;
 }
 
+#header .header-right > div {
+  margin-left: 15px;
+}
 #header .header-right > div:nth-child(2) {
-  margin-left: 20px;
+  // margin-left: 20px;
+}
+
+#default-layout .ant-layout-content {
+  margin: 24px;
+
+  background-color: #eff1ed;
+}
+
+.ant-layout {
+  background-color: #eff1ed;
 }
