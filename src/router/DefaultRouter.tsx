@@ -8,7 +8,8 @@ import DppInitLayout from 'layouts/DppInitLayout';
 import QrReader from '../pages/qr/QrReader';
 import Overview from 'pages/overview/Overview';
 import GeneralBattery from 'pages/generalBattery/GeneralBattery';
-import CircularityAndResourceEfficiency from 'pages/CircularityAndResourceEfficiency/CircularityAndResourceE';
+import CircularityAndResourceEfficiency from 'pages/circularity-and-resource-efficiency/CircularityAndResourceE';
+import SupplyChain from 'pages/supply-chain-due-diligentcet/SupplyChainDueDiligentcet';
 
 export function DefaultRouter() {
   return (
@@ -23,6 +24,7 @@ export function DefaultRouter() {
           element={<CircularityAndResourceEfficiency />}
         />
         <Route path="/general-battery" element={<GeneralBattery />} />
+        <Route path="/supply-chain-due-diligentcet" element={<SupplyChain />} />
       </Route>
     </Routes>
   );
