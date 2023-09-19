@@ -85,6 +85,8 @@
 }
 
 .starIcon {
+  position: relative;
+  //   border: 1px solid black;
   //   width: 60px;
   height: 60px;
   font-size: 30px;
@@ -92,7 +94,12 @@
   padding-top: 18px;
 }
 
+.starIcon:hover {
+  color: #587dca;
+}
+
 .rTitle {
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -113,6 +120,7 @@
 
 .titleEffect:hover {
   text-decoration: underline;
+  color: #587dca;
 }
 
 .mBox {
@@ -122,17 +130,83 @@
   flex-direction: column;
 }
 .batteryImg {
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   border: 1px solid black;
   width: 120px;
   height: 120px;
   margin-right: 10px;
 }
 
-.tooltip {
+.batteryInfo {
+  width: 600px;
+
+  > div {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+  }
+
+  .percent {
+    font-weight: 800;
+    width: 80px;
+    text-align: center;
+    // padding: 0px 10px;
+  }
+
+  .title {
+    font-weight: 800;
+    width: 70px;
+  }
+
+  .rigthIcon {
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .battery {
+    // margin-top: 2px;
+    font-size: 32px;
+    // width: 90px;
+    height: 42px;
+    // border: 1px solid black;
+  }
 }
 
-.battery {
-  width: 90px;
-  height: 45px;
-  border: 1px solid black;
+.starInfo {
+  //   width: 600px;
+  > div {
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+  }
+
+  .starInfoIcon {
+    // text-align: center;
+    margin-top: 4px;
+    width: 60px;
+  }
+  .text {
+    margin-left: 10px;
+
+    margin-right: 10px;
+  }
+}
+
+.batteryHealth {
+  padding: 0px 40px;
+
+  .inner {
+    display: flex;
+    flex-direction: row;
+    > div:nth-child(1) {
+      flex: 1;
+      text-align: left;
+    }
+    > div:nth-child(2) {
+      flex: 2;
+    }
+  }
 }

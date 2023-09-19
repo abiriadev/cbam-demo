@@ -1,63 +1,179 @@
 import React from 'react';
 import styles from './Overview.module.scss';
 import classnames from 'classnames';
-import Battery100Path from '../../assets/images/bettery100.svg';
+import EVBatteryPath from '../../assets/images/EVBattery.jpeg';
+import Battery100Path from '../../assets/images/battery100per.png';
 import { FiBox, FiAlertCircle } from 'react-icons/fi';
 import { FaPassport } from 'react-icons/fa';
 import { MdPublish, MdOutlinePublish } from 'react-icons/md';
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { CiEdit } from 'react-icons/ci';
-import { Tooltip } from 'antd';
+import {
+  PiBatteryFullDuotone,
+  PiBatteryHighDuotone,
+  PiBatteryMediumDuotone,
+  PiBatteryLowDuotone,
+  PiBatteryWarningDuotone,
+  PiBatteryEmptyDuotone,
+} from 'react-icons/pi';
+import { BsChevronDoubleRight } from 'react-icons/bs';
+import { Tooltip, Popconfirm, message } from 'antd';
 
 const Overview = () => {
-  const batteryTooltip = () => {
+  const betteryDesc = () => {
     return (
-      <div className={styles.tooltip}>
+      <div className={styles.batteryInfo}>
         <div>
-          <div className={styles.battery}></div>
-          <span className={styles.percent}>100%</span>
-          <span className={styles.title}>Mercury</span>
-          <span className={styles.subText}>text</span>
+          <div className={styles.battery}>
+            <PiBatteryFullDuotone />
+          </div>
+          <div className={styles.percent}>100%</div>
+          <div className={styles.title}>Mercury</div>
+          <div className={styles.rigthIcon}>
+            <BsChevronDoubleRight />
+          </div>
+          <div className={styles.subText}>
+            Mercury is the small planet in the Solar System
+          </div>
         </div>
         <div>
-          <span className={styles.percent}>85%</span>
-          <span className={styles.title}>Neptune</span>
-          <span className={styles.subText}>text</span>
+          <div className={styles.battery}>
+            <PiBatteryHighDuotone />
+          </div>
+          <div className={styles.percent}>85%</div>
+          <div className={styles.title}>Neptune</div>
+          <div className={styles.rigthIcon}>
+            <BsChevronDoubleRight />
+          </div>
+          <div className={styles.subText}>
+            Neptune is the fouth-largest in the Solor System
+          </div>
         </div>
         <div>
-          <span className={styles.percent}>70%</span>
-          <span className={styles.title}>Mars</span>
-          <span className={styles.subText}>text</span>
+          <div className={styles.battery}>
+            <PiBatteryMediumDuotone />
+          </div>
+          <div className={styles.percent}>70%</div>
+          <div className={styles.title}>Mars</div>
+          <div className={styles.rigthIcon}>
+            <BsChevronDoubleRight />
+          </div>
+          <div className={styles.subText}>
+            Despite being red, Mars is actually a cold place
+          </div>
         </div>
         <div>
-          <span className={styles.percent}>55%</span>
-          <span className={styles.title}>Saturn</span>
-          <span className={styles.subText}>text</span>
+          <div className={styles.battery}>
+            <PiBatteryLowDuotone />
+          </div>
+          <div className={styles.percent}>55%</div>
+          <div className={styles.title}>Saturn</div>
+          <div className={styles.rigthIcon}>
+            <BsChevronDoubleRight />
+          </div>
+          <div className={styles.subText}>
+            Saturn is composed of hydrogen and heliium
+          </div>
         </div>
         <div>
-          <span className={styles.percent}>40%</span>
-          <span className={styles.title}>Venus</span>
-          <span className={styles.subText}>text</span>
+          <div className={styles.battery}>
+            <PiBatteryEmptyDuotone />
+          </div>
+          <div className={styles.percent}>40%</div>
+          <div className={styles.title}>Venus</div>
+          <div className={styles.rigthIcon}>
+            <BsChevronDoubleRight />
+          </div>
+          <div className={styles.subText}>
+            It has a beautiful name and is the second planet
+          </div>
         </div>
         <div>
-          <span className={styles.percent}>25%</span>
-          <span className={styles.title}>Jupiter</span>
-          <span className={styles.subText}>text</span>
+          <div className={styles.battery}>
+            <PiBatteryWarningDuotone />
+          </div>
+          <div className={styles.percent}>25%</div>
+          <div className={styles.title}>Jupiter</div>
+          <div className={styles.rigthIcon}>
+            <BsChevronDoubleRight />
+          </div>
+          <div className={styles.subText}>
+            Jupiter is the biggest planet in the Solar System
+          </div>
         </div>
       </div>
     );
   };
 
+  const starDesc = () => {
+    return (
+      <div className={styles.starInfo}>
+        <div>
+          <div className={styles.starInfoIcon}>
+            <AiFillStar />
+            <AiOutlineStar />
+            <AiOutlineStar />
+            <AiOutlineStar />
+          </div>
+          <div className={styles.text}>Data is self-reported</div>
+        </div>
+        <div>
+          <div className={styles.starInfoIcon}>
+            <AiFillStar />
+            <AiFillStar />
+            <AiOutlineStar />
+            <AiOutlineStar />
+          </div>
+          <div className={styles.text}>
+            Data is verified by a member of the supply chain
+          </div>
+        </div>
+        <div>
+          <div className={styles.starInfoIcon}>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiOutlineStar />
+          </div>
+          <div className={styles.text}>
+            Data is audited by authorized verifier or auditor
+          </div>
+        </div>
+        <div>
+          <div className={styles.starInfoIcon}>
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+          </div>
+          <div className={styles.text}>
+            Data collected via authorized external provider and additionally
+            audited
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const confirm = () => {
+    message.info('Clicked on Yes.');
+  };
+
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.rBox}>배터리 이미지</div>
+        <div className={styles.rBox}>
+          <img src={EVBatteryPath} alt="" width={500} />
+        </div>
         <div className={styles.content}>
-          <div className={styles.mBox}>
-            <Tooltip
+          <div className={classnames(styles.mBox, styles.batteryHealth)}>
+            <Popconfirm
+              className={styles.popconBattery}
               placement="topLeft"
-              title={batteryTooltip}
-              color={'#4094DE'}
+              title={'Battery health info'}
+              description={betteryDesc}
+              onConfirm={confirm}
+              showCancel={false}
             >
               <div className={styles.titleEffect}>
                 <div className={styles.rTitle}>Battery health</div>
@@ -65,14 +181,15 @@ const Overview = () => {
                   <FiAlertCircle />
                 </div>
               </div>
-            </Tooltip>
+            </Popconfirm>
 
-            <div style={{ display: 'flex' }}>
-              <div className={styles.batteryImg}>
-                <img src={''} alt="Battery100" />
-              </div>
+            <div className={styles.inner}>
               <div className={styles.innerText}>
                 Battery capacity relative to when it was new
+              </div>
+              <div className={styles.batteryImg}>
+                {/* <PiBatteryFullDuotone style={{ fontSize: '50px' }} /> */}
+                <img src={Battery100Path} alt="Battery100" width={250} />
               </div>
             </div>
           </div>
@@ -121,12 +238,27 @@ const Overview = () => {
               <div className={styles.innerText}>Not audited</div>
             </div>
             <div className={classnames(styles.sBox)}>
-              <div className={styles.starIcon}>
-                <AiFillStar />
-                <AiFillStar />
-                <AiFillStar />
-                <AiFillStar />
-              </div>
+              <Popconfirm
+                className={styles.starPopcon}
+                placement="topLeft"
+                title={'Data quality-into info'}
+                description={starDesc}
+                onConfirm={confirm}
+                showCancel={false}
+              >
+                <div className={styles.starIcon}>
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <div
+                    className={styles.alertIcon}
+                    style={{ position: 'absolute', top: '0px', right: '-10px' }}
+                  >
+                    <FiAlertCircle />
+                  </div>
+                </div>
+              </Popconfirm>
               <div className={styles.rTitle}>Data quality-into</div>
               <div className={styles.innerText}> &nbsp; </div>
             </div>
