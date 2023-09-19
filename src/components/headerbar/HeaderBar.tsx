@@ -113,7 +113,7 @@ const HeaderBar = () => {
     },
     {
       label: (
-        <Link to={'/circularity-resource-efficiency'}>
+        <Link to={'/circularity-and-resource-efficiency'}>
           CIRCULARITY & RESOURCE EFFICIENCY
         </Link>
       ),
