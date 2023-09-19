@@ -128,7 +128,18 @@ const HeaderBar = () => {
   ];
 
   return (
-    <Header id="header" style={{ display: 'flex', alignItems: 'center' }}>
+    <Header
+      id="header"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        right: '0',
+        zIndex: 999,
+      }}
+    >
       <div
         className="logo"
         style={{
@@ -152,6 +163,7 @@ const HeaderBar = () => {
         defaultSelectedKeys={['mainItem1']}
         items={mainItems}
         disabledOverflow={false}
+        style={{ fontWeight: '800', fontSize: '16px' }}
       />
       <div className="header-right">
         <div

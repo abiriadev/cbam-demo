@@ -5,13 +5,15 @@
   justify-content: center;
 
   .container {
+    height: calc(100vh - 64px);
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90%;
+    // margin: 20px;
     width: 100%;
-    padding: 0px 450px;
+    padding: 20px 450px;
     > {
       flex: 1;
     }
