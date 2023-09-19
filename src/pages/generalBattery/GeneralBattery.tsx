@@ -11,11 +11,6 @@ const GeneralBattery = () => {
         <IMessage />
       </div>
       <div className={styles.container}>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className={styles.title}>General characteristics</div>
         <Characteristics />
       </div>
     </div>

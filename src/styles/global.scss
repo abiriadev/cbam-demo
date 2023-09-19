@@ -89,3 +89,8 @@ a {
 .ant-popconfirm-buttons {
   display: none;
 }
+
+#header .ant-menu-item-selected {
+  font-weight: 800;
+  // transition: all 1s ease-out;
+}

@@ -11,6 +11,7 @@ import GeneralBattery from 'pages/generalBattery/GeneralBattery';
 import CircularityAndResourceEfficiency from 'pages/circularity-and-resource-efficiency/CircularityAndResourceE';
 import SupplyChain from 'pages/supply-chain-due-diligentcet/SupplyChainDueDiligentcet';
 import CarbonFootpint from 'pages/carbon-footprint/CarbonFootprint';
+import ComplianceLabelsCertirications from 'pages/complianceLabelsCertirications/ComplianceLabelsCertirications';
 
 export function DefaultRouter() {
   return (
@@ -27,6 +28,10 @@ export function DefaultRouter() {
         <Route path="/general-battery" element={<GeneralBattery />} />
         <Route path="/supply-chain-due-diligentcet" element={<SupplyChain />} />
         <Route path="/carbon-footprint" element={<CarbonFootpint />} />
+        <Route
+          path="/compliance-labels-certirications"
+          element={<ComplianceLabelsCertirications />}
+        />
       </Route>
     </Routes>
   );

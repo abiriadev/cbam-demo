@@ -163,7 +163,10 @@ const HeaderBar = () => {
         defaultSelectedKeys={['mainItem1']}
         items={mainItems}
         disabledOverflow={false}
-        style={{ fontWeight: '800', fontSize: '16px' }}
+        style={{
+          fontWeight: '600',
+          fontSize: '12px',
+        }}
       />
       <div className="header-right">
         <div
