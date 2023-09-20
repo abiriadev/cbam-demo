@@ -48,8 +48,14 @@ a {
 .site-layout-content {
   height: 100%;
 }
+
+#header {
+  // height: 80px;
+  color: black;
+}
+
 #header .title {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 
 #header .header-right {
@@ -90,7 +96,14 @@ a {
   display: none;
 }
 
+// #header .ant-menu-item-selected {
+//   font-weight: 800;
+//   //
+// }
+
 #header .ant-menu-item-selected {
   font-weight: 800;
-  // transition: all 1s ease-out;
+  // transition: 0.5s;
+  // transition: all 300ms ease-in; //모든 속성을 1초동안 ease-in
+  // transition: all 1s ease;
 }

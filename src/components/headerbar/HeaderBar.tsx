@@ -16,6 +16,7 @@ import { AuthService } from '../../services/AuthService';
 import LogoPath from '../../assets/images/aipim_logo.png';
 import type { MenuProps } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import styles from './HeaderBar.module.scss';
 
 const { Header } = Layout;
 
@@ -78,19 +79,33 @@ const HeaderBar = () => {
     },
   ];
 
-  const mainItems: MenuProps['items'] = [
+  const mainItems: any = [
     {
-      label: <Link to={'/overview'}>OVERVIEW</Link>,
+      label: (
+        <Link to={'/overview'}>
+          <div className={styles.titleContainer}>OVERVIEW</div>
+        </Link>
+      ),
       key: 'mainItem1',
     },
     {
-      label: <Link to={'/general-battery'}>BATTERY & MANUFACTURER INFO</Link>,
+      label: (
+        <Link to={'/general-battery'}>
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}>BATTERY</div>
+            <div className={styles.innerTitle}>MANUFACTURER INFO</div>
+          </div>
+        </Link>
+      ),
       key: 'mainItem2',
     },
     {
       label: (
         <Link to={'/compliance-labels-certirications'}>
-          COMPLIANCE & LABELS & CERTIRICATIONS
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}>COMPLIANCE</div>
+            <div className={styles.innerTitle}>LABELS & CERTIRICATIONS</div>
+          </div>
         </Link>
       ),
       key: 'mainItem3',
@@ -102,26 +117,44 @@ const HeaderBar = () => {
     {
       label: (
         <Link to={'/supply-chain-due-diligentcet'}>
-          SUPPLY CHAIN DUE DILIGENCET
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}> SUPPLY CHAIN</div>
+            <div className={styles.innerTitle}> DUE DILIGENCET</div>
+          </div>
         </Link>
       ),
       key: 'mainItem5',
     },
     {
-      label: <Link to={'/materials-composition'}>MATERIALS & COMPOSITION</Link>,
+      label: (
+        <Link to={'/materials-composition'}>
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}> MATERIALS</div>
+            <div className={styles.innerTitle}>COMPOSITION</div>
+          </div>
+        </Link>
+      ),
       key: 'mainItem6',
     },
     {
       label: (
         <Link to={'/circularity-and-resource-efficiency'}>
-          CIRCULARITY & RESOURCE EFFICIENCY
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}> CIRCULARITY</div>
+            <div className={styles.innerTitle}>RESOURCE EFFICIENCY</div>
+          </div>
         </Link>
       ),
       key: 'mainItem7',
     },
     {
       label: (
-        <Link to={'/performance-durability'}>PERFORMANCE & DURABILITY</Link>
+        <Link to={'/performance-durability'}>
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}> PERFORMANCE</div>
+            <div className={styles.innerTitle}>DURABILITY</div>
+          </div>
+        </Link>
       ),
       key: 'mainItem8',
     },
@@ -157,6 +190,12 @@ const HeaderBar = () => {
           <img src={LogoPath} alt="logo" />
         </a> */}
       </div>
+      {/* <ul>
+        {mainItems.map(({ label, key }: any) => {
+          return <li key={key}>{label}</li>;
+        })}
+      </ul> */}
+
       <Menu
         // theme="dark"
         mode="horizontal"
@@ -166,6 +205,9 @@ const HeaderBar = () => {
         style={{
           fontWeight: '600',
           fontSize: '12px',
+          display: 'flex',
+          width: 'calc(100% - 120px)',
+          justifyContent: 'center',
         }}
       />
       <div className="header-right">

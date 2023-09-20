@@ -32,6 +32,7 @@ export function DefaultRouter() {
           path="/compliance-labels-certirications"
           element={<ComplianceLabelsCertirications />}
         />
+        <Route path="*" element={<ComplianceLabelsCertirications />} />
       </Route>
     </Routes>
   );
