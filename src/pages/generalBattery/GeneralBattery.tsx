@@ -1,17 +1,27 @@
 import React from 'react';
 import styles from './GeneralBattery.module.scss';
-import Chat from './Chat';
-import IMessage from './IMessage';
-import Characteristics from './Characteristics';
+
 const GeneralBattery = () => {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.title}>Identification</div>
-        <IMessage />
-      </div>
-      <div className={styles.container}>
-        <Characteristics />
+        <div
+          style={{
+            background: '#fff',
+            width: '800px',
+            height: '100%',
+            borderRadius: '16px',
+            marginRight: '20px',
+          }}
+        ></div>
+        <div
+          style={{
+            background: '#fff',
+            width: '800px',
+            height: '100%',
+            borderRadius: '16px',
+          }}
+        ></div>
       </div>
     </div>
   );
