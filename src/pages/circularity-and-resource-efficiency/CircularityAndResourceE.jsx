@@ -7,7 +7,7 @@ const CircularityAndResourceEfficiency = () => {
     <div className={styles.page}>
       <div className={styles.container}>
         <div className={styles.link}>
-          Manual for removal of the betterPart numbers for components(구성
+          Manual for removal of the batterPart numbers for components(구성
           요소의 부품 번호) from the appliance(배터리 분리 메뉴얼)
         </div>
         <div className={styles.link}>

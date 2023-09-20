@@ -12,6 +12,7 @@ import CircularityAndResourceEfficiency from 'pages/circularity-and-resource-eff
 import SupplyChain from 'pages/supply-chain-due-diligentcet/SupplyChainDueDiligentcet';
 import CarbonFootpint from 'pages/carbon-footprint/CarbonFootprint';
 import ComplianceLabelsCertirications from 'pages/complianceLabelsCertirications/ComplianceLabelsCertirications';
+import PerformanceAndDurability from 'pages/performance-durability/PerformanceAndDurability';
 
 export function DefaultRouter() {
   return (
@@ -31,6 +32,10 @@ export function DefaultRouter() {
         <Route
           path="/compliance-labels-certirications"
           element={<ComplianceLabelsCertirications />}
+        />
+        <Route
+          path="/performance-durability"
+          element={<PerformanceAndDurability />}
         />
         <Route path="*" element={<ComplianceLabelsCertirications />} />
       </Route>
