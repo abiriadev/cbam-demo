@@ -1,67 +1,66 @@
 .page {
-  margin: 0 auto;
-  margin-top: 100px;
-  height: 100%;
-  width: 70%;
+  margin-top: 64px;
+  height: calc(100vh - 64px);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  //   justify-content: center;
+  justify-content: center;
+  border: 1px solid black;
 
   .container {
-    text-align: center;
+    padding: 40px;
     width: 100%;
-    height: 3%;
-    padding: 0px 35px;
-    // margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: 600;
-    > {
-      flex: 1;
-    }
-    // background: #fff;
+    height: 100%;
   }
-  .content {
-    // flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 90%;
+}
 
-    .info {
-      display: flex;
-      overflow: hidden;
-      align-items: center;
-      text-align: center;
-      margin: 0 auto;
-      width: 70%;
-      height: 85%;
-      background-color: #fff;
-      border-radius: 18px;
-      margin-bottom: 50px;
-      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
-      ul {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        margin: 0 auto;
-        margin-left: 100px;
-        align-items: center;
-        li {
-          width: 200px;
-          text-align: left;
-        }
-        img {
-          margin: 100px;
-        }
-      }
+.tab1 {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  .ineer {
+    display: flex;
+
+    flex: 1;
+    border: 1px solid black;
+    margin: 30px;
+    .img {
+      background: #fff;
+      border: 1px solid black;
+      flex: 1;
+      height: 100%;
+      margin-right: 20px;
     }
-    .arrow {
-      font-size: 40px;
+    .text {
+      background: #fff;
+      flex: 3;
+      border: 1px solid black;
     }
-    .arrow:hover {
-      cursor: pointer;
-    }
+  }
+}
+
+.tab2 {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 30px;
+  .ineer {
+    flex: 1;
+    border: 1px solid black;
+  }
+
+  .mBox {
+    background: #fff;
+    border: 1px solid black;
+    height: 180px;
+    width: 70%;
+  }
+  .sBox {
+    background: #fff;
+    border: 1px solid black;
+    height: 120px;
+    width: 70%;
   }
 }
