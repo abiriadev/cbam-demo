@@ -1,13 +1,10 @@
 import React from 'react';
 import styles from './Overview.module.scss';
-import classnames from 'classnames';
 import EVBatteryPath from '../../assets/images/EVBattery.jpeg';
-import Battery100Path from '../../assets/images/battery100per.png';
 import { FiBox, FiAlertCircle } from 'react-icons/fi';
 import { FaPassport } from 'react-icons/fa';
-import { MdPublish, MdOutlinePublish } from 'react-icons/md';
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import { CiEdit } from 'react-icons/ci';
+import { MdDateRange } from 'react-icons/md';
+import { AiFillStar, AiOutlineStar, AiFillEdit } from 'react-icons/ai';
 import {
   PiBatteryFullDuotone,
   PiBatteryHighDuotone,
@@ -16,8 +13,10 @@ import {
   PiBatteryWarningDuotone,
   PiBatteryEmptyDuotone,
 } from 'react-icons/pi';
-import { BsChevronDoubleRight } from 'react-icons/bs';
-import { Tooltip, Popconfirm, message } from 'antd';
+import { MdGrade } from 'react-icons/md';
+import { TbHealthRecognition } from 'react-icons/tb';
+import { BsChevronDoubleRight, BsBuilding } from 'react-icons/bs';
+import { Popconfirm, message } from 'antd';
 
 const Overview = () => {
   const betteryDesc = () => {
@@ -162,105 +161,145 @@ const Overview = () => {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.rBox}>
-          <img src={EVBatteryPath} alt="" width={500} />
-        </div>
-        <div className={styles.content}>
-          <div className={classnames(styles.mBox, styles.batteryHealth)}>
-            <Popconfirm
-              className={styles.popconBattery}
-              placement="topLeft"
-              title={'Battery health info'}
-              description={betteryDesc}
-              onConfirm={confirm}
-              showCancel={false}
-            >
-              <div className={styles.titleEffect}>
-                <div className={styles.rTitle}>Battery health</div>
-                <div className={styles.alertIcon}>
-                  <FiAlertCircle />
+        <div className={styles.boxContainer}>
+          <div className={styles.box}>
+            <div className={styles.overview}>
+              <div className={styles.title}>
+                Battery Passport Overview
+                <div className={styles.subTitle}>
+                  Battery ID : RSTE2291345831
                 </div>
               </div>
-            </Popconfirm>
+              <div>
+                <img src={EVBatteryPath} alt="" width={300} />
+              </div>
+            </div>
+          </div>
+          <div className={styles.space} />
 
-            <div className={styles.inner}>
-              <div className={styles.innerText}>
-                Battery capacity relative to when it was new
-              </div>
-              <div className={styles.batteryImg}>
-                {/* <PiBatteryFullDuotone style={{ fontSize: '50px' }} /> */}
-                <img src={Battery100Path} alt="Battery100" width={250} />
-              </div>
-            </div>
-          </div>
-          <div className={styles.boxContainer}>
-            <div className={classnames(styles.sBox)}>
-              <div className={styles.icon}>
-                <FaPassport />
-              </div>
-              <div className={styles.rTitle}>Battery Passport ID</div>
-              <div className={styles.innerText}>
-                RSTE2291345831 <br />
-                Tesla Model 3 Standard Range NMC-M50
-              </div>
-            </div>
-
-            <div className={classnames(styles.sBox)}>
-              <div className={styles.icon}>
-                <FiBox />
-              </div>
-              <div className={styles.rTitle}> Battery MODEL</div>
-              <div className={styles.innerText}>NMC-M50</div>
-            </div>
-          </div>
-          <div className={styles.boxContainer}>
-            <div className={classnames(styles.sBox)}>
-              <div className={styles.icon}>
-                <MdPublish />
-              </div>
-              <div className={styles.rTitle}>Passport issued for</div>
-              <div className={styles.innerText}>Tesla</div>
-            </div>
-            <div className={classnames(styles.sBox)}>
-              <div className={styles.icon}>
-                <MdOutlinePublish />
-              </div>
-              <div className={styles.rTitle}>Passport issued date</div>
-              <div className={styles.innerText}>16/01/2023</div>
-            </div>
-          </div>
-          <div className={styles.boxContainer}>
-            <div className={classnames(styles.sBox)}>
-              <div className={styles.icon}>
-                <CiEdit />
-              </div>
-              <div className={styles.rTitle}>Data auditor</div>
-              <div className={styles.innerText}>Not audited</div>
-            </div>
-            <div className={classnames(styles.sBox)}>
-              <Popconfirm
-                className={styles.starPopcon}
-                placement="topLeft"
-                title={'Data quality-into info'}
-                description={starDesc}
-                onConfirm={confirm}
-                showCancel={false}
-              >
-                <div className={styles.starIcon}>
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <AiFillStar />
-                  <div
-                    className={styles.alertIcon}
-                    style={{ position: 'absolute', top: '0px', right: '-10px' }}
-                  >
-                    <FiAlertCircle />
+          <div
+            className={styles.box}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.mainTitle}>Required Infomation</div>
+            <div className={styles.content}>
+              <ul>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
                   </div>
-                </div>
-              </Popconfirm>
-              <div className={styles.rTitle}>Data quality-into</div>
-              <div className={styles.innerText}> &nbsp; </div>
+                  <div className={styles.liTitle}>BATTERY PASSPORT ID</div>
+                  <div className={styles.tag}>
+                    RSTE2291345831, Tesla Model 3 Standard Range NMC-M50
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FiBox />
+                  </div>
+                  <div className={styles.liTitle}>BATTERY MODEL</div>
+                  <div className={styles.tag}>NMC-M50</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <BsBuilding />
+                  </div>
+                  <div className={styles.liTitle}>PASSPORT ISSUED FOR</div>
+
+                  <div className={styles.tag}>Aipim</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <MdDateRange />
+                  </div>
+                  <div className={styles.liTitle}>PASSPORT ISSUED DATE</div>
+                  <div className={styles.tag}>16/01/2023</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <AiFillEdit />
+                  </div>
+                  <div className={styles.liTitle}>DATA AUDITOR</div>
+                  <div className={styles.tag}>Not audited</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <MdGrade />
+                  </div>
+                  <Popconfirm
+                    className={styles.popcon}
+                    placement="topLeft"
+                    title={'Data quality-into information'}
+                    description={starDesc}
+                    onConfirm={confirm}
+                    showCancel={false}
+                  >
+                    <div
+                      className={styles.liTitle}
+                      style={{
+                        position: 'relative',
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '-5px',
+                          right: '50px',
+                        }}
+                      >
+                        <FiAlertCircle />
+                      </div>
+                      DATA QUALITY INTO
+                    </div>
+                  </Popconfirm>
+
+                  <div className={styles.tagDiv}>
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                    <AiFillStar />
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <TbHealthRecognition />
+                  </div>
+
+                  <Popconfirm
+                    className={styles.popcon}
+                    placement="bottomLeft"
+                    title={'Battery health info'}
+                    description={betteryDesc}
+                    onConfirm={confirm}
+                    showCancel={false}
+                  >
+                    <div
+                      className={styles.liTitle}
+                      style={{
+                        position: 'relative',
+                      }}
+                    >
+                      <div
+                        style={{
+                          position: 'absolute',
+                          top: '-5px',
+                          right: '66px',
+                        }}
+                      >
+                        <FiAlertCircle />
+                      </div>
+                      BATTERY HEALTH
+                    </div>
+                  </Popconfirm>
+
+                  <div className={styles.tagDiv}>
+                    <PiBatteryFullDuotone />
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
