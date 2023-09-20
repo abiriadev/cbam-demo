@@ -298,6 +298,9 @@ const Overview = () => {
                   <div className={styles.tagDiv}>
                     <PiBatteryFullDuotone />
                   </div>
+                  <div className={styles.tag} style={{ marginLeft: '5px' }}>
+                    100%
+                  </div>
                 </li>
               </ul>
             </div>
