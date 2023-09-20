@@ -3,217 +3,195 @@ import styles from './ComplianceLabelsCertirications.module.scss';
 import weeePath from '../../assets/images/WEEE_SYMBOL.png';
 import cdPath from '../../assets/images/cd_SYMBOL.png';
 import pbPath from '../../assets/images/pb_SYMBOL.png';
-import { BsThreeDots } from 'react-icons/bs';
-import { Divider, Form, Radio, Skeleton, Space, Switch } from 'antd';
-
+import { Popconfirm, Button } from 'antd';
+import { FaPassport } from 'react-icons/fa';
+import { FiAlertCircle } from 'react-icons/fi';
+import { AiFillRightCircle, AiOutlineClose } from 'react-icons/ai';
 const ComplianceLabelsCertirications = () => {
+  const onClick = () => {
+    let ele = document.getElementById('prepare');
+    if (ele != undefined) {
+      ele.style.visibility = 'visible';
+    }
+  };
+
+  const onHidden = () => {
+    let ele = document.getElementById('prepare');
+    if (ele != undefined) {
+      ele.style.visibility = 'hidden';
+    }
+  };
+
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.box}>
-          <Space style={{ float: 'right' }}>
-            <Skeleton.Image active={false} />
-          </Space>
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={false} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} />
-          <Skeleton.Input active={false} size={'large'} />
-          <br />
-          <br />
-          <Skeleton.Button
-            active={false}
-            size={'large'}
-            shape={'square'}
-            block={false}
-          />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={true} />
-          <br />
-          <br />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={false} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} />
-          <Skeleton.Input active={false} size={'large'} />
-          <br />
-          <br />
-          <Skeleton.Button
-            active={false}
-            size={'large'}
-            shape={'square'}
-            block={false}
-          />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={true} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={false} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={true} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} />
-          <br />
-          <br />
-          <Skeleton.Button
-            active={false}
-            size={'large'}
-            shape={'square'}
-            block={false}
-          />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={true} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={false} />
-          <br />
-          <br />
-          <Skeleton.Input active={false} size={'large'} block={true} />
-          <br />
-          <br />
-          <Skeleton.Button
-            active={false}
-            size={'large'}
-            shape={'square'}
-            block={true}
-          />
-          <br />
-          <br />
-        </div>
-        <div className={styles.rightContainer}>
-          <div className={styles.top}>
-            <div className={styles.box}>
-              <Space style={{ float: 'right' }}>
-                <Skeleton.Image active={false} />
-              </Space>
-              <br />
-              <br />
-              <Skeleton.Button
-                active={false}
-                size={'default'}
-                shape={'square'}
-                block={false}
-              />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={false} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={false} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={true} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={true} />
-            </div>
-            <div className={styles.box}>
-              <Space style={{ float: 'right' }}>
-                <Skeleton.Image active={false} />
-              </Space>
-              <br />
-              <br />
-              <Skeleton.Button
-                active={false}
-                size={'default'}
-                shape={'square'}
-                block={false}
-              />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={false} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={false} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={true} />
-              <br />
-              <br />
-              <Skeleton.Input active={false} size={'default'} block={true} />
+        <div className={styles.boxContainer} style={{ marginRight: '20px' }}>
+          <div
+            className={styles.box}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.mainTitle}>Certifications & Compliance </div>
+            <div className={styles.content}>
+              <ul>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>
+                    EU declaration of conformity
+                  </div>
+                  <Button onClick={onClick}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>
+                    ID of EU declaration of conformity
+                  </div>
+                  <Button onClick={onClick}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        fontWeight: '600',
+                      }}
+                    >
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>
+                    Compliance of test results
+                  </div>
+                  <Button onClick={onClick}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>Results of tests reports</div>
+                  <Button onClick={onClick}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className={styles.bottom}>
-            <div className={styles.title}>Symbols</div>
-            <div className={styles.symbols}>
-              <div style={{ marginBottom: '10px' }}>
-                <div
-                  className={styles.symbolContainer}
-                  style={{ marginRight: '20px' }}
-                >
-                  <div className={styles.symbol}>
-                    <img src={weeePath} alt="WEEE SYMBOL" width={110} />
-                  </div>
+          <div className={styles.space} />
 
-                  <div className={styles.symbolTitle}>
-                    Separate collection symbol
+          <div
+            className={styles.box}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.mainTitle}>Labels</div>
+            <div className={styles.symbolContent}>
+              <Popconfirm
+                className={styles.popcon}
+                placement="bottomLeft"
+                title={'symbol description'}
+                // description={betteryDesc}
+                showCancel={false}
+              >
+                <div className={styles.symbol}>
+                  <div className={styles.alert}>
+                    <FiAlertCircle />
                   </div>
+                  <img src={weeePath} alt="WEEE SYMBOL" width={110} />
                 </div>
-
-                <div
-                  className={styles.symbolContainer}
-                  style={{ marginRight: '20px' }}
-                >
-                  <div className={styles.symbol}>
-                    <img src={pbPath} alt="Pb SYMBOL" width={110} />
+              </Popconfirm>
+              <Popconfirm
+                className={styles.popcon}
+                placement="bottomLeft"
+                title={'symbol description'}
+                // description={betteryDesc}
+                showCancel={false}
+              >
+                <div className={styles.symbol}>
+                  <div className={styles.alert}>
+                    <FiAlertCircle />
                   </div>
-
-                  <div className={styles.symbolTitle}>Lead symbols</div>
+                  <img src={cdPath} alt="Cd SYMBOL" width={110} />
                 </div>
-
-                <div className={styles.symbolContainer}>
-                  <div className={styles.symbol}>
-                    <img src={cdPath} alt="Cd SYMBOL" width={110} />
+              </Popconfirm>
+              <Popconfirm
+                className={styles.popcon}
+                placement="bottomLeft"
+                title={'symbol description'}
+                // description={betteryDesc}
+                showCancel={false}
+              >
+                <div className={styles.symbol}>
+                  <div className={styles.alert}>
+                    <FiAlertCircle />
                   </div>
-
-                  <div className={styles.symbolTitle}>Cadmium symbol</div>
+                  <img src={pbPath} alt="Pb SYMBOL" width={110} />
                 </div>
-              </div>
-              <div>
-                <div
-                  className={styles.symbolContainer}
-                  style={{ marginRight: '20px' }}
-                >
-                  <div className={styles.symbol}></div>
-                  <div className={styles.symbolTitle}>
-                    <BsThreeDots />
-                  </div>
-                </div>
-
-                <div
-                  className={styles.symbolContainer}
-                  style={{ marginRight: '20px' }}
-                >
-                  <div className={styles.symbol}></div>
-                  <div className={styles.symbolTitle}>
-                    {' '}
-                    <BsThreeDots />
-                  </div>
-                </div>
-
-                <div className={styles.symbolContainer}>
-                  <div className={styles.symbol}></div>
-                  <div className={styles.symbolTitle}>
-                    {' '}
-                    <BsThreeDots />
-                  </div>
-                </div>
-              </div>
+              </Popconfirm>
+            </div>
+          </div>
+        </div>
+        <div
+          className={styles.boxContainer}
+          style={{ backgroundColor: 'transparent' }}
+        >
+          <div id="prepare" className={styles.prepare}>
+            <div
+              style={{
+                position: 'absolute',
+                right: '20px',
+                top: '20px',
+                fontSize: '28px',
+              }}
+              onClick={onHidden}
+            >
+              <AiOutlineClose />
+            </div>
+            <div className={styles.title}>
+              There is
+              <br />
+              nothing here <br />
+              yet...
+            </div>
+            <br />
+            <hr style={{ border: '1px solid #ced4da' }} />
+            <br />
+            <div className={styles.text}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              sequi, delectus aliquid ipsum ex officiis labore enim ratione id.
+              Dolores dignissimos inventore quo expedita reiciendis adipisci
+              deserunt ea ducimus voluptatibus?
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@ import SupplyChain from 'pages/supply-chain-due-diligentcet/SupplyChainDueDilige
 import CarbonFootpint from 'pages/carbon-footprint/CarbonFootprint';
 import ComplianceLabelsCertirications from 'pages/complianceLabelsCertirications/ComplianceLabelsCertirications';
 import PerformanceAndDurability from 'pages/performance-durability/PerformanceAndDurability';
+import MaterialsComposition from 'pages/materialsComposition/MaterialsComposition';
 import DefaultPage from 'pages/DefaultPage';
 export function DefaultRouter() {
   return (
@@ -36,6 +37,10 @@ export function DefaultRouter() {
         <Route
           path="/performance-durability"
           element={<PerformanceAndDurability />}
+        />
+        <Route
+          path="/materials-composition"
+          element={<MaterialsComposition />}
         />
         <Route path="*" element={<DefaultPage />} />
       </Route>

@@ -5,18 +5,6 @@ import { FaPassport } from 'react-icons/fa';
 import { FiAlertCircle } from 'react-icons/fi';
 
 const GeneralBattery = () => {
-  //   "Describe battery status(Mandatory)
-  // 1) Original
-  // A battery in its original state as placed on the market or put into service
-  // 2) Repurposed
-  // A battery that has been subject to repurposing or preparing for repurpose
-  // 3) Reused
-  // A battery that has been subject to re-use or preparing for re-use
-  // 4) Remanufactured
-  // A battery that has been subject to remanufacturing
-  // 5) Waste
-  // A battery that is considered waste according to the definition of “waste”"
-
   const batteryStatusDesc = () => {
     return (
       <div className={styles.starInfo}>
