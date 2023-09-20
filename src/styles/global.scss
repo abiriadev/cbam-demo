@@ -110,6 +110,16 @@ a {
 
 #carbonTab .ant-tabs-content.ant-tabs-content-left,
 #carbonTab-panel-1,
-#carbonTab-panel-2 {
+#carbonTab-panel-2,
+#reportTab .ant-tabs-content.ant-tabs-content-left,
+#reportTab-panel-1,
+#reportTab-panel-2,
+#reportTab-panel-3,
+#reportTab-panel-4,
+#reportTab-panel-5 {
   height: 100%;
+}
+
+#reportTab {
+  width: 100%;
 }
