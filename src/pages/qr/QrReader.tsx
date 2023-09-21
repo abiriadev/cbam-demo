@@ -3,7 +3,9 @@ import styles from './QrReader.module.scss';
 import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
-import dppLogo from '../../assets/images/DPP_logo.png';
+// import dppLogo from '../../assets/images/DPP_logo.png';
+import aipimLogo from '../../assets/images/aipim_logo2.png';
+import dppImg from '../../assets/images/dpp_img.png';
 
 const QrReader = () => {
   const navigate = useNavigate();
@@ -32,7 +34,8 @@ const QrReader = () => {
           <div className={styles.tBox}>
             <img
               className={styles.img}
-              src="https://www.europarl.europa.eu/cmsdata/248115/product%20passport%20-%20traceability3-ml.jpeg"
+              src={dppImg}
+              // src="https://www.europarl.europa.eu/cmsdata/248115/product%20passport%20-%20traceability3-ml.jpeg"
             />
           </div>
         </div>
@@ -43,7 +46,7 @@ const QrReader = () => {
           <Button className={styles.arrow}>
             <ArrowLeftOutlined />
           </Button>
-          <img src={dppLogo} className={styles.logo} />
+          <img src={aipimLogo} className={styles.logo} />
           <div className={styles.buttons}>
             <Button className={styles.button} style={{ marginRight: '10px' }}>
               QR Scan

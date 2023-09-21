@@ -15,6 +15,7 @@ import {
 import { AuthService } from '../../services/AuthService';
 import LogoPath from '../../assets/images/aipim_logo.png';
 import type { MenuProps } from 'antd';
+import aipimLogo from '../../assets/images/aipim_logo_indigo.png';
 
 const { Header } = Layout;
 
@@ -84,13 +85,15 @@ const HeaderBar = () => {
           height: '100%',
           width: '100px',
           textAlign: 'center',
-          background: 'gray',
+          marginLeft: '15px',
+          marginTop: '15px',
+          // margin: '0 auto',
+          // background: 'gray',
         }}
       >
-        AIPIM
-        {/* <a href="/" target="_blank">
-          <img src={LogoPath} alt="logo" />
-        </a> */}
+        <a href="/qr" target="_blank">
+          <img src={aipimLogo} alt="logo" />
+        </a>
       </div>
 
       <div className="header-right">

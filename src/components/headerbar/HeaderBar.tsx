@@ -17,6 +17,7 @@ import LogoPath from '../../assets/images/aipim_logo.png';
 import type { MenuProps } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import styles from './HeaderBar.module.scss';
+import apimIndigo from '../../assets/images/aipim_logo_indigo.png';
 
 const { Header } = Layout;
 
@@ -179,13 +180,14 @@ const HeaderBar = () => {
           height: '100%',
           width: '100px',
           textAlign: 'center',
-          background: 'gray',
+          marginLeft: '10px',
+          marginTop: '15px',
+          // background: 'gray',
         }}
       >
-        AIPIM
-        {/* <a href="/" target="_blank">
-          <img src={LogoPath} alt="logo" />
-        </a> */}
+        <a href="/overview" target="_blank">
+          <img src={apimIndigo} alt="logo" />
+        </a>
       </div>
       {/* <ul>
         {mainItems.map(({ label, key }: any) => {
