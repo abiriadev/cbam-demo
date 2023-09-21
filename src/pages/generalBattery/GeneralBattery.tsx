@@ -99,8 +99,7 @@ const GeneralBattery = () => {
                   </div>
                   <div className={styles.liTitle}>postal address</div>
                   <div className={styles.tag}>
-                    46653 | 95, Baegyang-daero, Buk-gu, Busan, 46653, REP. OF
-                    KOREA
+                    360, Olympic-ro, Songpa-gu Seoul, Republic of Korea
                   </div>
                 </li>
                 <li>

@@ -22,63 +22,82 @@ const CircularityAndResourceEfficiency = () => {
               flexDirection: 'column',
             }}
           >
-            <div className={styles.mainTitle}>Design for circularity</div>
+            <div className={styles.mainTitle}>Design for Circularity</div>
             <div className={styles.content}>
               <ul>
                 <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
                   <div className={styles.liTitle}>
                     Part numbers for components
                   </div>
+                  <div className={styles.tag}>
+                    X123456789012X12345678901234566
+                  </div>
                 </li>
                 <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
                   <div className={styles.liTitle}>
                     Postal address of sources for spare parts
                   </div>
+                  <div className={styles.tag}>
+                    360, Olympic-ro, Songpa-gu
+                    <br /> Seoul, Republic of Korea
+                  </div>
                 </li>
                 <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
                   <div className={styles.liTitle}>
                     E-mail address of sources for spare parts
                   </div>
+                  <div className={styles.tag}>aipimbusiness@aipim.io</div>
                 </li>
                 <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
                   <div className={styles.liTitle}>
                     Web address of sources for spare parts
                   </div>
+                  <div className={styles.tag}>http://www.aipim.io</div>
                 </li>
-                <ol className>
-                  <li>
-                    <div className={styles.liICon}>
-                      <FaPassport />
-                    </div>
-                    <div className={styles.liTitle}>
-                      Manual for removal of the battery from the appliance
-                    </div>
-                    <Button onClick={onClick}>
-                      <div style={{ display: 'flex', fontWeight: '600' }}>
-                        Download
-                        <div className={styles.icon}>
-                          <AiFillRightCircle />
-                        </div>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>
+                    Manual for removal of the battery from the appliance
+                  </div>
+                  <Button className={styles.button}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      Download
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
                       </div>
-                    </Button>
-                  </li>
-                  <li>
-                    <div className={styles.liICon}>
-                      <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>
-                      Manual for disassembly and dismantling of the battery pack
-                    </div>
-                    <Button onClick={onClick}>
-                      <div style={{ display: 'flex', fontWeight: '600' }}>
-                        Download
-                        <div className={styles.icon}>
-                          <AiFillRightCircle />
-                        </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>
+                    Manual for disassembly & dismantling of the battery pack
+                  </div>
+                  <Button className={styles.button}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      Download
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
                       </div>
-                    </Button>
-                  </li>
-                </ol>
+                    </div>
+                  </Button>
+                </li>
               </ul>
             </div>
           </div>
@@ -101,7 +120,7 @@ const CircularityAndResourceEfficiency = () => {
                   <div className={styles.liTitle}>
                     Safety measures/instructions
                   </div>
-                  <Button onClick={onClick}>
+                  <Button className={styles.button}>
                     <div style={{ display: 'flex', fontWeight: '600' }}>
                       Download
                       <div className={styles.icon}>
@@ -115,7 +134,7 @@ const CircularityAndResourceEfficiency = () => {
                     <FaPassport />
                   </div>
                   <div className={styles.liTitle}>Extinguishing agent</div>
-                  <Button onClick={onClick}>
+                  <Button className={styles.button}>
                     <div
                       style={{
                         display: 'flex',
