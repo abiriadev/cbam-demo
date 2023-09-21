@@ -84,14 +84,14 @@ const GeneralBattery = () => {
                     <FaPassport />
                   </div>
                   <div className={styles.liTitle}>Name</div>
-                  <div className={styles.tag}>Company A</div>
+                  <div className={styles.tag}>Aipim</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
                     <FaPassport />
                   </div>
                   <div className={styles.liTitle}>trade name or mark</div>
-                  <div className={styles.tag}>68161/12</div>
+                  <div className={styles.tag}>9876/457</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>

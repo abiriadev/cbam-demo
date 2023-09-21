@@ -214,9 +214,7 @@ const PerformancAndDurability = () => {
                     <div className={styles.liTitle}>
                       Energy round trip efficiency fade
                     </div>
-                    <div className={styles.tag}>
-                      가능한 경우 입력, 조금 애매모호
-                    </div>
+                    <div className={styles.tag}>None</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>

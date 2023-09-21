@@ -15,19 +15,18 @@ const SupplyChainDueDiligentcet = () => {
       children: (
         <div className={styles.prepare}>
           <div className={styles.title}>
-            There is
-            <br />
-            nothing here <br />
-            yet...
+            information of the due dilligence report
           </div>
           <br />
           <hr style={{ border: '1px solid #ced4da' }} />
           <br />
           <div className={styles.text}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-            sequi, delectus aliquid ipsum ex officiis labore enim ratione id.
-            Dolores dignissimos inventore quo expedita reiciendis adipisci
-            deserunt ea ducimus voluptatibus?
+            Making due diligence report information available via the battery
+            passport, at least via a link to the annual due diligence report
+            valid for the specific battery at the time of placing on the market,
+            as PDF uploaded to the company website. In addition, potentially
+            making key information of the report available via the battery
+            passport directly.
           </div>
         </div>
       ),
@@ -42,20 +41,23 @@ const SupplyChainDueDiligentcet = () => {
       children: (
         <div className={styles.prepare}>
           <div className={styles.title}>
-            There is
-            <br />
-            nothing here <br />
-            yet...
+            Third party supply chain assurances demonstrate (e.g., via
+            certifications) that supply chain practices adhere to defined
+            standards. If schemes are chosen carefully (e.g., based on criteria
+            outlined by the Battery Pass consortium) and key information about
+            the assurances are communicated (see proposal by the Battery Pass
+            consortium), assurances could be voluntarily made available via the
+            battery passport.
           </div>
           <br />
           <hr style={{ border: '1px solid #ced4da' }} />
           <br />
-          <div className={styles.text}>
+          {/* <div className={styles.text}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
             sequi, delectus aliquid ipsum ex officiis labore enim ratione id.
             Dolores dignissimos inventore quo expedita reiciendis adipisci
             deserunt ea ducimus voluptatibus?
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -69,20 +71,18 @@ const SupplyChainDueDiligentcet = () => {
       children: (
         <div className={styles.prepare}>
           <div className={styles.title}>
-            There is
-            <br />
-            nothing here <br />
-            yet...
+            ESGE+ indices under development by the GBA, scoring and benchmarking
+            sustainability performance
           </div>
           <br />
           <hr style={{ border: '1px solid #ced4da' }} />
           <br />
-          <div className={styles.text}>
+          {/* <div className={styles.text}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
             sequi, delectus aliquid ipsum ex officiis labore enim ratione id.
             Dolores dignissimos inventore quo expedita reiciendis adipisci
             deserunt ea ducimus voluptatibus?
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -97,19 +97,17 @@ const SupplyChainDueDiligentcet = () => {
       children: (
         <div className={styles.prepare}>
           <div className={styles.title}>
-            There is
-            <br />
-            nothing here <br />
-            yet...
+            Large untertakings need to disclose information to the public on how
+            and to what extent their activities are associated with
+            environmentally sustainable economic activities as part of the EU
+            Taxonomy Regulation.
           </div>
           <br />
           <hr style={{ border: '1px solid #ced4da' }} />
           <br />
           <div className={styles.text}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-            sequi, delectus aliquid ipsum ex officiis labore enim ratione id.
-            Dolores dignissimos inventore quo expedita reiciendis adipisci
-            deserunt ea ducimus voluptatibus?
+            Voluntarily making the EU Taxonomy disclosure available via the
+            battery passport.
           </div>
         </div>
       ),
@@ -124,19 +122,15 @@ const SupplyChainDueDiligentcet = () => {
       children: (
         <div className={styles.prepare}>
           <div className={styles.title}>
-            There is
-            <br />
-            nothing here <br />
-            yet...
+            The EU Corporate Sustainability Reporting Directive (CSRD) requires
+            EU companies to draft a sustainability report.
           </div>
           <br />
           <hr style={{ border: '1px solid #ced4da' }} />
           <br />
           <div className={styles.text}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-            sequi, delectus aliquid ipsum ex officiis labore enim ratione id.
-            Dolores dignissimos inventore quo expedita reiciendis adipisci
-            deserunt ea ducimus voluptatibus?
+            Voluntarily making the Sustainability Report available via the
+            battery passport.
           </div>
         </div>
       ),

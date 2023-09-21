@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Overview.module.scss';
 import EVBatteryPath from '../../assets/images/EVBattery.jpeg';
 import { FiBox, FiAlertCircle } from 'react-icons/fi';
-import { FaPassport } from 'react-icons/fa';
+import { FaPassport, FaTruck } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import { AiFillStar, AiOutlineStar, AiFillEdit } from 'react-icons/ai';
 import {
@@ -304,6 +304,30 @@ const Overview = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className={styles.space} />
+
+          <div
+            className={styles.box}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.mainTitle}>Chain of Custody</div>
+            <div className={styles.content}></div>
+            {/* FaTruck */}
+            <ul>
+              <li>
+                <div className={styles.liICon}>
+                  <FaTruck />
+                </div>
+                <div className={styles.liTitle}>BATTERY PASSPORT ID</div>
+                <div className={styles.tag}>
+                  RSTE2291345831, Tesla Model 3 Standard Range NMC-M50
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

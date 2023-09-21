@@ -26,7 +26,7 @@
     align-items: center;
 
     .space {
-      border-bottom: 1px solid black;
+      border-bottom: 2px solid #eff1ed;
       width: 95%;
     }
   }
@@ -105,8 +105,9 @@
   width: 800px;
   height: 100%;
   padding: 40px;
+
   .title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     color: #ced4da;
   }
@@ -119,15 +120,15 @@
 .symbol {
   position: relative;
   // border: 1px solid black;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
 
   .alert {
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
     top: 0px;
     right: 0px;

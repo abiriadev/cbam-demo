@@ -16,6 +16,111 @@ const CircularityAndResourceEfficiency = () => {
       <div className={styles.container}>
         <div className={styles.boxContainer}>
           <div
+            style={{
+              marginTop: '30px',
+              paddingLeft: '30px',
+              width: '100%',
+            }}
+          >
+            <div className={styles.title}>Recycled & Renewable Content</div>
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              width: '100%',
+            }}
+          >
+            <div
+              className={styles.topBox}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <div className={styles.mainTitle}>
+                Pre-consumer recycled share
+              </div>
+              <div className={styles.content}>
+                <ul>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>nickel</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>cobalt</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>lithium</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>lead</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              className={styles.topBox}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+            >
+              <div className={styles.mainTitle}>
+                Post-consumer recycled share
+              </div>
+              <div className={styles.content}>
+                <ul>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>nickel</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>cobalt</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>lithium</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                  <li>
+                    <div className={styles.liICon}>
+                      <FaPassport />
+                    </div>
+                    <div className={styles.liTitle}>lead</div>
+                    <div className={styles.tag}>0%</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.space} />
+          <div
             className={styles.box}
             style={{
               display: 'flex',
@@ -32,9 +137,7 @@ const CircularityAndResourceEfficiency = () => {
                   <div className={styles.liTitle}>
                     Part numbers for components
                   </div>
-                  <div className={styles.tag}>
-                    X123456789012X12345678901234566
-                  </div>
+                  <div className={styles.tag}>98721</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
@@ -110,7 +213,7 @@ const CircularityAndResourceEfficiency = () => {
               flexDirection: 'column',
             }}
           >
-            <div className={styles.mainTitle}>Safety requirements</div>
+            <div className={styles.mainTitle}>Safety Requirements</div>
             <div className={styles.content}>
               <ul>
                 <li>
