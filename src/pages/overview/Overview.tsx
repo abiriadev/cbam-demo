@@ -17,6 +17,7 @@ import { MdGrade } from 'react-icons/md';
 import { TbHealthRecognition } from 'react-icons/tb';
 import { BsChevronDoubleRight, BsBuilding } from 'react-icons/bs';
 import { Popconfirm, message } from 'antd';
+import { GoDotFill } from 'react-icons/go';
 
 const Overview = () => {
   const betteryDesc = () => {
@@ -312,22 +313,182 @@ const Overview = () => {
             style={{
               display: 'flex',
               flexDirection: 'column',
+              // height: '100%',
             }}
           >
             <div className={styles.mainTitle}>Chain of Custody</div>
-            <div className={styles.content}></div>
-            {/* FaTruck */}
-            <ul>
-              <li>
-                <div className={styles.liICon}>
+            <div
+              className={styles.content}
+              style={{
+                // height: '100%',
+                flexDirection: 'row',
+              }}
+            >
+              <div
+                style={{
+                  width: '30px',
+                  paddingTop: '4px',
+                  paddingLeft: '4px',
+                  marginRight: '10px',
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: '24px',
+                    width: '30px',
+                  }}
+                >
                   <FaTruck />
                 </div>
-                <div className={styles.liTitle}>BATTERY PASSPORT ID</div>
-                <div className={styles.tag}>
-                  RSTE2291345831, Tesla Model 3 Standard Range NMC-M50
+              </div>
+              <div
+                style={{
+                  borderLeft: '1px solid #d9d9d9',
+                  height: '90%',
+                }}
+              >
+                <div
+                  style={{
+                    position: 'relative',
+                    marginBottom: '20px',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '20px',
+                      position: 'absolute',
+                      left: '-10px',
+                      color: '#d9d9d9',
+                    }}
+                  >
+                    <GoDotFill />
+                  </div>
+                  <div
+                    style={{
+                      paddingLeft: '20px',
+                      color: 'gray',
+                    }}
+                  >
+                    09/07/2022, 10:00
+                    <div style={{ color: 'black' }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
                 </div>
-              </li>
-            </ul>
+                <div
+                  style={{
+                    position: 'relative',
+                    marginBottom: '20px',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '20px',
+                      position: 'absolute',
+                      left: '-10px',
+                      color: '#d9d9d9',
+                    }}
+                  >
+                    <GoDotFill />
+                  </div>
+                  <div
+                    style={{
+                      paddingLeft: '20px',
+                      color: 'gray',
+                    }}
+                  >
+                    09/07/2022, 10:00
+                    <div style={{ color: 'black' }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    position: 'relative',
+                    marginBottom: '20px',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '20px',
+                      position: 'absolute',
+                      left: '-10px',
+                      color: '#d9d9d9',
+                    }}
+                  >
+                    <GoDotFill />
+                  </div>
+                  <div
+                    style={{
+                      paddingLeft: '20px',
+                      color: 'gray',
+                    }}
+                  >
+                    09/07/2022, 10:00
+                    <div style={{ color: 'black' }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    position: 'relative',
+                    marginBottom: '20px',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '20px',
+                      position: 'absolute',
+                      left: '-10px',
+                      color: '#d9d9d9',
+                    }}
+                  >
+                    <GoDotFill />
+                  </div>
+                  <div
+                    style={{
+                      paddingLeft: '20px',
+                      color: 'gray',
+                    }}
+                  >
+                    09/07/2022, 10:00
+                    <div style={{ color: 'black' }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    position: 'relative',
+                    marginBottom: '20px',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '20px',
+                      position: 'absolute',
+                      left: '-10px',
+                      color: '#d9d9d9',
+                    }}
+                  >
+                    <GoDotFill />
+                  </div>
+                  <div
+                    style={{
+                      paddingLeft: '20px',
+                      color: 'gray',
+                    }}
+                  >
+                    09/07/2022, 10:00
+                    <div style={{ color: 'black' }}>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
