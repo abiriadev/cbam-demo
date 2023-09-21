@@ -179,9 +179,6 @@ const HeaderBar = () => {
           height: '100%',
           width: '100px',
           textAlign: 'center',
-          // height: '32px',
-          // margin: '10px 16px 14px 30px',
-
           background: 'gray',
         }}
       >

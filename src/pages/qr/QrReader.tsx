@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import styles from './QrReader.module.scss';
-import { Button, Input } from 'antd';
+import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
-import Loader from '../../components/loader/Loader';
 import dppLogo from '../../assets/images/DPP_logo.png';
 
 const QrReader = () => {
@@ -16,10 +15,10 @@ const QrReader = () => {
   };
 
   return (
-    <>
-      <div className={styles.page}>
-        <div className={styles.container}>
-          <div className={styles.tBox}>
+    <div className={styles.page}>
+      <div className={styles.container}>
+        <div className={styles.content} style={{ marginRight: '20px' }}>
+          <div className={styles.tBox} style={{ marginBottom: '20px' }}>
             <div className={styles.title}>Digital Product Passport</div>
             <div className={styles.text}>
               Deployed and validated at scale and real life setting Digital
@@ -37,65 +36,26 @@ const QrReader = () => {
             />
           </div>
         </div>
-        <div className={styles.content}>
+        <div
+          className={styles.content}
+          style={{ background: '#fff', border: '1px solid #d9d9d9' }}
+        >
           <Button className={styles.arrow}>
             <ArrowLeftOutlined />
           </Button>
           <img src={dppLogo} className={styles.logo} />
           <div className={styles.buttons}>
-            <Button className={styles.button}>QR Scan</Button>
+            <Button className={styles.button} style={{ marginRight: '10px' }}>
+              QR Scan
+            </Button>
             <Button className={styles.button} onClick={onSearch}>
               Search <ArrowRightOutlined />
             </Button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 export default QrReader;
-
-// import React, { useState } from 'react';
-// import styles from './QrReader.module.scss';
-// import { Button, Input } from 'antd';
-// import { useNavigate } from 'react-router-dom';
-// import { ArrowRightOutlined } from '@ant-design/icons';
-// import Loader from '../../components/loader/Loader';
-// const QrReader = () => {
-//   const navigate = useNavigate();
-
-//   const onSearch = () => {
-//     setTimeout(() => {
-//       navigate('/overview');
-//     }, 500);
-//   };
-
-//   return (
-//     <>
-//       <div className={styles.page}>
-//         <div className={styles.container}>
-//           <div className={styles.buttons}>
-//             <Button className={styles.button} style={{ marginRight: '2.5px' }}>
-//               Upload Image
-//             </Button>
-//             <Button className={styles.button} style={{ marginLeft: '2.5px' }}>
-//               Scan QR code
-//             </Button>
-//           </div>
-//           <div className={styles.qrBox} />
-//           <div className={styles.input}>
-//             <Input placeholder="URL" />
-//           </div>
-//           <div className={styles.buttons}>
-//             <Button className={styles.button} onClick={onSearch}>
-//               Search <ArrowRightOutlined />
-//             </Button>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default QrReader;

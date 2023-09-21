@@ -163,6 +163,20 @@ const GeneralBattery = () => {
                   <div className={styles.liICon}>
                     <FaPassport />
                   </div>
+                  <div className={styles.liTitle}>Weight of the module</div>
+                  <div className={styles.tag}>45kg</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
+                  <div className={styles.liTitle}>Weight of the cell</div>
+                  <div className={styles.tag}>1.56kg</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <FaPassport />
+                  </div>
 
                   <Popconfirm
                     className={styles.popcon}
