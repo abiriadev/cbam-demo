@@ -91,7 +91,7 @@ const HeaderBar = () => {
           // background: 'gray',
         }}
       >
-        <a href="/qr" target="_blank">
+        <a href="/qr">
           <img src={aipimLogo} alt="logo" />
         </a>
       </div>

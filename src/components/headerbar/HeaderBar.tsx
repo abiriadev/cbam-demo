@@ -185,7 +185,7 @@ const HeaderBar = () => {
           // background: 'gray',
         }}
       >
-        <a href="/overview" target="_blank">
+        <a href="/overview">
           <img src={apimIndigo} alt="logo" />
         </a>
       </div>

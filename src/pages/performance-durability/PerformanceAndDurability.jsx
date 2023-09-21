@@ -246,9 +246,7 @@ const PerformancAndDurability = () => {
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className={styles.midBox} style={{ marginRight: '20px' }}>
+            <div className={styles.space} />
             <div
               className={styles.box}
               style={{
@@ -282,7 +280,6 @@ const PerformancAndDurability = () => {
                 </ul>
               </div>
             </div>
-
             <div className={styles.space} />
             <div
               className={styles.box}
@@ -322,7 +319,9 @@ const PerformancAndDurability = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.space} />
+          </div>
+
+          <div className={styles.RightBox}>
             <div
               className={styles.box}
               style={{
@@ -362,9 +361,7 @@ const PerformancAndDurability = () => {
                 </ul>
               </div>
             </div>
-          </div>
-
-          <div className={styles.RightBox}>
+            <div className={styles.space} />
             <div
               className={styles.box}
               style={{
@@ -402,8 +399,7 @@ const PerformancAndDurability = () => {
                     </div>
 
                     <div className={styles.tag}>
-                      IEC 62660-2 <br />
-                      EUCAR
+                      IEC 62660-2, EUCAR,
                       {/* [European Council for Automotive R&D) */}
                       <br /> DOE
                       {/* (U.S. Department of Energy) */}
@@ -439,7 +435,7 @@ const PerformancAndDurability = () => {
                     <div className={styles.liTitle}>
                       Capacity threshold for exhaustion
                     </div>
-                    <div className={styles.tag}>75%(70~80%)]</div>
+                    <div className={styles.tag}>75%(70~80%)</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
@@ -480,9 +476,7 @@ const PerformancAndDurability = () => {
                 </ul>
               </div>
             </div>
-
             <div className={styles.space} />
-
             <div
               className={styles.box}
               style={{
