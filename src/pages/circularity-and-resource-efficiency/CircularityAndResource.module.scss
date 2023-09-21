@@ -1,6 +1,6 @@
 .page {
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 80px;
   height: 100%;
   width: 70%;
   display: flex;
@@ -12,9 +12,9 @@
     // flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 30%;
+    // justify-content: center;
+    width: 800px;
+    height: 90%;
     padding: 0px 35px;
     > {
       flex: 1;
@@ -25,48 +25,60 @@
     margin-bottom: 50px;
     // border: 2px solid #31437f;
 
-    .link {
+    .box {
+      display: flex;
       width: 100%;
-      padding: 10px;
-    }
-  }
-  .content {
-    width: 100%;
-    height: 90%;
-    // flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    > {
-      flex: 1;
+      padding: 30px;
+
+      .mainTitle {
+        font-size: 16px;
+        margin: 20px 0px;
+        font-weight: 600;
+      }
     }
 
-    .cBox {
-      background-color: #587dca;
-      color: #fff;
-      border-radius: 18px;
-      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
-      margin: 0px 10px 10px 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px 15px 15px 45px;
-      .button {
-        margin-top: 18px;
-        // background-color: #587dca;
-        // color: #fff;
-        background-color: #fff;
-        color: #587dca;
-        // border: 1px solid transparent;
-        font-weight: 600;
-        font-size: 16px;
-        width: 200px;
-        height: 45px;
-        border-radius: 10px;
+    .space {
+      border-bottom: 1px solid black;
+      width: 95%;
+    }
+    .content {
+      > ul > li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .liICon {
+          width: 20px;
+          font-size: 16px;
+          margin-top: 2px;
+        }
+
+        .liTitle {
+          font-weight: 500;
+          width: 400px;
+        }
       }
-      .button:hover {
-        color: #fff;
-        background-color: #31437f;
+      > ul > ol {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        li {
+          width: 100%;
+          display: flex;
+          margin-bottom: 10px;
+        }
+        .liICon {
+          width: 20px;
+          font-size: 16px;
+          margin-top: 2px;
+        }
+
+        .liTitle {
+          font-weight: 500;
+          width: 400px;
+        }
       }
     }
   }

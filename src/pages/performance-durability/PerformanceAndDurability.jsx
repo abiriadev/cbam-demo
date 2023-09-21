@@ -1,14 +1,10 @@
 import React from 'react';
 import styles from './Performance.module.scss';
-import EVBatteryPath from '../../assets/images/EVBattery.jpeg';
 import { FiBox, FiAlertCircle } from 'react-icons/fi';
 import { FaPassport } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import { AiFillStar, AiOutlineStar, AiFillEdit } from 'react-icons/ai';
-import { MdGrade } from 'react-icons/md';
-import { TbHealthRecognition } from 'react-icons/tb';
 import { BsChevronDoubleRight, BsBuilding } from 'react-icons/bs';
-import { Popconfirm, message } from 'antd';
 
 const PerformancAndDurability = () => {
   return (
