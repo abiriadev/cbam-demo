@@ -6,6 +6,8 @@ import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
 import { ImQrcode } from 'react-icons/im';
 import aipimLogo from '../../assets/images/aipim_logo2.png';
 import dppImg from '../../assets/images/dpp_img.png';
+import mainPath from '../../assets/images/main.jpeg';
+import aipimLogoGreen from '../../assets/images/aipim_logo_green.png';
 
 const Start = () => {
   const navigate = useNavigate();
@@ -32,11 +34,7 @@ const Start = () => {
             </div>
           </div>
           <div className={styles.tBox}>
-            <img
-              className={styles.img}
-              src={dppImg}
-              // src="https://www.europarl.europa.eu/cmsdata/248115/product%20passport%20-%20traceability3-ml.jpeg"
-            />
+            <img className={styles.img} src={mainPath} />
           </div>
         </div>
         <div
@@ -46,7 +44,7 @@ const Start = () => {
           {/* <Button className={styles.arrow}>
             <ArrowLeftOutlined />
           </Button> */}
-          <img src={aipimLogo} className={styles.logo} />
+          <img src={aipimLogoGreen} className={styles.logo} />
           <div className={styles.buttons}>
             <Button
               className={styles.button}
