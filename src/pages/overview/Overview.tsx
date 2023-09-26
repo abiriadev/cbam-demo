@@ -622,7 +622,6 @@ const Overview = () => {
             <div
               className={styles.content}
               style={{
-                // height: '100%',
                 flexDirection: 'row',
               }}
             >
@@ -645,7 +644,7 @@ const Overview = () => {
               </div>
               <div
                 style={{
-                  borderLeft: '1px solid #d9d9d9',
+                  borderLeft: '1px solid #47c8a4',
                   height: '90%',
                 }}
               >
@@ -660,7 +659,7 @@ const Overview = () => {
                       fontSize: '20px',
                       position: 'absolute',
                       left: '-10px',
-                      color: '#d9d9d9',
+                      color: '#47c8a4',
                     }}
                   >
                     <GoDotFill />
@@ -688,7 +687,7 @@ const Overview = () => {
                       fontSize: '20px',
                       position: 'absolute',
                       left: '-10px',
-                      color: '#d9d9d9',
+                      color: '#47c8a4',
                     }}
                   >
                     <GoDotFill />
@@ -716,7 +715,7 @@ const Overview = () => {
                       fontSize: '20px',
                       position: 'absolute',
                       left: '-10px',
-                      color: '#d9d9d9',
+                      color: '#47c8a4',
                     }}
                   >
                     <GoDotFill />
@@ -744,7 +743,7 @@ const Overview = () => {
                       fontSize: '20px',
                       position: 'absolute',
                       left: '-10px',
-                      color: '#d9d9d9',
+                      color: '#47c8a4',
                     }}
                   >
                     <GoDotFill />
@@ -772,7 +771,7 @@ const Overview = () => {
                       fontSize: '20px',
                       position: 'absolute',
                       left: '-10px',
-                      color: '#d9d9d9',
+                      color: '#47c8a4',
                     }}
                   >
                     <GoDotFill />

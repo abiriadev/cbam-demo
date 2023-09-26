@@ -78,8 +78,10 @@
   .tagDiv {
     padding: 3px 10px 0px 10px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid #d9d9d9;
+    // background: rgba(0, 0, 0, 0.02);
+    // border: 1px solid #d9d9d9;
+    background-color: rgba(210, 245, 238, 0.5);
+    border: 1px solid #47c8a4;
     border-radius: 4px;
   }
 
@@ -87,9 +89,11 @@
     padding: 2px 10px;
     // padding: 3px 10px 0px 10px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid #d9d9d9;
+    // background: rgba(0, 0, 0, 0.02);
+    // border: 1px solid #d9d9d9;
     border-radius: 4px;
+    background-color: rgba(210, 245, 238, 0.5);
+    border: 1px solid #47c8a4;
   }
 }
 
@@ -112,14 +116,24 @@
   padding: 3px 10px;
   // padding: 3px 10px 0px 10px;
   height: 100%;
-  background: rgba(0, 0, 0, 0.02);
-  border: 1px solid #d9d9d9;
+  // background: rgba(0, 0, 0, 0.02);
+  // border: 1px solid #d9d9d9;
+  background-color: rgba(210, 245, 238, 0.5);
+  border: 1px solid #47c8a4;
   border-radius: 4px;
   // font-weight: 600;
 }
 
 .button {
   height: 30px;
+  color: #fff;
+  background-color: rgba(251, 163, 75, 0.8);
+  border: 1px solid #fba34b;
+}
+
+.button:hover {
+  border: 1px solid black !important;
+  color: black !important;
 }
 
 .title {

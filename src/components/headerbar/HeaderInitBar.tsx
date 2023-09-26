@@ -16,7 +16,9 @@ import { MdQuestionAnswer } from 'react-icons/md';
 import { AuthService } from '../../services/AuthService';
 import LogoPath from '../../assets/images/aipim_logo.png';
 import type { MenuProps } from 'antd';
-import aipimLogo from '../../assets/images/aipim_logo_indigo.png';
+import apimIndigo from '../../assets/images/aipim_logo_indigo.png';
+import apimWhite from '../../assets/images/aipim_logo.png';
+
 import { useNavigate } from 'react-router-dom';
 
 const { Header } = Layout;
@@ -102,7 +104,7 @@ const HeaderBar = () => {
         }}
       >
         <a href="/qr">
-          <img src={aipimLogo} alt="logo" />
+          <img src={apimWhite} alt="logo" width={100} />
         </a>
       </div>
 

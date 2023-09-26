@@ -8,11 +8,7 @@ const DppInitLayout = () => {
   return (
     <Layout id="default-layout">
       <HeaderBar />
-      {/* <Content style={{ padding: '0 50px' }}> */}
-      {/* <div className="site-layout-content"> */}
       <Outlet />
-      {/* </div> */}
-      {/* </Content> */}
     </Layout>
   );
 };
