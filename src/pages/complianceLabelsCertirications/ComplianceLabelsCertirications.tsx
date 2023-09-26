@@ -99,7 +99,7 @@ const ComplianceLabelsCertirications = () => {
                 height: '100%',
               }}
             >
-              <img src={cert2Path} alt="certifications-2" width={500} />
+              <img src={cert1Path} alt="certifications-2" width={500} />
             </div>
           </div>
         );
