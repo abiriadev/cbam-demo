@@ -307,7 +307,13 @@ const ComplianceLabelsCertirications = () => {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.boxContainer} style={{ marginRight: '20px' }}>
+        <div
+          className={styles.boxContainer}
+          style={{
+            marginRight: '20px',
+            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.25)',
+          }}
+        >
           <div
             className={styles.box}
             style={{

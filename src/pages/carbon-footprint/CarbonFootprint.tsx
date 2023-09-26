@@ -252,7 +252,6 @@ const CarbonFootpint = () => {
         </div>
 
         <div className={styles.boxContainer}>
-          <div className={styles.space} />
           <div
             className={styles.sbox}
             style={{
