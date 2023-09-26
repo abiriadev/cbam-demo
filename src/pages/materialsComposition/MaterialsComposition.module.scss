@@ -82,7 +82,7 @@
 
     .liTitle {
       font-weight: 500;
-      width: 200px;
+      width: 400px;
     }
   }
   .tagDiv {
@@ -106,4 +106,19 @@
 .popcon:hover {
   color: red;
   text-decoration: underline;
+}
+
+.topBox {
+  padding: 10px 30px 30px 30px;
+  flex: 1;
+
+  .liTitle {
+    width: 140px !important;
+  }
+}
+
+.mainTitle {
+  font-size: 16px;
+  margin: 20px 0px;
+  font-weight: 600;
 }

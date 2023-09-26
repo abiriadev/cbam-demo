@@ -5,7 +5,8 @@ import { FaPassport } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import { AiFillStar, AiOutlineStar, AiFillEdit } from 'react-icons/ai';
 import { BsChevronDoubleRight, BsBuilding } from 'react-icons/bs';
-
+import { GrCapacity } from 'react-icons/gr';
+import { PiDotOutlineBold } from 'react-icons/pi';
 const PerformancAndDurability = () => {
   return (
     <div className={styles.page}>
@@ -26,21 +27,21 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Rated capacity</div>
                     <div className={styles.tag}>232 Ah</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Remaining capacity</div>
                     <div className={styles.tag}>230 Ah</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Capacity fade</div>
 
@@ -48,7 +49,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <MdDateRange />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Certified usable battery energy
@@ -57,7 +58,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Remaining usable battery energy
@@ -66,7 +67,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       State of certified energy (SOCE)
@@ -75,28 +76,28 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>State of charge (SoC)</div>
                     <div className={styles.tag}>98%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Minimum voltage</div>
                     <div className={styles.tag}>400V</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Maximum voltage</div>
                     <div className={styles.tag}>800V</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Nominal voltage</div>
                     <div className={styles.tag}>657V</div>
@@ -119,7 +120,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Original power capability
@@ -128,14 +129,14 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Power capabiltiy fade</div>
                     <div className={styles.tag}>1%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Remaining power capability
@@ -145,7 +146,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <MdDateRange />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Maximum permitted battery power
@@ -154,7 +155,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Ratio between nominal battery power and battery energy
@@ -181,7 +182,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Initial round trip energy efficiency
@@ -190,7 +191,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Round trip energy efficiency at 50% of cycle-life
@@ -199,7 +200,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Remaining round trip energy efficiency
@@ -209,7 +210,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <MdDateRange />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Energy round trip efficiency fade
@@ -218,7 +219,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Initial self-discharging rate
@@ -227,7 +228,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Current self discharging rate
@@ -236,7 +237,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Evolution of self discharging rates
@@ -261,7 +262,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Initial internal battery Cell resistance
@@ -270,7 +271,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Current internal battery Cell resistance
@@ -295,7 +296,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Cell level</div>
                     <div className={styles.tag}>1 milliohm</div>
@@ -303,7 +304,7 @@ const PerformancAndDurability = () => {
 
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Pack level</div>
                     <div className={styles.tag}>1 milliohm</div>
@@ -311,7 +312,7 @@ const PerformancAndDurability = () => {
 
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>module level</div>
                     <div className={styles.tag}>None</div>
@@ -336,7 +337,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Cell level</div>
 
@@ -345,7 +346,7 @@ const PerformancAndDurability = () => {
 
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Pack level</div>
                     <div className={styles.tag}>1 milliohm </div>
@@ -353,7 +354,7 @@ const PerformancAndDurability = () => {
 
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>module level</div>
                     <div className={styles.tag}>None</div>
@@ -374,7 +375,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Expected lifetime: Number of chargedischarge cycles
@@ -383,7 +384,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Number of full charging and discharging cycles
@@ -392,7 +393,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Cycle-life Reference test
@@ -407,7 +408,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <MdDateRange />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       C-rate of relevant cyclelife test
@@ -416,21 +417,21 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Energy throughput</div>
                     <div className={styles.tag}>Not applicable</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>Capacity throughput</div>
                     <div className={styles.tag}>Not applicable</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Capacity threshold for exhaustion
@@ -439,7 +440,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       SOCE threshold for exhaustion
@@ -448,7 +449,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Warranty period of the battery
@@ -457,7 +458,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Date of manufacturing of the battery
@@ -466,7 +467,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Date of putting the battery into service
@@ -489,7 +490,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Temperature range idle state (lower boundary)
@@ -498,7 +499,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Temperature range idle state (upper boundary)
@@ -507,7 +508,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Time spent in extreme temperatures above boundary
@@ -517,7 +518,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <MdDateRange />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Time spent in extreme temperatures below boundary
@@ -526,7 +527,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Time spent charging during extreme temperatures above
@@ -536,7 +537,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <AiFillEdit />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Time spent charging during extreme temperatures below
@@ -561,7 +562,7 @@ const PerformancAndDurability = () => {
                 <ul>
                   <li>
                     <div className={styles.liICon}>
-                      <FaPassport />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Number of deep discharge events
@@ -570,7 +571,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <FiBox />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Number of overcharge events
@@ -579,7 +580,7 @@ const PerformancAndDurability = () => {
                   </li>
                   <li>
                     <div className={styles.liICon}>
-                      <BsBuilding />
+                      <PiDotOutlineBold />
                     </div>
                     <div className={styles.liTitle}>
                       Information on accidents

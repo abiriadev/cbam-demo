@@ -5,7 +5,7 @@ import AuthRoute from '../route/AuthRoute';
 import Default from '../pages/default/Default';
 import DppLayout from 'layouts/DppLayout';
 import DppInitLayout from 'layouts/DppInitLayout';
-import QrReader from '../pages/qr/QrReader';
+import Start from '../pages/start/Start';
 import Overview from 'pages/overview/Overview';
 import GeneralBattery from 'pages/generalBattery/GeneralBattery';
 import CircularityAndResourceEfficiency from 'pages/circularity-and-resource-efficiency/CircularityAndResourceE';
@@ -15,11 +15,13 @@ import ComplianceLabelsCertirications from 'pages/complianceLabelsCertirications
 import PerformanceAndDurability from 'pages/performance-durability/PerformanceAndDurability';
 import MaterialsComposition from 'pages/materialsComposition/MaterialsComposition';
 import DefaultPage from 'pages/DefaultPage';
+import Qr from 'pages/qr/Qr';
 export function DefaultRouter() {
   return (
     <Routes>
       <Route element={<DppInitLayout />}>
-        <Route path="/qr" element={<QrReader />} />
+        <Route path="/start" element={<Start />} />
+        <Route path="/qr" element={<Qr />} />
       </Route>
       <Route element={<DppLayout />}>
         <Route path="/overview" element={<Overview />} />

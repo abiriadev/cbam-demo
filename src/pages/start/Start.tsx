@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import styles from './QrReader.module.scss';
+import styles from './Start.module.scss';
 import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons';
-// import dppLogo from '../../assets/images/DPP_logo.png';
+import { ImQrcode } from 'react-icons/im';
 import aipimLogo from '../../assets/images/aipim_logo2.png';
 import dppImg from '../../assets/images/dpp_img.png';
 
-const QrReader = () => {
+const Start = () => {
   const navigate = useNavigate();
 
   const onSearch = () => {
     setTimeout(() => {
-      navigate('/overview');
+      navigate('/qr');
     }, 500);
   };
 
@@ -43,13 +43,25 @@ const QrReader = () => {
           className={styles.content}
           style={{ background: '#fff', border: '1px solid #d9d9d9' }}
         >
-          <Button className={styles.arrow}>
+          {/* <Button className={styles.arrow}>
             <ArrowLeftOutlined />
-          </Button>
+          </Button> */}
           <img src={aipimLogo} className={styles.logo} />
           <div className={styles.buttons}>
-            <Button className={styles.button} style={{ marginRight: '10px' }}>
+            <Button
+              className={styles.button}
+              style={{
+                marginRight: '10px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+              onClick={onSearch}
+            >
               QR Scan
+              <div style={{ marginTop: '4px', marginLeft: '4px' }}>
+                <ImQrcode />
+              </div>
             </Button>
             <Button className={styles.button} onClick={onSearch}>
               Search <ArrowRightOutlined />
@@ -61,4 +73,4 @@ const QrReader = () => {
   );
 };
 
-export default QrReader;
+export default Start;

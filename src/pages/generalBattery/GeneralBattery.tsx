@@ -3,6 +3,17 @@ import styles from './GeneralBattery.module.scss';
 import { Popconfirm } from 'antd';
 import { FaPassport } from 'react-icons/fa';
 import { FiAlertCircle } from 'react-icons/fi';
+import { PiIdentificationBadgeFill } from 'react-icons/pi';
+import {
+  MdDriveFileRenameOutline,
+  MdEmail,
+  MdDateRange,
+  MdOutlinePlace,
+  MdScale,
+} from 'react-icons/md';
+import { GrStatusUnknown } from 'react-icons/gr';
+import { BsFillBookmarkFill, BsFillHouseFill } from 'react-icons/bs';
+import { BiLogoInternetExplorer, BiCategoryAlt } from 'react-icons/bi';
 
 const GeneralBattery = () => {
   const batteryStatusDesc = () => {
@@ -53,12 +64,19 @@ const GeneralBattery = () => {
               flexDirection: 'column',
             }}
           >
+            <div
+              className={styles.title}
+              style={{ fontSize: '24px', fontWeight: '600' }}
+            >
+              Battery Manufacturer Info
+            </div>
+            <br />
             <div className={styles.mainTitle}>Identification</div>
             <div className={styles.content}>
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <PiIdentificationBadgeFill />
                   </div>
                   <div className={styles.liTitle}>Battery identification </div>
                   <div className={styles.tag}>
@@ -81,54 +99,54 @@ const GeneralBattery = () => {
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdDriveFileRenameOutline />
                   </div>
                   <div className={styles.liTitle}>Name</div>
                   <div className={styles.tag}>Aipim</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BsFillBookmarkFill />
                   </div>
-                  <div className={styles.liTitle}>trade name or mark</div>
+                  <div className={styles.liTitle}>Trade name or mark</div>
                   <div className={styles.tag}>9876/457</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BsFillHouseFill />
                   </div>
-                  <div className={styles.liTitle}>postal address</div>
-                  <div className={styles.tag}>
-                    360, Olympic-ro, Songpa-gu Seoul, Republic of Korea
-                  </div>
+                  <div className={styles.liTitle}>Postal address</div>
+                  <div className={styles.tag}>05543</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BiLogoInternetExplorer />
                   </div>
-                  <div className={styles.liTitle}>web address</div>
+                  <div className={styles.liTitle}>Web address</div>
                   <div className={styles.tag}>www.aipim.io</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdEmail />
                   </div>
-                  <div className={styles.liTitle}>e-mail address</div>
+                  <div className={styles.liTitle}>E-mail address</div>
                   <div className={styles.tag}>aipimbusiness@aipim.io</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdDateRange />
                   </div>
                   <div className={styles.liTitle}> Manufacturing date </div>
                   <div className={styles.tag}>16/01/2023</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdOutlinePlace />
                   </div>
                   <div className={styles.liTitle}> Manufacturing place</div>
-                  <div className={styles.tag}>mannheim</div>
+                  <div className={styles.tag}>
+                    360, Olympic-ro, Songpa-gu Seoul, Republic of Korea
+                  </div>
                 </li>
               </ul>
             </div>
@@ -146,35 +164,35 @@ const GeneralBattery = () => {
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BiCategoryAlt />
                   </div>
                   <div className={styles.liTitle}>Battery Category</div>
                   <div className={styles.tag}>EV(electric vehicle battery)</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdScale />
                   </div>
                   <div className={styles.liTitle}>Weight of the battery</div>
                   <div className={styles.tag}>450kg</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdScale />
                   </div>
                   <div className={styles.liTitle}>Weight of the module</div>
                   <div className={styles.tag}>45kg</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdScale />
                   </div>
                   <div className={styles.liTitle}>Weight of the cell</div>
                   <div className={styles.tag}>1.56kg</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <GrStatusUnknown />
                   </div>
 
                   <Popconfirm

@@ -3,6 +3,10 @@ import styles from './CircularityAndResource.module.scss';
 import { Button } from 'antd';
 import { FaPassport } from 'react-icons/fa';
 import { AiFillRightCircle, AiOutlineClose } from 'react-icons/ai';
+import { HiOutlineDocumentReport } from 'react-icons/hi';
+import { MdEmail } from 'react-icons/md';
+import { BiLogoInternetExplorer, BiCategoryAlt } from 'react-icons/bi';
+import { BsFillHouseFill } from 'react-icons/bs';
 
 const CircularityAndResourceEfficiency = () => {
   const onClick = () => {
@@ -11,6 +15,7 @@ const CircularityAndResourceEfficiency = () => {
       ele.style.visibility = 'visible';
     }
   };
+
   return (
     <div className={styles.page}>
       <div className={styles.container}>
@@ -46,29 +51,29 @@ const CircularityAndResourceEfficiency = () => {
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>nickel</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Ni</div>
+                    <div className={styles.tag}>30%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>cobalt</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Co</div>
+                    <div className={styles.tag}>20%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>lithium</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Li</div>
+                    <div className={styles.tag}>27%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>lead</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Pb</div>
+                    <div className={styles.tag}>9%</div>
                   </li>
                 </ul>
               </div>
@@ -90,29 +95,29 @@ const CircularityAndResourceEfficiency = () => {
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>nickel</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Ni</div>
+                    <div className={styles.tag}>28%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>cobalt</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Co</div>
+                    <div className={styles.tag}>19%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>lithium</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Li</div>
+                    <div className={styles.tag}>22%</div>
                   </li>
                   <li>
                     <div className={styles.liICon}>
                       <FaPassport />
                     </div>
-                    <div className={styles.liTitle}>lead</div>
-                    <div className={styles.tag}>0%</div>
+                    <div className={styles.liTitle}>Pb</div>
+                    <div className={styles.tag}>5%</div>
                   </li>
                 </ul>
               </div>
@@ -132,18 +137,18 @@ const CircularityAndResourceEfficiency = () => {
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BiCategoryAlt />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '500px' }}>
                     Part numbers for components
                   </div>
-                  <div className={styles.tag}>98721</div>
+                  <div className={styles.tag}>123XXYS456ZZY</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BsFillHouseFill />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '500px' }}>
                     Postal address of sources for spare parts
                   </div>
                   <div className={styles.tag}>
@@ -153,27 +158,27 @@ const CircularityAndResourceEfficiency = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdEmail />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '500px' }}>
                     E-mail address of sources for spare parts
                   </div>
                   <div className={styles.tag}>aipimbusiness@aipim.io</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <BiLogoInternetExplorer />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '500px' }}>
                     Web address of sources for spare parts
                   </div>
                   <div className={styles.tag}>http://www.aipim.io</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '500px' }}>
                     Manual for removal of the battery from the appliance
                   </div>
                   <Button className={styles.button}>
@@ -187,9 +192,9 @@ const CircularityAndResourceEfficiency = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '500px' }}>
                     Manual for disassembly & dismantling of the battery pack
                   </div>
                   <Button className={styles.button}>
@@ -218,9 +223,9 @@ const CircularityAndResourceEfficiency = () => {
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
-                  <div className={styles.liTitle}>
+                  <div className={styles.liTitle} style={{ width: '550px' }}>
                     Safety measures/instructions
                   </div>
                   <Button className={styles.button}>
@@ -234,9 +239,78 @@ const CircularityAndResourceEfficiency = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
-                  <div className={styles.liTitle}>Extinguishing agent</div>
+                  <div className={styles.liTitle} style={{ width: '550px' }}>
+                    Extinguishing agent
+                  </div>
+                  <Button className={styles.button}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        fontWeight: '600',
+                      }}
+                    >
+                      Download
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <HiOutlineDocumentReport />
+                  </div>
+                  <div className={styles.liTitle} style={{ width: '550px' }}>
+                    Role of end-users in contributing to waste prevention
+                  </div>
+                  <Button className={styles.button}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        fontWeight: '600',
+                      }}
+                    >
+                      Download
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <HiOutlineDocumentReport />
+                  </div>
+                  <div className={styles.liTitle} style={{ width: '550px' }}>
+                    Role of end-users in contributing to the separate collection
+                    of waste batteries
+                  </div>
+                  <Button className={styles.button}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        fontWeight: '600',
+                      }}
+                    >
+                      Download
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <HiOutlineDocumentReport />
+                  </div>
+                  <div className={styles.liTitle} style={{ width: '550px' }}>
+                    Information on the separate collection
+                    {/* , the take-back and
+                    collection points and preparing for re-use, preparing for
+                    repurposing and recycling operations */}
+                  </div>
                   <Button className={styles.button}>
                     <div
                       style={{

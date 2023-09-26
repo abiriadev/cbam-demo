@@ -7,10 +7,13 @@ import cert1Path from '../../assets/images/certifications1.jpg';
 import cert2Path from '../../assets/images/certifications2.jpg';
 import cert3Path from '../../assets/images/certifications3.jpg';
 import footLabelPath from '../../assets/images/footlabel1.png';
+import packagePath from '../../assets/images/package.png';
 import { Popconfirm, Button } from 'antd';
 import { FaPassport } from 'react-icons/fa';
-import { FiAlertCircle } from 'react-icons/fi';
+import { HiOutlineDocumentReport } from 'react-icons/hi';
 import { AiFillRightCircle, AiOutlineClose } from 'react-icons/ai';
+import { VscSymbolMisc } from 'react-icons/vsc';
+
 const ComplianceLabelsCertirications = () => {
   const [page, setPage] = useState<string>('');
   const onClick = (value: any) => {
@@ -193,6 +196,165 @@ const ComplianceLabelsCertirications = () => {
             </div>
           </div>
         );
+      case 'label1':
+        return (
+          <div
+            style={{
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.title}>
+              The “separate collection” symbol or “WEEE label” (see Figure )
+              indicates that a “product should not be discarded as unsorted
+              waste but must be sent to separate collection facilities for
+              recovery and recycling”. The symbol must appear on any electrical
+              and electronic equipment placed on the EU market. This label is
+              introduced in the EU directive on waste electrical and electronic
+              equipment (WEEE).
+            </div>
+            <br />
+            <hr style={{ border: '1px solid #ced4da' }} />
+            <br />
+            <div className={styles.text}>
+              Display symbol and translate it into text to ensure machine
+              readability of the battery passport We suggest specifying in the
+              battery passport for any battery that a separate collection is
+              required. The separate collection symbol is also to be printed as
+              a symbol on the physical label of the battery (with the symbol
+              displayed in Annex VI, Part B and the required size of the symbol
+              specified in Article 13(3)). We suggest displaying the symbol via
+              the battery passport since the public is familiar with it and will
+              therefore easily recognise it. In addition, we suggest translating
+              the symbol into text to be made accessible for the battery
+              passport to ensure machine readability.
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+              }}
+            >
+              <img src={weeePath} alt="certifications-3" width={200} />
+            </div>
+          </div>
+        );
+      case 'label2':
+        return (
+          <div
+            style={{
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.title}>Meaning of labels and symbols</div>
+            <br />
+            <hr style={{ border: '1px solid #ced4da' }} />
+            <br />
+            <div className={styles.text}>
+              <p>
+                "Meaning of all labels and symbols 1) marked on batteries 2)
+                printed on their packaging 3) the document accompanying
+                batteries Available (on the market) to end-users and
+                distributors Producers shall communicate this information “in a
+                visible manner and through online marketplaces” We suggest
+                adding an explanation of the meaning of all symbols and labels.
+                This would include the separate collection; cadmium and lead;
+                and carbon footprint and carbon footprint performance class
+                labels, which are accessible via the battery passport. In
+                addition, the meaning of symbols and labels marked or printed on
+                batteries or their accompanying documents but not included in
+                the battery passport should be added. We recommend linking the
+                symbols to be accessible via the battery passport to the
+                explanation of meaning. This way, if the symbol is added, the
+                corresponding explanatory text could be automatically added to
+                the battery passport. For labels and symbols not accessible via
+                the battery passport but still printed on the battery or its
+                documents, it will first need to be specified if the symbol or
+                label is applicable. Only then, the text on the meaning can be
+                added to the battery passport. In line with Article 60, this
+                information shall be communicated in (a) language(s) easily
+                understood by end-users as determined by the Member State. We
+                recommend that the explanatory texts are agreed on across the
+                industry, potentially even prescribed by regulation, to ease the
+                implementation for companies and ensure comprehensibility for
+                the public."
+              </p>
+            </div>
+          </div>
+        );
+      case 'label3':
+        return (
+          <div
+            style={{
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.title}>Symbols for cadmium and lead </div>
+            <br />
+            <hr style={{ border: '1px solid #ced4da' }} />
+            <br />
+            <div className={styles.text}>
+              Chemical symbol “Cd” for cadmium contained in the battery above
+              0.002%; “Pb” for lead above 0.004%.
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+              }}
+            >
+              <img src={cdPath} alt="certifications-3" width={150} />
+              <img src={pbPath} alt="certifications-3" width={150} />
+            </div>
+          </div>
+        );
+      case 'label4':
+        return (
+          <div
+            style={{
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div className={styles.title}>Carbon footprint label</div>
+            <br />
+            <hr style={{ border: '1px solid #ced4da' }} />
+            <br />
+            <div className={styles.text}>
+              "A label indicating the carbon footprint and carbon footprint
+              performance class the carbon footprint of the battery, calculated
+              as kg of carbon dioxide equivalent per one kWh of the total energy
+              provided by the battery over its expected service life; Article
+              7(2) specifies the CF performance classes. Starting from 36 months
+              (EV batteries), 60 months (industrial batteries without external
+              storage), 78 months (LMT batteries) and 102 months (industrial
+              batteries with external storage) after entry into force of the
+              regulation (industrial batteries), batteries in these categories
+              “shall bear a conspicuous, clearly legible and indelible label
+              indicating the carbon footprint of the battery "{' '}
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+              }}
+            >
+              <img src={packagePath} alt="certifications-3" width={400} />
+            </div>
+          </div>
+        );
 
       default:
 
@@ -211,12 +373,19 @@ const ComplianceLabelsCertirications = () => {
               flexDirection: 'column',
             }}
           >
-            <div className={styles.mainTitle}>Certifications & Compliance </div>
+            <div
+              className={styles.title}
+              style={{ fontSize: '24px', fontWeight: '600' }}
+            >
+              Certifications & Compliance
+            </div>
+            <br /> <br />
+            {/* <div className={styles.mainTitle}> </div> */}
             <div className={styles.content}>
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
                   <div className={styles.liTitle}>
                     EU declaration of conformity
@@ -232,7 +401,7 @@ const ComplianceLabelsCertirications = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
                   <div className={styles.liTitle}>
                     ID of EU declaration of conformity
@@ -253,7 +422,7 @@ const ComplianceLabelsCertirications = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <HiOutlineDocumentReport />
                   </div>
                   <div className={styles.liTitle}>
                     Compliance of test results
@@ -279,66 +448,84 @@ const ComplianceLabelsCertirications = () => {
               flexDirection: 'column',
             }}
           >
-            <div className={styles.mainTitle}>Labels</div>
-            <div className={styles.symbolContent}>
-              <Popconfirm
-                className={styles.popcon}
-                placement="bottomLeft"
-                title={'Separate collection symbol'}
-                description={decs1}
-                showCancel={false}
-              >
-                <div className={styles.symbol}>
-                  <div className={styles.alert}>
-                    <FiAlertCircle />
-                  </div>
-                  <img src={weeePath} alt="WEEE SYMBOL" width={100} />
-                </div>
-              </Popconfirm>
-              <Popconfirm
-                className={styles.popcon}
-                placement="bottomLeft"
-                title={'Cadmium description'}
-                description={decs2}
-                showCancel={false}
-              >
-                <div className={styles.symbol}>
-                  <div className={styles.alert}>
-                    <FiAlertCircle />
-                  </div>
-                  <img src={cdPath} alt="Cd SYMBOL" width={100} />
-                </div>
-              </Popconfirm>
-              <Popconfirm
-                className={styles.popcon}
-                placement="bottomLeft"
-                title={'Lead description'}
-                description={decs2}
-                showCancel={false}
-              >
-                <div className={styles.symbol}>
-                  <div className={styles.alert}>
-                    <FiAlertCircle />
-                  </div>
-                  <img src={pbPath} alt="Pb SYMBOL" width={100} />
-                </div>
-              </Popconfirm>
+            <div
+              className={styles.title}
+              style={{ fontSize: '24px', fontWeight: '600' }}
+            >
+              Labels
             </div>
-            <div className={styles.symbolContent}>
-              <Popconfirm
-                className={styles.popcon}
-                placement="bottomLeft"
-                title={'Carbon footprint label description'}
-                description={decs3}
-                showCancel={false}
-              >
-                <div className={styles.symbol}>
-                  <div className={styles.alert}>
-                    <FiAlertCircle />
+            <br />
+            <br />
+            <div className={styles.content}>
+              <ul>
+                <li>
+                  <div className={styles.liICon}>
+                    <VscSymbolMisc />
                   </div>
-                  <img src={footLabelPath} alt="foot lables" width={150} />
-                </div>
-              </Popconfirm>
+                  <div className={styles.liTitle}>
+                    Separate collection symbol
+                  </div>
+                  <Button onClick={() => onClick('label1')}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <VscSymbolMisc />
+                  </div>
+                  <div className={styles.liTitle}>
+                    Meaning of labels and symbols
+                  </div>
+                  <Button onClick={() => onClick('label2')}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        fontWeight: '600',
+                      }}
+                    >
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <VscSymbolMisc />
+                  </div>
+                  <div className={styles.liTitle}>
+                    Symbols for cadmium and lead
+                  </div>
+                  <Button onClick={() => onClick('label3')}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <VscSymbolMisc />
+                  </div>
+                  <div className={styles.liTitle}>Carbon footprint label</div>
+                  <Button onClick={() => onClick('label4')}>
+                    <div style={{ display: 'flex', fontWeight: '600' }}>
+                      view
+                      <div className={styles.icon}>
+                        <AiFillRightCircle />
+                      </div>
+                    </div>
+                  </Button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -132,6 +132,34 @@ const SupplyChainDueDiligentcet = () => {
             Voluntarily making the Sustainability Report available via the
             battery passport.
           </div>
+          <br /> <br /> <br />
+          <br />
+          <div className={styles.title}>Human Rights index</div>
+          <br />
+          <hr style={{ border: '1px solid #ced4da' }} />
+          <br />
+          <div className={styles.text}>
+            The Human Rights index for this battery is calculated based on the
+            Human Rights Rulebook issued by the Global Battery Alliance. The
+            Human Rights index is calculated through averaging all individually
+            reported Human Rights scores of all supply chain participants.
+            Disclaimer: the calculation of the Human Rights index for this
+            Battery Passport included only the Cobalt supply chain.
+          </div>
+          <br /> <br /> <br />
+          <br />
+          <div className={styles.title}>Child Labor index</div>
+          <br />
+          <hr style={{ border: '1px solid #ced4da' }} />
+          <br />
+          <div className={styles.text}>
+            The Child Labor index for this battery is calculated based on the
+            Child Labor Rulebook issued by the Global Battery Alliance. The
+            Child Labor index is calculated through averaging all individually
+            reported Child Labor scores of all supply chain participants.
+            Disclaimer: the calculation of the Child Labor index for this
+            Battery Passport included only the Cobalt supply chain.
+          </div>
         </div>
       ),
     },

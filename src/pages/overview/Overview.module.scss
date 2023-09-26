@@ -125,6 +125,7 @@
 
     .overview {
       display: flex;
+
       width: 100%;
       justify-content: space-between;
       .title {
@@ -152,34 +153,35 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
-    .liICon {
-      width: 20px;
-      font-size: 16px;
-      margin-top: 2px;
-    }
-
-    .liTitle {
-      font-weight: 500;
-      width: 200px;
-    }
   }
-  .tagDiv {
-    padding: 3px 10px 0px 10px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid #d9d9d9;
-    border-radius: 4px;
-  }
+}
 
-  .tag {
-    padding: 2px 10px;
-    // padding: 3px 10px 0px 10px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid #d9d9d9;
-    border-radius: 4px;
-  }
+.liICon {
+  width: 20px;
+  font-size: 16px;
+  margin-top: 2px;
+}
+
+.liTitle {
+  font-weight: 500;
+  width: 200px;
+}
+
+.tagDiv {
+  padding: 3px 10px 0px 10px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.tag {
+  padding: 2px 10px;
+  // padding: 3px 10px 0px 10px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
 }
 
 .popcon:hover {

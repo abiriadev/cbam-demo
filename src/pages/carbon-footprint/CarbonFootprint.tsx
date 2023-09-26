@@ -5,7 +5,7 @@ import footLabelPath from '../../assets/images/footlabel1.png';
 import { FaPassport } from 'react-icons/fa';
 import { FiAlertCircle } from 'react-icons/fi';
 import { BiLink } from 'react-icons/bi';
-
+import { TbRulerMeasure } from 'react-icons/tb';
 import LocationPath from '../../assets/images/location.png';
 import { Popconfirm } from 'antd';
 import TimeLineCharts from './TimeLineCharts';
@@ -14,8 +14,16 @@ import {
   PiNumberCircleTwoBold,
   PiNumberCircleThreeBold,
   PiNumberCircleFourBold,
+  PiIdentificationBadgeFill,
 } from 'react-icons/pi';
-import { MdExpandCircleDown } from 'react-icons/md';
+import {
+  MdExpandCircleDown,
+  MdLabel,
+  MdCalendarMonth,
+  MdOutlinePlace,
+} from 'react-icons/md';
+import { AiFillPhone } from 'react-icons/ai';
+
 import { useNavigate } from 'react-router-dom';
 
 const CarbonFootpint = () => {
@@ -68,7 +76,7 @@ const CarbonFootpint = () => {
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdLabel />
                   </div>
                   <div className={styles.liTitle} style={{ width: '350px' }}>
                     Name
@@ -77,7 +85,7 @@ const CarbonFootpint = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdCalendarMonth />
                   </div>
                   <div className={styles.liTitle} style={{ width: '350px' }}>
                     Date of recognition of manufacturing capacity
@@ -86,7 +94,7 @@ const CarbonFootpint = () => {
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <TbRulerMeasure />
                   </div>
                   <div className={styles.liTitle} style={{ width: '350px' }}>
                     Accreditation size
@@ -96,7 +104,7 @@ const CarbonFootpint = () => {
 
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <AiFillPhone />
                   </div>
                   <div className={styles.liTitle} style={{ width: '350px' }}>
                     Contact
@@ -119,7 +127,7 @@ const CarbonFootpint = () => {
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <PiIdentificationBadgeFill />
                   </div>
                   <div className={styles.liTitle}>Battery identification</div>
                   <div className={styles.tag}>
@@ -144,9 +152,9 @@ const CarbonFootpint = () => {
               <ul>
                 <li style={{ position: 'relative' }}>
                   <div className={styles.liICon}>
-                    <FaPassport />
+                    <MdOutlinePlace />
                   </div>
-                  <div className={styles.liTitle}>location</div>
+                  <div className={styles.liTitle}>Location</div>
                   <Popconfirm
                     className={styles.popcon}
                     placement="topLeft"
@@ -195,7 +203,7 @@ const CarbonFootpint = () => {
                     <BiLink />
                   </div>
                   <div className={styles.liTitle} style={{ width: '300px' }}>
-                    link
+                    Link
                   </div>
                   <div className={styles.tag}>
                     <a

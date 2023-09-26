@@ -12,6 +12,7 @@ import {
   AppstoreOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
+import { MdQuestionAnswer } from 'react-icons/md';
 import { AuthService } from '../../services/AuthService';
 import LogoPath from '../../assets/images/aipim_logo.png';
 import type { MenuProps } from 'antd';
@@ -56,10 +57,16 @@ const HeaderBar = () => {
 
   const items: MenuProps['items'] = [
     {
+      key: '0',
+      label: 'Help',
+      icon: <MdQuestionAnswer />,
+      onClick: () => navigate('/overview'),
+    },
+    {
       key: '1',
       label: 'Logout',
       icon: <UserOutlined />,
-      onClick: () => onClickLogout(),
+      onClick: () => navigate('/start'),
     },
     {
       key: '2',

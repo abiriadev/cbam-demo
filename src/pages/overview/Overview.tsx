@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Overview.module.scss';
 import EVBatteryPath from '../../assets/images/EVBattery.jpeg';
+import EVBattery2Path from '../../assets/images/EVBattery2.png';
 import { FiBox, FiAlertCircle } from 'react-icons/fi';
-import { FaPassport, FaTruck } from 'react-icons/fa';
+import { FaPassport, FaTruck, FaRecycle } from 'react-icons/fa';
+import { FaUser, FaUserLarge } from 'react-icons/fa6';
 import { MdDateRange } from 'react-icons/md';
 import { AiFillStar, AiOutlineStar, AiFillEdit } from 'react-icons/ai';
 import {
@@ -13,12 +15,15 @@ import {
   PiBatteryWarningDuotone,
   PiBatteryEmptyDuotone,
 } from 'react-icons/pi';
-import { MdGrade } from 'react-icons/md';
+import { LuFileType2 } from 'react-icons/lu';
+import { MdGrade, MdHealthAndSafety } from 'react-icons/md';
 import { TbHealthRecognition } from 'react-icons/tb';
 import { BsChevronDoubleRight, BsBuilding } from 'react-icons/bs';
 import { Popconfirm, message } from 'antd';
 import { GoDotFill } from 'react-icons/go';
-
+import { GrCapacity } from 'react-icons/gr';
+import { ImPower } from 'react-icons/im';
+import { GiFootprint, GiAtom } from 'react-icons/gi';
 const Overview = () => {
   const betteryDesc = () => {
     return (
@@ -165,14 +170,123 @@ const Overview = () => {
         <div className={styles.boxContainer}>
           <div className={styles.box}>
             <div className={styles.overview}>
-              <div className={styles.title}>
-                Battery Passport Overview
-                <div className={styles.subTitle}>
-                  Battery ID : RSTE2291345831
+              <div>
+                <div className={styles.title}>Battery Passport Overview</div>
+                <br />
+                <br />
+                <div className={styles.content}>
+                  <ul>
+                    <li>
+                      <div className={styles.liICon}>
+                        <FaPassport />
+                      </div>
+                      <div className={styles.liTitle}>Battery Passport ID</div>
+                      <div className={styles.tag}>RSTE2291345831</div>
+                    </li>
+                    <li>
+                      <div className={styles.liICon}>
+                        <BsBuilding />
+                      </div>
+                      <div className={styles.liTitle}>Passport Issued For</div>
+
+                      <div className={styles.tag}>Aipim</div>
+                    </li>
+                    <li>
+                      <div className={styles.liICon}>
+                        <MdDateRange />
+                      </div>
+                      <div className={styles.liTitle}>Passport Issued Date</div>
+                      <div className={styles.tag}>16/01/2023</div>
+                    </li>
+                    <li>
+                      <div className={styles.liICon}>
+                        <AiFillEdit />
+                      </div>
+                      <div className={styles.liTitle}>Data Auditor</div>
+                      <div className={styles.tag}>Not audited</div>
+                    </li>
+                    <li>
+                      <div className={styles.liICon}>
+                        <MdGrade />
+                      </div>
+                      <Popconfirm
+                        className={styles.popcon}
+                        placement="topLeft"
+                        title={'Data quality-into information'}
+                        description={starDesc}
+                        onConfirm={confirm}
+                        showCancel={false}
+                      >
+                        <div
+                          className={styles.liTitle}
+                          style={{
+                            position: 'relative',
+                          }}
+                        >
+                          <div
+                            style={{
+                              position: 'absolute',
+                              top: '-5px',
+                              left: '110px',
+                            }}
+                          >
+                            <FiAlertCircle />
+                          </div>
+                          Data Quality Info
+                        </div>
+                      </Popconfirm>
+                      <div className={styles.tagDiv}>
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                      </div>
+                    </li>
+                    <li>
+                      <div className={styles.liICon}>
+                        <TbHealthRecognition />
+                      </div>
+
+                      <Popconfirm
+                        className={styles.popcon}
+                        placement="bottomLeft"
+                        title={'Battery health info'}
+                        description={betteryDesc}
+                        onConfirm={confirm}
+                        showCancel={false}
+                      >
+                        <div
+                          className={styles.liTitle}
+                          style={{
+                            position: 'relative',
+                          }}
+                        >
+                          <div
+                            style={{
+                              position: 'absolute',
+                              top: '-5px',
+                              left: '96px',
+                            }}
+                          >
+                            <FiAlertCircle />
+                          </div>
+                          Battery Health
+                        </div>
+                      </Popconfirm>
+
+                      <div className={styles.tagDiv}>
+                        <PiBatteryFullDuotone />
+                      </div>
+                      <div className={styles.tag} style={{ marginLeft: '5px' }}>
+                        100%
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
+
               <div>
-                <img src={EVBatteryPath} alt="" width={300} />
+                <img src={EVBattery2Path} alt="" width={320} />
               </div>
             </div>
           </div>
@@ -185,95 +299,197 @@ const Overview = () => {
               flexDirection: 'column',
             }}
           >
-            <div className={styles.mainTitle}>Required Infomation</div>
+            {/* <div className={styles.mainTitle}>Required Infomation</div> */}
+            <div className={styles.mainTitle}>General</div>
+            <div className={styles.content}>
+              <ul>
+                <li>
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      width: '100%',
+                    }}
+                  >
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <LuFileType2 />
+                      </div>
+                      <div className={styles.liTitle}>Type</div>
+                      <div className={styles.tag}>EV</div>
+                    </div>
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <FiBox />
+                      </div>
+                      <div className={styles.liTitle}>Battery Model</div>
+                      <div className={styles.tag}>NMC-M50</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.mainTitle}>Performance</div>
+            <div className={styles.content}>
+              <ul>
+                <li>
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      width: '100%',
+                    }}
+                  >
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <GrCapacity />
+                      </div>
+                      <div className={styles.liTitle}>Rated Capacity </div>
+                      <div className={styles.tag}>120 kWh</div>
+                    </div>
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <ImPower />
+                      </div>
+                      <div className={styles.liTitle}>Original Power</div>
+                      <div className={styles.tag}>350 kW</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.mainTitle}>Health</div>
+            <div className={styles.content}>
+              <ul>
+                <li>
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      width: '100%',
+                    }}
+                  >
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <MdHealthAndSafety />
+                      </div>
+                      <div className={styles.liTitle}>State Of Health(SOH)</div>
+                      <div className={styles.tag}>12 %</div>
+                    </div>
+
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <FaRecycle />
+                      </div>
+                      <div className={styles.liTitle}>Charging Cycles</div>
+                      <div className={styles.tag}>20/1200</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div className={styles.mainTitle}>Sustainability</div>
             <div className={styles.content}>
               <ul>
                 <li>
                   <div className={styles.liICon}>
-                    <FaPassport />
-                  </div>
-                  <div className={styles.liTitle}>BATTERY PASSPORT ID</div>
-                  <div className={styles.tag}>
-                    RSTE2291345831, Tesla Model 3 Standard Range NMC-M50
-                  </div>
-                </li>
-                <li>
-                  <div className={styles.liICon}>
-                    <FiBox />
-                  </div>
-                  <div className={styles.liTitle}>BATTERY MODEL</div>
-                  <div className={styles.tag}>NMC-M50</div>
-                </li>
-                <li>
-                  <div className={styles.liICon}>
-                    <BsBuilding />
-                  </div>
-                  <div className={styles.liTitle}>PASSPORT ISSUED FOR</div>
-
-                  <div className={styles.tag}>Aipim</div>
-                </li>
-                <li>
-                  <div className={styles.liICon}>
-                    <MdDateRange />
-                  </div>
-                  <div className={styles.liTitle}>PASSPORT ISSUED DATE</div>
-                  <div className={styles.tag}>16/01/2023</div>
-                </li>
-                <li>
-                  <div className={styles.liICon}>
-                    <AiFillEdit />
-                  </div>
-                  <div className={styles.liTitle}>DATA AUDITOR</div>
-                  <div className={styles.tag}>Not audited</div>
-                </li>
-                <li>
-                  <div className={styles.liICon}>
-                    <MdGrade />
+                    <FaUserLarge />
                   </div>
                   <Popconfirm
                     className={styles.popcon}
                     placement="topLeft"
-                    title={'Data quality-into information'}
-                    description={starDesc}
-                    onConfirm={confirm}
+                    title={'Human Rights index information'}
+                    description={
+                      <div style={{ width: '500px' }}>
+                        The Human Rights index for this battery is calculated
+                        based on the Human Rights Rulebook issued by the Global
+                        Battery Alliance. The Human Rights index is calculated
+                        through averaging all individually reported Human Rights
+                        scores of all supply chain participants. Disclaimer: the
+                        calculation of the Human Rights index for this Battery
+                        Passport included only the Cobalt supply chain.
+                      </div>
+                    }
                     showCancel={false}
                   >
                     <div
                       className={styles.liTitle}
                       style={{
                         position: 'relative',
+                        width: '285px',
                       }}
                     >
                       <div
                         style={{
                           position: 'absolute',
                           top: '-5px',
-                          right: '50px',
+                          left: '135px',
                         }}
                       >
                         <FiAlertCircle />
                       </div>
-                      DATA QUALITY INTO
+                      Human Rights Index
                     </div>
                   </Popconfirm>
 
-                  <div className={styles.tagDiv}>
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                    <AiFillStar />
-                  </div>
+                  <div className={styles.tag}>Advanced</div>
                 </li>
                 <li>
                   <div className={styles.liICon}>
-                    <TbHealthRecognition />
+                    <FaUser />
                   </div>
-
                   <Popconfirm
                     className={styles.popcon}
-                    placement="bottomLeft"
-                    title={'Battery health info'}
-                    description={betteryDesc}
+                    placement="topLeft"
+                    title={'Child Rights index information'}
+                    description={
+                      <div style={{ width: '500px' }}>
+                        The Child Labor index for this battery is calculated
+                        based on the Child Labor Rulebook issued by the Global
+                        Battery Alliance. The Child Labor index is calculated
+                        through averaging all individually reported Child Labor
+                        scores of all supply chain participants. Disclaimer: the
+                        calculation of the Child Labor index for this Battery
+                        Passport included only the Cobalt supply chain.
+                      </div>
+                    }
                     onConfirm={confirm}
                     showCancel={false}
                   >
@@ -281,26 +497,112 @@ const Overview = () => {
                       className={styles.liTitle}
                       style={{
                         position: 'relative',
+                        width: '285px',
                       }}
                     >
                       <div
                         style={{
                           position: 'absolute',
                           top: '-5px',
-                          right: '66px',
+                          left: '118px',
                         }}
                       >
                         <FiAlertCircle />
                       </div>
-                      BATTERY HEALTH
+                      Child Labor Index
                     </div>
                   </Popconfirm>
-
-                  <div className={styles.tagDiv}>
-                    <PiBatteryFullDuotone />
+                  <div className={styles.tag}>Advanced</div>
+                </li>
+                <li>
+                  <div className={styles.liICon}>
+                    <GiFootprint />
                   </div>
-                  <div className={styles.tag} style={{ marginLeft: '5px' }}>
-                    100%
+                  <div className={styles.liTitle} style={{ width: '285px' }}>
+                    Battery Carbon Footprint
+                  </div>
+                  <div className={styles.tag}>110 CO2e/kWh</div>
+                </li>
+                <li>
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      width: '100%',
+                    }}
+                  >
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <GiAtom />
+                      </div>
+                      <div
+                        className={styles.liTitle}
+                        style={{ width: '100px' }}
+                      >
+                        Ni
+                      </div>
+                      <div className={styles.tag}>47%</div>
+                    </div>
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <GiAtom />
+                      </div>
+                      <div
+                        className={styles.liTitle}
+                        style={{ width: '100px' }}
+                      >
+                        Co
+                      </div>
+                      <div className={styles.tag}>9%</div>
+                    </div>
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <GiAtom />
+                      </div>
+                      <div
+                        className={styles.liTitle}
+                        style={{ width: '100px' }}
+                      >
+                        Li
+                      </div>
+                      <div className={styles.tag}>19%</div>
+                    </div>
+                    <div
+                      style={{
+                        flex: 1,
+                        display: 'flex',
+                        flexDirection: 'row',
+                      }}
+                    >
+                      <div className={styles.liICon}>
+                        <GiAtom />
+                      </div>
+                      <div
+                        className={styles.liTitle}
+                        style={{ width: '100px' }}
+                      >
+                        Pb
+                      </div>
+                      <div className={styles.tag}>0%</div>
+                    </div>
                   </div>
                 </li>
               </ul>
