@@ -670,9 +670,35 @@ const Overview = () => {
                       color: 'gray',
                     }}
                   >
-                    09/07/2022, 10:00
+                    01/01/2023, 10:00
+                    <div style={{ color: 'black' }}>Battery serviced</div>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    position: 'relative',
+                    marginBottom: '20px',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '20px',
+                      position: 'absolute',
+                      left: '-10px',
+                      color: '#47c8a4',
+                    }}
+                  >
+                    <GoDotFill />
+                  </div>
+                  <div
+                    style={{
+                      paddingLeft: '20px',
+                      color: 'gray',
+                    }}
+                  >
+                    27/01/2023, 10:00
                     <div style={{ color: 'black' }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      [Truck] sold to consumer
                     </div>
                   </div>
                 </div>
@@ -698,9 +724,9 @@ const Overview = () => {
                       color: 'gray',
                     }}
                   >
-                    09/07/2022, 10:00
+                    01/03/2023, 10:00
                     <div style={{ color: 'black' }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Battery build into[Truck]
                     </div>
                   </div>
                 </div>
@@ -726,10 +752,8 @@ const Overview = () => {
                       color: 'gray',
                     }}
                   >
-                    09/07/2022, 10:00
-                    <div style={{ color: 'black' }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
+                    03/03/2023, 10:00
+                    <div style={{ color: 'black' }}>[Car] sold to consumer</div>
                   </div>
                 </div>
                 <div
@@ -754,37 +778,9 @@ const Overview = () => {
                       color: 'gray',
                     }}
                   >
-                    09/07/2022, 10:00
+                    05/03/2023, 10:00
                     <div style={{ color: 'black' }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    position: 'relative',
-                    marginBottom: '20px',
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: '20px',
-                      position: 'absolute',
-                      left: '-10px',
-                      color: '#47c8a4',
-                    }}
-                  >
-                    <GoDotFill />
-                  </div>
-                  <div
-                    style={{
-                      paddingLeft: '20px',
-                      color: 'gray',
-                    }}
-                  >
-                    09/07/2022, 10:00
-                    <div style={{ color: 'black' }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Battery build into[car]
                     </div>
                   </div>
                 </div>

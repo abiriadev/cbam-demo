@@ -129,6 +129,10 @@ a {
 #reportTab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #fba34b !important;
 }
+.ant-tabs-tab:hover,
+.ant-tabs-tab-btn:hover {
+  color: #fba34b !important;
+}
 
 #reportTab .ant-tabs-ink-bar-animated {
   border-right: 3px solid #fba34b;
