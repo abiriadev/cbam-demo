@@ -12,7 +12,7 @@ import CircularityAndResourceEfficiency from 'pages/circularity-and-resource-eff
 import SupplyChain from 'pages/supply-chain-due-diligentcet/SupplyChainDueDiligentcet';
 import CarbonFootpint from 'pages/carbon-footprint/CarbonFootprint';
 import ComplianceLabelsCertirications from 'pages/complianceLabelsCertirications/ComplianceLabelsCertirications';
-import PerformanceAndDurability from 'pages/performance-durability/PerformanceAndDurability';
+import PerformanceAndDurability from 'pages/performance-durability/PerformanceAndDurability';
 import MaterialsComposition from 'pages/materialsComposition/MaterialsComposition';
 import DefaultPage from 'pages/DefaultPage';
 import Qr from 'pages/qr/Qr';
