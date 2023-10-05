@@ -47,6 +47,7 @@
 
   .leftBox,
   .RightBox {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
     width: 700px;
     background: #fff;
     border-radius: 16px;
@@ -91,8 +92,8 @@
   .tagDiv {
     padding: 3px 10px 0px 10px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid #d9d9d9;
+    background-color: rgba(210, 245, 238, 0.5);
+    border: 1px solid #47c8a4;
     border-radius: 4px;
   }
 
@@ -101,8 +102,8 @@
     // padding: 3px 10px 0px 10px;
     // width: 150px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid #d9d9d9;
+    background-color: rgba(210, 245, 238, 0.5);
+    border: 1px solid #47c8a4;
     border-radius: 4px;
   }
 }

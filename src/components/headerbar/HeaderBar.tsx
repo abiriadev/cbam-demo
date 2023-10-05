@@ -19,6 +19,7 @@ import type { MenuProps } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import styles from './HeaderBar.module.scss';
 import apimIndigo from '../../assets/images/aipim_logo_indigo.png';
+import apimWhite from '../../assets/images/aipim_logo.png';
 
 const { Header } = Layout;
 
@@ -189,22 +190,17 @@ const HeaderBar = () => {
           textAlign: 'center',
           marginLeft: '10px',
           marginTop: '15px',
-          // background: 'gray',
         }}
       >
         <a href="/overview">
-          <img src={apimIndigo} alt="logo" />
+          <img src={apimWhite} alt="logo" width={100} />
         </a>
       </div>
-      {/* <ul>
-        {mainItems.map(({ label, key }: any) => {
-          return <li key={key}>{label}</li>;
-        })}
-      </ul> */}
 
       <Menu
         // theme="dark"
         mode="horizontal"
+        id="headerBg"
         defaultSelectedKeys={['mainItem1']}
         items={mainItems}
         disabledOverflow={false}

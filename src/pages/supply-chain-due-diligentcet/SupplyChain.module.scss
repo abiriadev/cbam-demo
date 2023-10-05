@@ -15,17 +15,18 @@
 }
 
 .prepare {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   background: #fff;
   width: 800px;
   height: 100%;
   padding: 40px;
   .title {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 800;
-    color: #ced4da;
+    color: rgba(251, 163, 75, 0.8);
   }
   .text {
-    font-size: 18px;
-    color: #ced4da;
+    font-size: 14px;
+    color: rgba(251, 163, 75, 0.5);
   }
 }

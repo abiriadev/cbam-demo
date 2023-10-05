@@ -32,64 +32,6 @@ const ComplianceLabelsCertirications = () => {
     }
   };
 
-  const decs1 = () => {
-    return (
-      <div style={{ width: '500px' }}>
-        <b>
-          The “separate collection” symbol or “WEEE label” (see Figure )
-          indicates that a “product should not be discarded as unsorted waste
-          but must be sent to separate collection facilities for recovery and
-          recycling”. The symbol must appear on any electrical and electronic
-          equipment placed on the EU market. This label is introduced in the EU
-          directive on waste electrical and electronic equipment (WEEE).
-        </b>
-        <br />
-        <br />
-        Display symbol and translate it into text to ensure machine readability
-        of the battery passport We suggest specifying in the battery passport
-        for any battery that a separate collection is required. The separate
-        collection symbol is also to be printed as a symbol on the physical
-        label of the battery (with the symbol displayed in Annex VI, Part B and
-        the required size of the symbol specified in Article 13(3)). We suggest
-        displaying the symbol via the battery passport since the public is
-        familiar with it and will therefore easily recognise it. In addition, we
-        suggest translating the symbol into text to be made accessible for the
-        battery passport to ensure machine readability.
-      </div>
-    );
-  };
-
-  const decs2 = () => {
-    return (
-      <div style={{ width: '500px' }}>
-        <b>
-          Chemical symbol “Cd” for cadmium contained in the battery above
-          0.002%; “Pb” for lead above 0.004%.
-        </b>
-      </div>
-    );
-  };
-
-  const decs3 = () => {
-    return (
-      <div style={{ width: '500px' }}>
-        <b>
-          A label indicating the carbon footprint and carbon footprint
-          performance class the carbon footprint of the battery, calculated as
-          kg of carbon dioxide equivalent per one kWh of the total energy
-          provided by the battery over its expected service life; Article 7(2)
-          specifies the CF performance classes. Starting from 36 months (EV
-          batteries), 60 months (industrial batteries without external storage),
-          78 months (LMT batteries) and 102 months (industrial batteries with
-          external storage) after entry into force of the regulation (industrial
-          batteries), batteries in these categories “shall bear a conspicuous,
-          clearly legible and indelible label indicating the carbon footprint of
-          the battery
-        </b>
-      </div>
-    );
-  };
-
   const onSelectCert = () => {
     switch (page) {
       case 'case1':
@@ -157,7 +99,7 @@ const ComplianceLabelsCertirications = () => {
                 height: '100%',
               }}
             >
-              <img src={cert2Path} alt="certifications-2" width={500} />
+              <img src={cert1Path} alt="certifications-2" width={500} />
             </div>
           </div>
         );
@@ -365,7 +307,13 @@ const ComplianceLabelsCertirications = () => {
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.boxContainer} style={{ marginRight: '20px' }}>
+        <div
+          className={styles.boxContainer}
+          style={{
+            marginRight: '20px',
+            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.25)',
+          }}
+        >
           <div
             className={styles.box}
             style={{
@@ -390,7 +338,10 @@ const ComplianceLabelsCertirications = () => {
                   <div className={styles.liTitle}>
                     EU declaration of conformity
                   </div>
-                  <Button onClick={() => onClick('case1')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('case1')}
+                  >
                     <div style={{ display: 'flex', fontWeight: '600' }}>
                       view
                       <div className={styles.icon}>
@@ -406,7 +357,10 @@ const ComplianceLabelsCertirications = () => {
                   <div className={styles.liTitle}>
                     ID of EU declaration of conformity
                   </div>
-                  <Button onClick={() => onClick('case2')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('case2')}
+                  >
                     <div
                       style={{
                         display: 'flex',
@@ -427,7 +381,10 @@ const ComplianceLabelsCertirications = () => {
                   <div className={styles.liTitle}>
                     Compliance of test results
                   </div>
-                  <Button onClick={() => onClick('case3')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('case3')}
+                  >
                     <div style={{ display: 'flex', fontWeight: '600' }}>
                       view
                       <div className={styles.icon}>
@@ -465,7 +422,10 @@ const ComplianceLabelsCertirications = () => {
                   <div className={styles.liTitle}>
                     Separate collection symbol
                   </div>
-                  <Button onClick={() => onClick('label1')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('label1')}
+                  >
                     <div style={{ display: 'flex', fontWeight: '600' }}>
                       view
                       <div className={styles.icon}>
@@ -481,7 +441,10 @@ const ComplianceLabelsCertirications = () => {
                   <div className={styles.liTitle}>
                     Meaning of labels and symbols
                   </div>
-                  <Button onClick={() => onClick('label2')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('label2')}
+                  >
                     <div
                       style={{
                         display: 'flex',
@@ -502,7 +465,10 @@ const ComplianceLabelsCertirications = () => {
                   <div className={styles.liTitle}>
                     Symbols for cadmium and lead
                   </div>
-                  <Button onClick={() => onClick('label3')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('label3')}
+                  >
                     <div style={{ display: 'flex', fontWeight: '600' }}>
                       view
                       <div className={styles.icon}>
@@ -516,7 +482,10 @@ const ComplianceLabelsCertirications = () => {
                     <VscSymbolMisc />
                   </div>
                   <div className={styles.liTitle}>Carbon footprint label</div>
-                  <Button onClick={() => onClick('label4')}>
+                  <Button
+                    className={styles.button}
+                    onClick={() => onClick('label4')}
+                  >
                     <div style={{ display: 'flex', fontWeight: '600' }}>
                       view
                       <div className={styles.icon}>
