@@ -91,18 +91,17 @@ const HeaderBar = () => {
   const mainItems: any = [
     {
       label: (
-        <Link to={'/overview'}>
-          <div className={styles.titleContainer}>OVERVIEW</div>
+        <Link to={'/instData'}>
+          <div className={styles.titleContainer}>INST DATA</div>
         </Link>
       ),
       key: 'mainItem1',
     },
     {
       label: (
-        <Link to={'/general-battery'}>
+        <Link to={'/emInst'}>
           <div className={styles.titleContainer}>
-            <div className={styles.innerTitle}>BATTERY</div>
-            <div className={styles.innerTitle}>MANUFACTURER INFO</div>
+            <div className={styles.innerTitle}>EMINST</div>
           </div>
         </Link>
       ),
@@ -110,25 +109,29 @@ const HeaderBar = () => {
     },
     {
       label: (
-        <Link to={'/compliance-labels-certirications'}>
+        <Link to={'/emissions-energy'}>
           <div className={styles.titleContainer}>
-            <div className={styles.innerTitle}>COMPLIANCE</div>
-            <div className={styles.innerTitle}>LABELS & CERTIRICATIONS</div>
+            <div className={styles.innerTitle}>EMISSIONS & ENERGY</div>
           </div>
         </Link>
       ),
       key: 'mainItem3',
     },
     {
-      label: <Link to={'/carbon-footprint'}>CARBON FOOTPRINT</Link>,
+      label: (
+        <Link to={'/precesses'}>
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}>PROCESSES</div>
+          </div>
+        </Link>
+      ),
       key: 'mainItem4',
     },
     {
       label: (
-        <Link to={'/supply-chain-due-diligentcet'}>
+        <Link to={'/purchprec'}>
           <div className={styles.titleContainer}>
-            <div className={styles.innerTitle}> SUPPLY CHAIN</div>
-            <div className={styles.innerTitle}> DUE DILIGENCET</div>
+            <div className={styles.innerTitle}>PURCHPREC</div>
           </div>
         </Link>
       ),
@@ -136,10 +139,9 @@ const HeaderBar = () => {
     },
     {
       label: (
-        <Link to={'/materials-composition'}>
+        <Link to={'/tools'}>
           <div className={styles.titleContainer}>
-            <div className={styles.innerTitle}> MATERIALS</div>
-            <div className={styles.innerTitle}>COMPOSITION</div>
+            <div className={styles.innerTitle}>TOOLS</div>
           </div>
         </Link>
       ),
@@ -147,10 +149,10 @@ const HeaderBar = () => {
     },
     {
       label: (
-        <Link to={'/circularity-and-resource-efficiency'}>
+        <Link to={'/summaryProcesses'}>
           <div className={styles.titleContainer}>
-            <div className={styles.innerTitle}> CIRCULARITY</div>
-            <div className={styles.innerTitle}>RESOURCE EFFICIENCY</div>
+            <div className={styles.innerTitle}>SUMMARY</div>
+            <div className={styles.innerTitle}>PROCESSES</div>
           </div>
         </Link>
       ),
@@ -158,14 +160,25 @@ const HeaderBar = () => {
     },
     {
       label: (
-        <Link to={'/performance-durability'}>
+        <Link to={'/summaryProducts'}>
           <div className={styles.titleContainer}>
-            <div className={styles.innerTitle}> PERFORMANCE</div>
-            <div className={styles.innerTitle}>DURABILITY</div>
+            <div className={styles.innerTitle}>SUMMARY</div>
+            <div className={styles.innerTitle}>PRODUCTS</div>
           </div>
         </Link>
       ),
       key: 'mainItem8',
+    },
+    {
+      label: (
+        <Link to={'/summaryCommunication'}>
+          <div className={styles.titleContainer}>
+            <div className={styles.innerTitle}>SUMMARY</div>
+            <div className={styles.innerTitle}>COMMUNICATION</div>
+          </div>
+        </Link>
+      ),
+      key: 'mainItem9',
     },
   ];
 

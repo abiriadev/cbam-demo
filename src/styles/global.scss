@@ -94,11 +94,11 @@ a {
   color: #fea34e;
 }
 
-.ant-menu-horizontal > .ant-menu-item::after {
+#headerBg.ant-menu-horizontal > .ant-menu-item::after {
   border-bottom: none !important;
 }
 
-.ant-menu-horizontal > .ant-menu-submenu::after {
+#headerBg.ant-menu-horizontal > .ant-menu-submenu::after {
   border-bottom: none !important;
   transition: none !important;
 }
@@ -129,11 +129,1076 @@ a {
 #reportTab .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: #fba34b !important;
 }
-.ant-tabs-tab:hover,
-.ant-tabs-tab-btn:hover {
+
+#headerBg .ant-tabs-tab:hover,
+#headerBg .ant-tabs-tab-btn:hover {
   color: #fba34b !important;
 }
 
 #reportTab .ant-tabs-ink-bar-animated {
   border-right: 3px solid #fba34b;
+}
+
+.ant-descriptions .ant-descriptions-item-label {
+  // background-color: red !important;
+  margin: 1px 3px !important;
+  font-weight: 600;
+  font-size: 10px !important;
+}
+
+.ant-table-thead,
+.ant-table-tbody,
+.ant-descriptions-item-content {
+  font-size: 10px !important;
+}
+
+.ant-descriptions-title {
+  font-weight: 600;
+  font-size: 14px !important;
+}
+#emInst1 .ant-table-thead > tr > th {
+  border: px solid white;
+}
+
+#emInst1 .ant-table-thead .ant-table-cell,
+#emInst2 .ant-table-thead .ant-table-cell,
+#emInst3 .ant-table-thead .ant-table-cell {
+  background-color: #366466 !important;
+  color: #fff;
+  font-weight: 700;
+}
+
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(41),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(42),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(43),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(44),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(34),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(35),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(40),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(24),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(26) {
+  background-color: #ccffcc !important;
+}
+
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(1),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(2),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(3),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(1),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(2),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(3),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(27),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(28),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(29),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(30),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(31),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(32),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(33),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(38),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(39),
+#emInst2 .ant-table-tbody .ant-table-cell:nth-child(4),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(1),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(2),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(3),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(16),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(18),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(20),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(22) {
+  background-color: #ffff00 !important;
+}
+
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(18),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(19),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(20),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(21),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(22),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(23),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(24),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(25),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(26),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(27),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(28),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(29),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(30),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(31),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(32),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(33),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(34),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(35),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(36),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(37),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(38),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(39),
+#emInst1 .ant-table-tbody .ant-table-cell:nth-child(40),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(27),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(28),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(29),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(30),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(31),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(32),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(33),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(34),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(35),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(36),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(37),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(38),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(39),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(40) {
+  background-color: #595959 !important;
+}
+
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(41),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(42),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(43),
+#emInst3 .ant-table-tbody .ant-table-cell:nth-child(44) {
+  background-color: #ffffcb !important;
+}
+
+#cal .ant-table-thead {
+  display: none;
+}
+
+#noHeaderTb .ant-table-thead {
+  display: none;
+}
+
+// tab
+
+.ant-tabs.ant-tabs-top,
+.ant-tabs-content,
+.ant-tabs-tabpane {
+  height: 100%;
+}
+
+// Des
+
+.instDtTb1 .ant-descriptions-item-content {
+  background-color: #fcfc04;
+  font-weight: 600;
+}
+
+.instDtTb2 .ant-descriptions-item-content {
+  background-color: #ffffcb;
+}
+.instDtTb2 .ant-descriptions-row:nth-child(2) > .ant-descriptions-item-content,
+.instDtTb2 .ant-descriptions-row:nth-child(9) > .ant-descriptions-item-content {
+  background-color: #fcfc04 !important;
+}
+
+.instDtTb3 .ant-descriptions-item-content {
+  background-color: #ffffcb;
+}
+
+#instDtTb4 .ant-table-tbody .ant-table-cell:nth-child(2) {
+  background-color: #fcfc04;
+}
+
+#instDtTb4 .ant-table-tbody .ant-table-cell:nth-child(3) {
+  background-color: #ccfccc;
+}
+
+#instDtTb5 .ant-table-tbody .ant-table-cell:nth-child(2) {
+  background-color: #fcfc04;
+}
+
+#instDtTb5 .ant-table-tbody .ant-table-row:nth-child(1),
+#instDtTb5 .ant-table-tbody .ant-table-row:nth-child(2) {
+  background-color: #fcfc04;
+}
+
+#instDtTb5
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-last-child(1),
+#instDtTb5
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-last-child(1) {
+  background-color: #ccfccc;
+}
+#instDtTb5
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-child(1),
+#instDtTb5
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-child(1) {
+  background-color: white;
+}
+
+#instDtTb6 .ant-table-tbody .ant-table-cell:nth-child(2) {
+  background-color: #fcfc04;
+}
+
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  .ant-table-cell:nth-child(4) {
+  background-color: #ccfccc;
+}
+
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(8),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(4),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(5),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(6),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(7),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(8) {
+  background-color: #ccfccc;
+  font-weight: 600;
+}
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(4),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(5),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(6),
+#eeTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(7) {
+  background-color: #ffffcb;
+}
+
+#eeTb2 .ant-table-tbody .ant-table-row:nth-child(1),
+#eeTb2 .ant-table-tbody .ant-table-row:nth-child(3) {
+  background-color: #ccfccc;
+  // font-weight: 600;
+}
+
+#eeTb2 .ant-table-tbody .ant-table-row:nth-child(2) {
+  background-color: #ffffcb;
+}
+
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-child(1),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-child(2),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-child(3),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-child(9),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  > .ant-table-cell:nth-child(10),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-child(1),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-child(2),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-child(3),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-child(10),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  > .ant-table-cell:nth-child(1),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  > .ant-table-cell:nth-child(2),
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  > .ant-table-cell:nth-child(3) {
+  background-color: white;
+}
+
+#eeTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  > .ant-table-cell:nth-child(9) {
+  background-color: #fcfc04;
+}
+
+#eeTb3 .ant-table-tbody .ant-table-row:nth-child(1) {
+  background-color: #ccfccc;
+  font-weight: 600;
+}
+
+#eeTb3
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  .ant-table-cell:nth-child(1),
+#eeTb3
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  .ant-table-cell:nth-child(2) {
+  background-color: white;
+}
+
+.ddDesc .ant-descriptions-row .ant-descriptions-item-content {
+  background-color: #fcfc04;
+  font-weight: 600;
+}
+#processTb2 .ant-table-thead,
+#processTb1 .ant-table-thead {
+  display: none;
+}
+
+#processTb1 .ant-table-tbody .ant-table-row:nth-child(2),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(7)
+  .ant-table-cell:nth-child(5),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(7)
+  .ant-table-cell:nth-child(6),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(9)
+  .ant-table-cell:nth-child(5),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(9)
+  .ant-table-cell:nth-child(6),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(10)
+  .ant-table-cell:nth-child(5),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(11)
+  .ant-table-cell:nth-child(6),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(12)
+  .ant-table-cell:nth-child(6),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(5),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(6) {
+  background-color: #ccfccc;
+}
+
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(6),
+#processTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(10)
+  .ant-table-cell:nth-child(6) {
+  background-color: #fcfc04;
+}
+
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(4),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(5),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(5)
+  .ant-table-cell:nth-child(5),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(16)
+  .ant-table-cell:nth-child(5),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(17)
+  .ant-table-cell:nth-child(5),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(18)
+  .ant-table-cell:nth-child(5),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(21)
+  .ant-table-cell:nth-child(5),
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(21)
+  .ant-table-cell:nth-child(5) {
+  background-color: #fcfc04;
+}
+
+#processTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(6) {
+  background-color: #ccfccc;
+}
+
+#purchTb1 .ant-table-thead,
+#purchTb2 .ant-table-thead {
+  display: none;
+}
+
+#toolTb1 .ant-table-thead,
+#toolTb2 .ant-table-thead,
+#toolTb3 .ant-table-thead,
+#toolTb4 .ant-table-thead {
+  display: none;
+}
+
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(4)
+  .ant-table-cell:nth-child(4),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(4)
+  .ant-table-cell:nth-child(5),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(4)
+  .ant-table-cell:nth-child(6),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(4)
+  .ant-table-cell:nth-child(7),
+,
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(8)
+  .ant-table-cell:nth-child(4),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(8)
+  .ant-table-cell:nth-child(5),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(8)
+  .ant-table-cell:nth-child(6),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(18)
+  .ant-table-cell:nth-child(4),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(18)
+  .ant-table-cell:nth-child(5),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(27)
+  .ant-table-cell:nth-child(5),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(27)
+  .ant-table-cell:nth-child(4) {
+  background-color: #ffffcb;
+}
+
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(14)
+  .ant-table-cell:nth-child(4),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(14)
+  .ant-table-cell:nth-child(5),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(14)
+  .ant-table-cell:nth-child(6),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(4),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(5),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(6),
+#toolTb1
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(7) {
+  background-color: #ccfccc;
+}
+
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(7),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(6),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(5),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(4),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(6)
+  .ant-table-cell:nth-child(4),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(6)
+  .ant-table-cell:nth-child(5),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(6)
+  .ant-table-cell:nth-child(6),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(11)
+  .ant-table-cell:nth-child(4),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(11)
+  .ant-table-cell:nth-child(5),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(11)
+  .ant-table-cell:nth-child(6),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(15)
+  .ant-table-cell:nth-child(4),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(15)
+  .ant-table-cell:nth-child(5),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(4),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(5),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(6),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(7),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(24)
+  .ant-table-cell:nth-child(4),
+#toolTb2
+  .ant-table-tbody
+  .ant-table-row:nth-child(24)
+  .ant-table-cell:nth-child(5) {
+  background-color: #ccfccc;
+}
+
+#toolTb4 .ant-table-tbody .ant-table-row {
+  background-color: #ccfccc;
+}
+
+#toolTb4 .ant-table-tbody .ant-table-cell:nth-child(5),
+#toolTb4 .ant-table-tbody .ant-table-cell:nth-child(7),
+#toolTb4 .ant-table-tbody .ant-table-cell:nth-child(8) {
+  background-color: #ffffcb;
+}
+
+#toolTb4 .ant-table-tbody .ant-table-row:nth-child(1),
+#toolTb4 .ant-table-tbody .ant-table-row:nth-child(2),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  .ant-table-cell:nth-child(5),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  .ant-table-cell:nth-child(7),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(1)
+  .ant-table-cell:nth-child(8),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(5),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(7),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(2)
+  .ant-table-cell:nth-child(8) {
+  background-color: white !important;
+}
+
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(13)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(13)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(13)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(14)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(14)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(14)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(15)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(15)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(15)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(16)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(16)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(16)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(17)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(17)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(17)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(18)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(18)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(18)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(19)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(19)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(19)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(20)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(21)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(21)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(21)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(22)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(22)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(22)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(23)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(24)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(24)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(24)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(25)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(25)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(25)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(26)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(26)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(26)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(27)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(27)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(27)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(28)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(28)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(28)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(29)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(29)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(29)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(30)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(30)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(30)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(31)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(31)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(31)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(32)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(32)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(32)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(33)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(33)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(33)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(34)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(34)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(34)
+  .ant-table-cell:nth-child(11),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(35)
+  .ant-table-cell:nth-child(9),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(35)
+  .ant-table-cell:nth-child(10),
+#toolTb4
+  .ant-table-tbody
+  .ant-table-row:nth-child(35)
+  .ant-table-cell:nth-child(11) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB1 .ant-table-thead,
+#summmaryProcessTB2 .ant-table-thead,
+#summmaryProcessTB3 .ant-table-thead,
+#summmaryProcessTB4 .ant-table-thead,
+#summmaryProcessTB5 .ant-table-thead,
+#summmaryProcessTB6 .ant-table-thead,
+#summmaryProcessTB7 .ant-table-thead,
+#summmaryProcessTB8 .ant-table-thead,
+#summmaryProcessTB9 .ant-table-thead,
+#summmaryProcessTB10 .ant-table-thead {
+  display: none;
+}
+
+#summmaryProcessTB1 .ant-table-tbody .ant-table-cell:nth-child(4),
+#summmaryProcessTB1 .ant-table-tbody .ant-table-cell:nth-child(9) {
+  background-color: #ccfccc;
+  font-weight: 600;
+}
+
+#summmaryProcessTB1
+  .ant-table-tbody
+  .ant-table-row:nth-child(3)
+  .ant-table-cell:nth-child(9),
+#summmaryProcessTB1
+  .ant-table-tbody
+  .ant-table-row:nth-child(4)
+  .ant-table-cell:nth-child(9),
+#summmaryProcessTB1
+  .ant-table-tbody
+  .ant-table-row:nth-child(5)
+  .ant-table-cell:nth-child(9),
+#summmaryProcessTB1
+  .ant-table-tbody
+  .ant-table-row:nth-child(6)
+  .ant-table-cell:nth-child(9),
+#summmaryProcessTB1
+  .ant-table-tbody
+  .ant-table-row:nth-child(7)
+  .ant-table-cell:nth-child(9) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB2 .ant-table-tbody {
+  background-color: #ccfccc;
+  font-weight: 600;
+}
+
+#summmaryProcessTB2 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB2 .ant-table-tbody .ant-table-row:nth-child(7),
+#summmaryProcessTB2 .ant-table-tbody .ant-table-row:nth-child(8),
+#summmaryProcessTB2 .ant-table-tbody .ant-table-row:nth-child(14),
+#summmaryProcessTB2 .ant-table-tbody .ant-table-row:nth-child(15) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB2 .ant-table-tbody .ant-table-cell:nth-child(1) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB3 .ant-table-tbody {
+  background-color: #ccfccc;
+}
+
+#summmaryProcessTB3 .ant-table-tbody .ant-table-cell:nth-child(1),
+#summmaryProcessTB3 .ant-table-tbody .ant-table-cell:nth-child(4),
+#summmaryProcessTB3 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB3 .ant-table-tbody .ant-table-row:nth-child(7),
+#summmaryProcessTB3 .ant-table-tbody .ant-table-row:nth-child(8),
+#summmaryProcessTB3 .ant-table-tbody .ant-table-row:nth-child(9) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB5 .ant-table-tbody {
+  background-color: #ccfccc;
+  font-weight: 600;
+}
+
+#summmaryProcessTB5 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB5 .ant-table-tbody .ant-table-row:nth-child(7),
+#summmaryProcessTB5 .ant-table-tbody .ant-table-row:nth-child(8),
+#summmaryProcessTB5 .ant-table-tbody .ant-table-cell:nth-child(1) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB6 .ant-table-tbody,
+#summmaryProcessTB7 .ant-table-tbody,
+#summmaryProcessTB8 .ant-table-tbody,
+#summmaryProcessTB9 .ant-table-tbody,
+#summmaryProcessTB10 .ant-table-tbody {
+  background-color: #ccfccc;
+  font-weight: 600;
+}
+
+#summmaryProcessTB6 .ant-table-tbody .ant-table-cell:nth-child(1),
+#summmaryProcessTB7 .ant-table-tbody .ant-table-cell:nth-child(1),
+#summmaryProcessTB8 .ant-table-tbody .ant-table-cell:nth-child(1),
+#summmaryProcessTB9 .ant-table-tbody .ant-table-cell:nth-child(1),
+#summmaryProcessTB10 .ant-table-tbody .ant-table-cell:nth-child(1) {
+  background-color: white !important;
+}
+
+#summmaryProcessTB6 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB6 .ant-table-tbody .ant-table-row:nth-child(2),
+#summmaryProcessTB6 .ant-table-tbody .ant-table-row:nth-child(3),
+#summmaryProcessTB7 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB7 .ant-table-tbody .ant-table-row:nth-child(2),
+#summmaryProcessTB7 .ant-table-tbody .ant-table-row:nth-child(3),
+#summmaryProcessTB8 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB9 .ant-table-tbody .ant-table-row:nth-child(1),
+#summmaryProcessTB10 .ant-table-tbody .ant-table-row:nth-child(1) {
+  background-color: white !important;
+}
+
+#summaryProductTb1 .ant-table-tbody .ant-table-row:nth-child(2) {
+  background-color: #ccfccc;
+}
+#summaryProductTb1 .ant-table-tbody .ant-table-cell:nth-child(2),
+#summaryProductTb1 .ant-table-tbody .ant-table-cell:nth-child(3) {
+  background-color: #ffffcb;
+}
+
+#scTb1 .ant-table-tbody .ant-table-cell:nth-child(2),
+#scTb2 .ant-table-tbody,
+#scTb3 .ant-table-tbody,
+#scTb4 .ant-table-tbody .ant-table-row:nth-child(2) {
+  background-color: #ccfccc;
+}
+
+#scTb2 .ant-table-tbody .ant-table-cell:nth-child(1),
+#scTb3 .ant-table-tbody .ant-table-cell:nth-child(1) {
+  background-color: white !important;
+}
+
+#scTb5 .ant-table-thead {
+  display: none;
+}
+
+#scTb5 .ant-table-tbody .ant-table-cell:nth-child(2) {
+  background-color: #ccfccc;
+}
+
+#scTb6 .ant-table-tbody,
+#scTb6 .ant-table-tbody .ant-table-cell-fix-left {
+  background-color: #ccfccc;
+}
+
+#scTb6 .ant-table-tbody .ant-table-cell-fix-left:nth-child(1) {
+  background-color: white !important;
 }

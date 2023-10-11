@@ -1,0 +1,32 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+
+  .title {
+    font-size: 16px;
+    margin: 20px 0px;
+    padding: 5px;
+    font-weight: 600;
+    background-color: #366466;
+    color: #fff;
+  }
+}
+
+.inner {
+  display: flex;
+
+  .title {
+    display: flex;
+  }
+
+  .alertIcon {
+    margin-left: 3px;
+  }
+}
+
+.popcon:hover {
+  color: red;
+  text-decoration: underline;
+}

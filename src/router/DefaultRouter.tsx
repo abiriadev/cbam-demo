@@ -6,44 +6,39 @@ import Default from '../pages/default/Default';
 import DppLayout from 'layouts/DppLayout';
 import DppInitLayout from 'layouts/DppInitLayout';
 import Start from '../pages/start/Start';
-import Overview from 'pages/overview/Overview';
-import GeneralBattery from 'pages/generalBattery/GeneralBattery';
-import CircularityAndResourceEfficiency from 'pages/circularity-and-resource-efficiency/CircularityAndResourceE';
-import SupplyChain from 'pages/supply-chain-due-diligentcet/SupplyChainDueDiligentcet';
-import CarbonFootpint from 'pages/carbon-footprint/CarbonFootprint';
-import ComplianceLabelsCertirications from 'pages/complianceLabelsCertirications/ComplianceLabelsCertirications';
-import PerformanceAndDurability from 'pages/performance-durability/PerformanceAndDurability';
-import MaterialsComposition from 'pages/materialsComposition/MaterialsComposition';
+import InstData from 'pages/instData/InstData';
+import EmissionsEnergy from 'pages/emissions-energy/EmissionsEnergy';
+import EmInst from 'pages/emInst/EmInst';
+import Process from 'pages/process/Process';
+
 import DefaultPage from 'pages/DefaultPage';
-import Qr from 'pages/qr/Qr';
+
+import PurchPrec from 'pages/purchprec/PurchPrec';
+import Tool from 'pages/tool/Tool';
+import SummaryProcesses from 'pages/summaryProcesses/SummaryProcesses';
+import SummaryProducts from 'pages/summaryProducts/SummaryProducts';
+import SummaryCommunication from 'pages/summaryCommunication/SummaryCommunication';
+
 export function DefaultRouter() {
   return (
     <Routes>
       <Route element={<DppInitLayout />}>
         <Route path="/start" element={<Start />} />
-        <Route path="/qr" element={<Qr />} />
       </Route>
       <Route element={<DppLayout />}>
-        <Route path="/overview" element={<Overview />} />
+        <Route path="/instData" element={<InstData />} />
+        <Route path="/emInst" element={<EmInst />} />
+        <Route path="/emissions-energy" element={<EmissionsEnergy />} />
+        <Route path="/precesses" element={<Process />} />
+        <Route path="/purchprec" element={<PurchPrec />} />
+        <Route path="/tools" element={<Tool />} />
+        <Route path="/summaryProcesses" element={<SummaryProcesses />} />
+        <Route path="/summaryProducts" element={<SummaryProducts />} />
         <Route
-          path="/circularity-and-resource-efficiency"
-          element={<CircularityAndResourceEfficiency />}
+          path="/summaryCommunication"
+          element={<SummaryCommunication />}
         />
-        <Route path="/general-battery" element={<GeneralBattery />} />
-        <Route path="/supply-chain-due-diligentcet" element={<SupplyChain />} />
-        <Route path="/carbon-footprint" element={<CarbonFootpint />} />
-        <Route
-          path="/compliance-labels-certirications"
-          element={<ComplianceLabelsCertirications />}
-        />
-        <Route
-          path="/performance-durability"
-          element={<PerformanceAndDurability />}
-        />
-        <Route
-          path="/materials-composition"
-          element={<MaterialsComposition />}
-        />
+
         <Route path="*" element={<DefaultPage />} />
       </Route>
     </Routes>
