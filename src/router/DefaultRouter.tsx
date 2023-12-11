@@ -23,6 +23,7 @@ export function DefaultRouter() {
   return (
     <Routes>
       <Route element={<DppInitLayout />}>
+        <Route path="/" element={<Start />} />
         <Route path="/start" element={<Start />} />
       </Route>
       <Route element={<DppLayout />}>

@@ -205,7 +205,7 @@ const HeaderBar = () => {
           marginTop: '15px',
         }}
       >
-        <a href="/overview">
+        <a href="/">
           <img src={apimWhite} alt="logo" width={100} />
         </a>
       </div>
