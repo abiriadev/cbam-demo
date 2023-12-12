@@ -1,7 +1,8 @@
 import ContentBox from 'components/ContentBox/ContentBox';
-import React from 'react';
 import styles from './SummaryProcesses.module.scss';
 import { Table } from 'antd';
+import { RootState } from 'store';
+import { useSelector } from 'react-redux';
 
 const Tab2 = () => {
   const columns1: any = [
@@ -49,6 +50,8 @@ const Tab2 = () => {
       align: 'center',
     },
   ];
+
+  const { direm } = useSelector((state: RootState) => state.cbam);
 
   return (
     <div className={styles.boxContainer}>
@@ -120,7 +123,7 @@ const Tab2 = () => {
                       d0: 'test',
                       d1: 'Cement Clinker',
                       d2: 'tCO2e',
-                      d3: '1,037,310',
+                      d3: direm,
                       d4: '0',
                       d5: '0',
                       d6: '1,037,310',
