@@ -64,7 +64,7 @@ const Tab2 = () => {
           <div
             style={{
               display: 'flex',
-              flexDirection: 'row',
+              flexDirection: 'column',
               flex: 1,
             }}
           >
