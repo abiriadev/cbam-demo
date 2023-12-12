@@ -1,8 +1,32 @@
-import React from 'react';
+import { FC, ReactNode, useRef } from 'react';
 import styles from './Process.module.scss';
-import { Descriptions, Table } from 'antd';
+import { Form, Input, InputRef, Table } from 'antd';
 import ContentBox from 'components/ContentBox/ContentBox';
-import NoHeaderTable from 'components/noHeaderTable/NoHeaderTable';
+
+interface EditableCellProps {
+  emIDir: boolean;
+  children: ReactNode;
+}
+
+const EditableCell: FC<EditableCellProps> = ({
+  emIDir,
+  children,
+  ...restProps
+}) => {
+  const inputRef = useRef<InputRef>(null);
+
+  return emIDir ? (
+    <td {...restProps}>
+      <Form.Item style={{ margin: 0 }}>
+        <Input ref={inputRef} onPressEnter={() => {}} />
+      </Form.Item>
+    </td>
+  ) : (
+    <td {...restProps} className="ant-table-cell">
+      {children}
+    </td>
+  );
+};
 
 const Process = () => {
   const dataSource1 = [
@@ -168,7 +192,7 @@ const Process = () => {
       idx: <b>(g)</b>,
       data1: <b>Directly attributable emissions (DirEm*)</b>,
       data2: 'tCO2e',
-      data3: '1,037,310',
+      data3: '123',
     },
     {},
     {
@@ -331,6 +355,11 @@ const Process = () => {
                     dataSource={dataSource6}
                     columns={columns6}
                     pagination={false}
+                    components={{
+                      body: {
+                        cell: EditableCell,
+                      },
+                    }}
                   />
                 </ContentBox>
               </div>
