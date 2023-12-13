@@ -67,7 +67,8 @@
     ]
   },
   "devDependencies": {
-    "@types/redux-logger": "^3.0.9"
+    "@types/redux-logger": "^3.0.9",
+    "vite": "^5.0.8"
   },
   "type": "module"
 }
