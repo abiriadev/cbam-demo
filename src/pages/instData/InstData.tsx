@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './InstData.module.scss';
 import { Descriptions, Table } from 'antd';
-import ContentBox from 'components/ContentBox/ContentBox';
+import ContentBox from '../../components/ContentBox/ContentBox';
 
 const InstData = () => {
   const items1: any = [

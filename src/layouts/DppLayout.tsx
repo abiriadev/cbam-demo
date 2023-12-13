@@ -1,6 +1,6 @@
 import React from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import HeaderBar from 'components/headerbar/HeaderBar';
+import HeaderBar from '../components/headerbar/HeaderBar';
 const { Header, Content, Footer } = Layout;
 import { Outlet } from 'react-router-dom';
 

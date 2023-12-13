@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './EmInst.module.scss';
 import { Descriptions, Table } from 'antd';
-import ContentBox from 'components/ContentBox/ContentBox';
+import ContentBox from '../../components/ContentBox/ContentBox';
 
 const EmInst = () => {
   const dataSource1 = [

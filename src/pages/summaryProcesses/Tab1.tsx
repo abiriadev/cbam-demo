@@ -1,4 +1,4 @@
-import ContentBox from 'components/ContentBox/ContentBox';
+import ContentBox from '../../components/ContentBox/ContentBox.tsx';
 import React from 'react';
 import styles from './SummaryProcesses.module.scss';
 import { Table } from 'antd';

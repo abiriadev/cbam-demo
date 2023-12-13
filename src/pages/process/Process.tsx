@@ -1,7 +1,7 @@
 import { FC, ReactNode, useRef, useState } from 'react';
 import styles from './Process.module.scss';
 import { Input, InputRef, Table } from 'antd';
-import ContentBox from 'components/ContentBox/ContentBox';
+import ContentBox from '../../components/ContentBox/ContentBox';
 import { setDirem } from '../../store/reducer/cbam';
 import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';

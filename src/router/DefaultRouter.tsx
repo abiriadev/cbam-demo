@@ -3,21 +3,21 @@ import { Route, Routes } from 'react-router-dom';
 import DefaultLayout from '../layouts/DefaultLayout';
 import AuthRoute from '../route/AuthRoute';
 import Default from '../pages/default/Default';
-import DppLayout from 'layouts/DppLayout';
-import DppInitLayout from 'layouts/DppInitLayout';
+import DppLayout from '../layouts/DppLayout';
+import DppInitLayout from '../layouts/DppInitLayout';
 import Start from '../pages/start/Start';
-import InstData from 'pages/instData/InstData';
-import EmissionsEnergy from 'pages/emissions-energy/EmissionsEnergy';
-import EmInst from 'pages/emInst/EmInst';
-import Process from 'pages/process/Process';
+import InstData from '../pages/instData/InstData.tsx';
+import EmissionsEnergy from '../pages/emissions-energy/EmissionsEnergy';
+import EmInst from '../pages/emInst/EmInst';
+import Process from '../pages/process/Process';
 
-import DefaultPage from 'pages/DefaultPage';
+import DefaultPage from '../pages/DefaultPage';
 
-import PurchPrec from 'pages/purchprec/PurchPrec';
-import Tool from 'pages/tool/Tool';
-import SummaryProcesses from 'pages/summaryProcesses/SummaryProcesses';
-import SummaryProducts from 'pages/summaryProducts/SummaryProducts';
-import SummaryCommunication from 'pages/summaryCommunication/SummaryCommunication';
+import PurchPrec from '../pages/purchprec/PurchPrec';
+import Tool from '../pages/tool/Tool';
+import SummaryProcesses from '../pages/summaryProcesses/SummaryProcesses';
+import SummaryProducts from '../pages/summaryProducts/SummaryProducts';
+import SummaryCommunication from '../pages/summaryCommunication/SummaryCommunication';
 
 export function DefaultRouter() {
   return (

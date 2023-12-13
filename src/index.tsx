@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import 'locales/i18n';
+import './locales/i18n.ts';
 import './styles/global.scss';
 import { Provider } from 'react-redux';
 import { store } from './store';

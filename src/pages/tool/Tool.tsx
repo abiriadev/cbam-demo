@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Tool.module.scss';
 import { Descriptions, Table } from 'antd';
-import ContentBox from 'components/ContentBox/ContentBox';
+import ContentBox from '../../components/ContentBox/ContentBox';
 import { TbColumns2 } from 'react-icons/tb';
 
 const Tool = () => {
