@@ -2,7 +2,7 @@ import { FC, ReactNode, useRef, useState } from 'react';
 import styles from './Process.module.scss';
 import { Input, InputRef, Table } from 'antd';
 import ContentBox from '../../components/ContentBox/ContentBox';
-import { setAl, setDirem } from '../../store/reducer/cbam';
+import { setAl, setDirem, setEl } from '../../store/reducer/cbam';
 import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction } from '@reduxjs/toolkit';
@@ -57,7 +57,7 @@ const EditableCell: FC<EditableCellProps> = ({
 };
 
 const Process = () => {
-  const { direm, al } = useSelector((state: RootState) => state.cbam);
+  const { direm, al, el } = useSelector((state: RootState) => state.cbam);
 
   const dataSource1 = [
     {
@@ -294,6 +294,9 @@ const Process = () => {
       data1: 'Electricity consumption',
       data2: 'MWh',
       data3: '81,575',
+      isEditable: true,
+      cb: setEl,
+      stNum: el,
     },
     {
       data0: 'ii',
