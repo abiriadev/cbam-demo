@@ -1,6 +1,20 @@
 import { Table } from 'antd';
 
 export const ProductionProcess = () => {
+  const p1 = {
+    idx: 'P1',
+    d0: 'test',
+    d1: 'Cement Clinker',
+    d2: '0.827',
+    d3: '0.827',
+    d4: '0.054',
+    d5: '0.054',
+    d6: '0.065',
+    d7: '0.065',
+    d8: '4.40',
+    d9: '3.52',
+  };
+
   const pds = [
     {
       idx: <b>(a)</b>,
@@ -55,19 +69,7 @@ export const ProductionProcess = () => {
         </b>
       ),
     },
-    {
-      idx: 'P1',
-      d0: 'test',
-      d1: 'Cement Clinker',
-      d2: '0.827',
-      d3: '0.827',
-      d4: '0.054',
-      d5: '0.054',
-      d6: '0.065',
-      d7: '0.065',
-      d8: '4.40',
-      d9: '3.52',
-    },
+    p1,
 
     {
       idx: 'P2',
