@@ -3,16 +3,18 @@ import { RootState } from 'store';
 import { useSelector } from 'react-redux';
 
 export const ProductionProcess = () => {
-  const { direm } = useSelector((state: RootState) => state.cbam);
+  const { dsee, dse, ise, isee } = useSelector(
+    (state: RootState) => state.cbam,
+  );
 
   const p1 = {
     idx: 'P1',
     d0: 'test',
     d1: 'Cement Clinker',
-    d2: '0.827',
-    d3: '0.827',
-    d4: '0.054',
-    d5: '0.054',
+    d2: dse,
+    d3: dsee,
+    d4: ise,
+    d5: isee,
     d6: '0.065',
     d7: '0.065',
     d8: '4.40',
