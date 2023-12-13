@@ -9,13 +9,13 @@ dependencies:
     specifier: ^5.2.6
     version: 5.2.6(react-dom@18.2.0)(react@18.2.0)
   '@eslint/eslintrc':
-    specifier: ^2.1.2
+    specifier: ^2.1.4
     version: 2.1.4
   '@react-google-maps/api':
     specifier: ^2.19.2
     version: 2.19.2(react-dom@18.2.0)(react@18.2.0)
   '@reduxjs/toolkit':
-    specifier: ^1.9.5
+    specifier: ^1.9.7
     version: 1.9.7(react-redux@8.1.3)(react@18.2.0)
   '@testing-library/jest-dom':
     specifier: ^5.17.0
@@ -27,44 +27,44 @@ dependencies:
     specifier: ^13.5.0
     version: 13.5.0(@testing-library/dom@9.3.3)
   '@types/echarts':
-    specifier: ^4.9.18
+    specifier: ^4.9.22
     version: 4.9.22
   '@types/jest':
     specifier: ^27.5.2
     version: 27.5.2
   '@types/lodash':
-    specifier: ^4.14.198
+    specifier: ^4.14.202
     version: 4.14.202
   '@types/node':
-    specifier: ^16.18.52
+    specifier: ^16.18.68
     version: 16.18.68
   '@types/react':
-    specifier: ^18.2.21
-    version: 18.2.43
+    specifier: ^18.2.45
+    version: 18.2.45
   '@types/react-dom':
-    specifier: ^18.2.7
+    specifier: ^18.2.17
     version: 18.2.17
   antd:
-    specifier: ^5.9.1
+    specifier: ^5.12.2
     version: 5.12.2(react-dom@18.2.0)(react@18.2.0)
   apexcharts:
-    specifier: ^3.42.0
+    specifier: ^3.44.2
     version: 3.44.2
   axios:
-    specifier: ^1.5.0
+    specifier: ^1.6.2
     version: 1.6.2
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
   dayjs:
-    specifier: ^1.11.9
+    specifier: ^1.11.10
     version: 1.11.10
   framer-motion:
-    specifier: ^10.16.4
+    specifier: ^10.16.16
     version: 10.16.16(react-dom@18.2.0)(react@18.2.0)
   i18next:
-    specifier: ^23.5.1
-    version: 23.7.8
+    specifier: ^23.7.9
+    version: 23.7.9
   jwt-decode:
     specifier: ^3.1.2
     version: 3.1.2
@@ -72,7 +72,7 @@ dependencies:
     specifier: ^4.17.21
     version: 4.17.21
   prettier:
-    specifier: ^3.0.3
+    specifier: ^3.1.1
     version: 3.1.1
   react:
     specifier: ^18.2.0
@@ -84,20 +84,20 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   react-i18next:
-    specifier: ^13.2.2
-    version: 13.5.0(i18next@23.7.8)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^13.5.0
+    version: 13.5.0(i18next@23.7.9)(react-dom@18.2.0)(react@18.2.0)
   react-icons:
-    specifier: ^4.11.0
+    specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
   react-loader-spinner:
     specifier: ^5.4.5
-    version: 5.5.0(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0)
+    version: 5.4.5(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0)
   react-query:
     specifier: ^3.39.3
     version: 3.39.3(react-dom@18.2.0)(react@18.2.0)
   react-redux:
-    specifier: ^8.1.2
-    version: 8.1.3(@types/react-dom@18.2.17)(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
+    specifier: ^8.1.3
+    version: 8.1.3(@types/react-dom@18.2.17)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
   react-route:
     specifier: ^1.0.3
     version: 1.0.3(react@18.2.0)
@@ -108,7 +108,7 @@ dependencies:
     specifier: ^3.0.6
     version: 3.0.6
   sass:
-    specifier: ^1.67.0
+    specifier: ^1.69.5
     version: 1.69.5
   typescript:
     specifier: ^4.9.5
@@ -119,7 +119,7 @@ dependencies:
 
 devDependencies:
   '@types/redux-logger':
-    specifier: ^3.0.9
+    specifier: ^3.0.12
     version: 3.0.12
   '@vitejs/plugin-react-swc':
     specifier: ^3.5.0
@@ -847,7 +847,7 @@ packages:
     dependencies:
       immer: 9.0.21
       react: 18.2.0
-      react-redux: 8.1.3(@types/react-dom@18.2.17)(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
+      react-redux: 8.1.3(@types/react-dom@18.2.17)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
       redux: 4.2.1
       redux-thunk: 2.4.2(redux@4.2.1)
       reselect: 4.1.8
@@ -1159,7 +1159,7 @@ packages:
   /@types/hoist-non-react-statics@3.3.5:
     resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
     dependencies:
-      '@types/react': 18.2.43
+      '@types/react': 18.2.45
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -1184,11 +1184,11 @@ packages:
   /@types/react-dom@18.2.17:
     resolution: {integrity: sha512-rvrT/M7Df5eykWFxn6MYt5Pem/Dbyc1N8Y0S9Mrkw2WFCRiqUgw9P7ul2NpwsXCSM1DVdENzdG9J5SreqfAIWg==}
     dependencies:
-      '@types/react': 18.2.43
+      '@types/react': 18.2.45
     dev: false
 
-  /@types/react@18.2.43:
-    resolution: {integrity: sha512-nvOV01ZdBdd/KW6FahSbcNplt2jCJfyWdTos61RYHV+FVv5L/g9AOX1bmbVcWcLFL8+KHQfh1zVIQrud6ihyQA==}
+  /@types/react@18.2.45:
+    resolution: {integrity: sha512-TtAxCNrlrBp8GoeEp1npd5g+d/OejJHFxS3OWmrPBMFaVQMSN0OFySozJio5BHxTuTeug00AVXVAjfDSfk+lUg==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -1309,7 +1309,7 @@ packages:
       rc-dropdown: 4.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-field-form: 1.41.0(react-dom@18.2.0)(react@18.2.0)
       rc-image: 7.5.1(react-dom@18.2.0)(react@18.2.0)
-      rc-input: 1.3.6(react-dom@18.2.0)(react@18.2.0)
+      rc-input: 1.3.11(react-dom@18.2.0)(react@18.2.0)
       rc-input-number: 8.4.0(react-dom@18.2.0)(react@18.2.0)
       rc-mentions: 2.9.1(react-dom@18.2.0)(react@18.2.0)
       rc-menu: 9.12.4(react-dom@18.2.0)(react@18.2.0)
@@ -1472,7 +1472,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001568
-      electron-to-chromium: 1.4.610
+      electron-to-chromium: 1.4.611
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: false
@@ -1702,8 +1702,8 @@ packages:
     resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
     dev: false
 
-  /electron-to-chromium@1.4.610:
-    resolution: {integrity: sha512-mqi2oL1mfeHYtOdCxbPQYV/PL7YrQlxbvFEZ0Ee8GbDdShimqt2/S6z2RWqysuvlwdOrQdqvE0KZrBTipAeJzg==}
+  /electron-to-chromium@1.4.611:
+    resolution: {integrity: sha512-ZtRpDxrjHapOwxtv+nuth5ByB8clyn8crVynmRNGO3wG3LOp8RTcyZDqwaI6Ng6y8FCK2hVZmJoqwCskKbNMaw==}
     dev: false
 
   /es-get-iterator@1.1.3:
@@ -1955,8 +1955,8 @@ packages:
       void-elements: 3.1.0
     dev: false
 
-  /i18next@23.7.8:
-    resolution: {integrity: sha512-yCe9964O+1abdIG01AOzk6P9mQi0HVJV1B57whYJQu6TjmrB9JHHDYonDI8amGt6M6b9bP3x3R0Zh7ROmvX7JQ==}
+  /i18next@23.7.9:
+    resolution: {integrity: sha512-wturtxTfJLJdLzHhyfxXo2l9Cbu2Iz4wF4065oWThPvdFJMUUG3fhXD3BLCHgrv4VxfScORq0i9sfCdjVPbgiw==}
     dependencies:
       '@babel/runtime': 7.23.6
     dev: false
@@ -2544,14 +2544,14 @@ packages:
       '@babel/runtime': 7.23.6
       '@rc-component/mini-decimal': 1.1.0
       classnames: 2.3.2
-      rc-input: 1.3.6(react-dom@18.2.0)(react@18.2.0)
+      rc-input: 1.3.11(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-input@1.3.6(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-/HjTaKi8/Ts4zNbYaB5oWCquxFyFQO4Co1MnMgoCeGJlpe7k8Eir2HN0a0F9IHDmmo+GYiGgPpz7w/d/krzsJA==}
+  /rc-input@1.3.11(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-jhH7QP5rILanSHCGSUkdoFE5DEtpv8FIseYhuYkOZzUBeiVAiwM3q26YqZ6xBB0QFEZ/yUAgms4xW4iuub3xFQ==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -2572,7 +2572,7 @@ packages:
       '@babel/runtime': 7.23.6
       '@rc-component/trigger': 1.18.2(react-dom@18.2.0)(react@18.2.0)
       classnames: 2.3.2
-      rc-input: 1.3.6(react-dom@18.2.0)(react@18.2.0)
+      rc-input: 1.3.11(react-dom@18.2.0)(react@18.2.0)
       rc-menu: 9.12.4(react-dom@18.2.0)(react@18.2.0)
       rc-textarea: 1.5.3(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
@@ -2837,7 +2837,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.6
       classnames: 2.3.2
-      rc-input: 1.3.6(react-dom@18.2.0)(react@18.2.0)
+      rc-input: 1.3.11(react-dom@18.2.0)(react@18.2.0)
       rc-resize-observer: 1.4.0(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
@@ -2949,7 +2949,7 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-i18next@13.5.0(i18next@23.7.8)(react-dom@18.2.0)(react@18.2.0):
+  /react-i18next@13.5.0(i18next@23.7.9)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-CFJ5NDGJ2MUyBohEHxljOq/39NQ972rh1ajnadG9BjTk+UXbHLq4z5DKEbEQBDoIhUmmbuS/fIMJKo6VOax1HA==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -2964,7 +2964,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.6
       html-parse-stringify: 3.0.1
-      i18next: 23.7.8
+      i18next: 23.7.9
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -2989,9 +2989,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-loader-spinner@5.5.0(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-3y+l6RPbkfW8EMs/X7MtfiPlAPwYp+WbCtls3gZn+fDJCt0SW4TakRoj2/lExbCVxSxA6Y5M8Nly+WfhNxnFcw==}
-    deprecated: Breaking changes was include so major version was use
+  /react-loader-spinner@5.4.5(@babel/core@7.23.6)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-32f+sb/v2tnNfyvnCCOS4fpyVHsGXjSyNo6QLniHcaj1XjKLxx14L2z0h6szRugOL8IEJ+53GPwNAdbkDqmy4g==}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
@@ -3024,7 +3023,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /react-redux@8.1.3(@types/react-dom@18.2.17)(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1):
+  /react-redux@8.1.3(@types/react-dom@18.2.17)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1):
     resolution: {integrity: sha512-n0ZrutD7DaX/j9VscF+uTALI3oUPa/pO4Z3soOBIjuRn/FzVu6aehhysxZCLi6y7duMf52WNZGMl7CtuK5EnRw==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
@@ -3047,7 +3046,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.6
       '@types/hoist-non-react-statics': 3.3.5
-      '@types/react': 18.2.43
+      '@types/react': 18.2.45
       '@types/react-dom': 18.2.17
       '@types/use-sync-external-store': 0.0.3
       hoist-non-react-statics: 3.3.2
