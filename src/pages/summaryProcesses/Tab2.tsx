@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { pds } from './process.ds';
 
 const Tab2 = () => {
-  const columns1: any = [
+  const columns1 = [
     {
       title: '',
       dataIndex: 'idx',
@@ -222,55 +222,7 @@ const Tab2 = () => {
                   The following abbreviations are used in the tables below:
                 </div>
                 <br />
-                <Table
-                  id="summmaryProcessTB4"
-                  size={'small'}
-                  dataSource={[
-                    {
-                      d0: 'SE (direct)',
-                      d1: 'Specific direct emissions of the production process, i.e. excluding any embedded emissions from any precursors consumed in the process.								',
-                    },
-                    {
-                      d0: 'SEE (direct)',
-                      d1: 'Specific embedded direct emissions of the production process, i.e. including any embedded emissions from any precursors consumed in the process.								',
-                    },
-                    {
-                      d0: 'SE (indirect)',
-                      d1: 'Specific indirect emissions of the production process, i.e. excluding any embedded indirect emissions from any precursors consumed in the process.								',
-                    },
-                    {
-                      d0: 'SEE (indirect)',
-                      d1: 'Specific embedded indirect emissions of the production process, i.e. including any embedded indirect emissions from any precursors consumed in the process.								',
-                    },
-                    {
-                      d0: 'Electricity consumed',
-                      d1: 'Specific electricity consumption within the production process.								',
-                    },
-                    {
-                      d0: 'Embedded electricity',
-                      d1: 'Specific embedded electricity consumption of the production process, i.e. including any embedded electricity consumption in other production processes within the installation (i.e. excl. from purchased precursors).								',
-                    },
-                    {
-                      d0: 'CP due (per t or MWh)',
-                      d1: 'This information is taken from the "tool to calculate the carbon price due" in sheet "F_Tools", where relevant.								',
-                    },
-                    {
-                      d0: 'Rebate (per t or MWh)',
-                      d1: 'This information is taken from the "tool to calculate the carbon price due" in sheet "F_Tools", where relevant.								',
-                    },
-                  ]}
-                  columns={[
-                    {
-                      title: '',
-                      dataIndex: 'd0',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd1',
-                    },
-                  ]}
-                  pagination={false}
-                />
+                <StaticHelp />
                 <br />
                 <Table
                   id="summmaryProcessTB5"
@@ -343,3 +295,55 @@ const Tab2 = () => {
 };
 
 export default Tab2;
+
+const StaticHelp = () => (
+  <Table
+    id="summmaryProcessTB4"
+    size={'small'}
+    dataSource={[
+      {
+        d0: 'SE (direct)',
+        d1: 'Specific direct emissions of the production process, i.e. excluding any embedded emissions from any precursors consumed in the process.								',
+      },
+      {
+        d0: 'SEE (direct)',
+        d1: 'Specific embedded direct emissions of the production process, i.e. including any embedded emissions from any precursors consumed in the process.								',
+      },
+      {
+        d0: 'SE (indirect)',
+        d1: 'Specific indirect emissions of the production process, i.e. excluding any embedded indirect emissions from any precursors consumed in the process.								',
+      },
+      {
+        d0: 'SEE (indirect)',
+        d1: 'Specific embedded indirect emissions of the production process, i.e. including any embedded indirect emissions from any precursors consumed in the process.								',
+      },
+      {
+        d0: 'Electricity consumed',
+        d1: 'Specific electricity consumption within the production process.								',
+      },
+      {
+        d0: 'Embedded electricity',
+        d1: 'Specific embedded electricity consumption of the production process, i.e. including any embedded electricity consumption in other production processes within the installation (i.e. excl. from purchased precursors).								',
+      },
+      {
+        d0: 'CP due (per t or MWh)',
+        d1: 'This information is taken from the "tool to calculate the carbon price due" in sheet "F_Tools", where relevant.								',
+      },
+      {
+        d0: 'Rebate (per t or MWh)',
+        d1: 'This information is taken from the "tool to calculate the carbon price due" in sheet "F_Tools", where relevant.								',
+      },
+    ]}
+    columns={[
+      {
+        title: '',
+        dataIndex: 'd0',
+      },
+      {
+        title: '',
+        dataIndex: 'd1',
+      },
+    ]}
+    pagination={false}
+  />
+);
