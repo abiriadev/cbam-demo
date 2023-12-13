@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+import type { Draft } from 'immer';
 
 interface CbamState {
   direm: number;
@@ -19,6 +20,11 @@ const initialState: CbamState = {
   isee: 0,
 };
 
+const recalcAll = (state: Draft<CbamState>): void => {
+  state.dse = state.direm / state.al;
+  state.dsee = state.direm / state.al;
+};
+
 const cbamSlice = createSlice({
   name: 'cbam',
   initialState,
@@ -26,14 +32,12 @@ const cbamSlice = createSlice({
     setDirem(state, action: PayloadAction<number>) {
       state.direm = action.payload;
 
-      state.dse = state.direm / state.al;
-      state.dsee = state.direm / state.al;
+      recalcAll(state);
     },
     setAl(state, action: PayloadAction<number>) {
       state.al = action.payload;
 
-      state.dse = state.direm / state.al;
-      state.dsee = state.direm / state.al;
+      recalcAll(state);
     },
   },
 });
