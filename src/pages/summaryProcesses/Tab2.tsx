@@ -6,52 +6,6 @@ import { useSelector } from 'react-redux';
 import { ProductionProcess } from './ProductionProcess';
 
 const Tab2 = () => {
-  const columns1 = [
-    {
-      title: '',
-      dataIndex: 'idx',
-    },
-    {
-      title: '',
-      dataIndex: 'd0',
-    },
-    {
-      title: '',
-      dataIndex: 'd1',
-      align: 'center',
-    },
-    {
-      title: '',
-      dataIndex: 'd2',
-      align: 'center',
-    },
-    {
-      title: '',
-      dataIndex: 'd3',
-      align: 'center',
-    },
-    {
-      title: '',
-      dataIndex: 'd4',
-      align: 'center',
-    },
-    {
-      title: '',
-      dataIndex: 'd5',
-      align: 'center',
-    },
-    {
-      title: '',
-      dataIndex: 'd6',
-      align: 'center',
-    },
-    {
-      title: '',
-      dataIndex: 'd7',
-      align: 'center',
-    },
-  ];
-
   const { direm } = useSelector((state: RootState) => state.cbam);
 
   return (
@@ -287,3 +241,49 @@ const StaticHelp = () => (
     pagination={false}
   />
 );
+
+const columns1 = [
+  {
+    title: '',
+    dataIndex: 'idx',
+  },
+  {
+    title: '',
+    dataIndex: 'd0',
+  },
+  {
+    title: '',
+    dataIndex: 'd1',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd2',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd3',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd4',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd5',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd6',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd7',
+    align: 'center',
+  },
+];

@@ -137,62 +137,64 @@ export const ProductionProcess = () => {
       id="summmaryProcessTB5"
       size={'small'}
       dataSource={pds}
-      columns={[
-        {
-          title: '',
-          dataIndex: 'idx',
-        },
-        {
-          title: '',
-          dataIndex: 'd0',
-        },
-        {
-          title: '',
-          dataIndex: 'd1',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd2',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd3',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd4',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd5',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd6',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd7',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd8',
-          align: 'center',
-        },
-        {
-          title: '',
-          dataIndex: 'd9',
-          align: 'center',
-        },
-      ]}
+      columns={col}
       pagination={false}
     />
   );
 };
+
+const col: Parameters<typeof Table>[0]['columns'] = [
+  {
+    title: '',
+    dataIndex: 'idx',
+  },
+  {
+    title: '',
+    dataIndex: 'd0',
+  },
+  {
+    title: '',
+    dataIndex: 'd1',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd2',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd3',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd4',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd5',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd6',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd7',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd8',
+    align: 'center',
+  },
+  {
+    title: '',
+    dataIndex: 'd9',
+    align: 'center',
+  },
+];
