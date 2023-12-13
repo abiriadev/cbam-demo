@@ -1,7 +1,10 @@
-import { FC, ReactNode, useRef } from 'react';
+import { FC, ReactNode, useRef, useState } from 'react';
 import styles from './Process.module.scss';
 import { Input, InputRef, Table } from 'antd';
 import ContentBox from 'components/ContentBox/ContentBox';
+import { setDirem } from '../../store/reducer/cbam';
+import { RootState } from '../../store';
+import { useDispatch, useSelector } from 'react-redux';
 
 interface EditableCellProps {
   isDirEm: boolean;
@@ -14,8 +17,9 @@ const EditableCell: FC<EditableCellProps> = ({
   ...restProps
 }) => {
   const inputRef = useRef<InputRef>(null);
-
   // console.table(restProps);
+  const dispatch = useDispatch();
+  const { direm } = useSelector((state: RootState) => state.cbam);
 
   return (
     <td {...restProps} className="ant-table-cell">
@@ -25,7 +29,12 @@ const EditableCell: FC<EditableCellProps> = ({
             ref={inputRef}
             styles={{ input: { width: '60px' } }}
             size="small"
-            onPressEnter={() => {}}
+            value={direm}
+            onChange={() => {
+              const a = parseInt(inputRef.current?.input?.value || '0');
+              dispatch(setDirem(a));
+            }}
+            // onPressEnter={() => {}}
           />
         </>
       ) : (
