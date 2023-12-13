@@ -2,7 +2,7 @@ import { FC, ReactNode, useRef, useState } from 'react';
 import styles from './Process.module.scss';
 import { Input, InputRef, Table } from 'antd';
 import ContentBox from '../../components/ContentBox/ContentBox';
-import { setDirem } from '../../store/reducer/cbam';
+import { setAl, setDirem } from '../../store/reducer/cbam';
 import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction } from '@reduxjs/toolkit';
@@ -57,7 +57,7 @@ const EditableCell: FC<EditableCellProps> = ({
 };
 
 const Process = () => {
-  const { direm } = useSelector((state: RootState) => state.cbam);
+  const { direm, al } = useSelector((state: RootState) => state.cbam);
 
   const dataSource1 = [
     {
@@ -73,6 +73,10 @@ const Process = () => {
       d2: 'All production routes',
       d3: 't',
       d4: '9327498',
+      // dafjaslkdfsjfklasjdlkfjasdklfsjdklfjakl
+      isEditable: true,
+      stNum: al,
+      cb: setAl,
     },
     {
       d0: '2',
@@ -197,6 +201,11 @@ const Process = () => {
     {
       title: '',
       dataIndex: 'd4',
+      onCell: ({ isEditable, stNum, cb }: Rec) => ({
+        isEditable,
+        stNum,
+        cb,
+      }),
       // onCell: ({ isEditable, stNum, cb }: Rec) => ({
       //   isEditable,
       //   stNum, cb
