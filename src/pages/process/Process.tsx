@@ -21,7 +21,12 @@ const EditableCell: FC<EditableCellProps> = ({
     <td {...restProps} className="ant-table-cell">
       {isDirEm ? (
         <>
-          <Input ref={inputRef} onPressEnter={() => {}} />
+          <Input
+            ref={inputRef}
+            styles={{ input: { width: '60px' } }}
+            size="small"
+            onPressEnter={() => {}}
+          />
         </>
       ) : (
         children
