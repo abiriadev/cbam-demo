@@ -22,6 +22,6 @@ const cbamSlice = createSlice({
 });
 
 export const {
-  actions: { setDirem },
+  actions: { setDirem, setAl },
   reducer,
 } = cbamSlice;

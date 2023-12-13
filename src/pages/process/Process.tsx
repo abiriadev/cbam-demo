@@ -5,34 +5,46 @@ import ContentBox from '../../components/ContentBox/ContentBox';
 import { setDirem } from '../../store/reducer/cbam';
 import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
+import { AnyAction } from '@reduxjs/toolkit';
+
+interface Rec {
+  isEditable: boolean;
+  stNum: number;
+  // const { direm } = useSelector((state: RootState) => state.cbam);
+  cb: (payload: number) => AnyAction;
+}
 
 interface EditableCellProps {
-  isDirEm: boolean;
+  isEditable: boolean;
   children: ReactNode;
+  stNum: number;
+  // const { direm } = useSelector((state: RootState) => state.cbam);
+  cb: (payload: number) => AnyAction;
 }
 
 const EditableCell: FC<EditableCellProps> = ({
-  isDirEm,
+  isEditable,
+  stNum,
+  cb,
   children,
   ...restProps
 }) => {
   const inputRef = useRef<InputRef>(null);
   // console.table(restProps);
   const dispatch = useDispatch();
-  const { direm } = useSelector((state: RootState) => state.cbam);
 
   return (
     <td {...restProps} className="ant-table-cell">
-      {isDirEm ? (
+      {isEditable ? (
         <>
           <Input
             ref={inputRef}
             styles={{ input: { width: '60px' } }}
             size="small"
-            value={direm}
+            value={stNum}
             onChange={() => {
               const a = parseInt(inputRef.current?.input?.value || '0');
-              dispatch(setDirem(a));
+              dispatch(cb(a));
             }}
             // onPressEnter={() => {}}
           />
@@ -45,6 +57,8 @@ const EditableCell: FC<EditableCellProps> = ({
 };
 
 const Process = () => {
+  const { direm } = useSelector((state: RootState) => state.cbam);
+
   const dataSource1 = [
     {
       idx: <b>(a)</b>,
@@ -58,7 +72,7 @@ const Process = () => {
       d1: 'test | Cement clinker',
       d2: 'All production routes',
       d3: 't',
-      d4: '1,255,000',
+      d4: '9327498',
     },
     {
       d0: '2',
@@ -183,6 +197,10 @@ const Process = () => {
     {
       title: '',
       dataIndex: 'd4',
+      // onCell: ({ isEditable, stNum, cb }: Rec) => ({
+      //   isEditable,
+      //   stNum, cb
+      // }),
     },
   ];
 
@@ -209,7 +227,9 @@ const Process = () => {
       data1: <b>Directly attributable emissions (DirEm*)</b>,
       data2: 'tCO2e',
       data3: '123',
-      isDirEm: true,
+      isEditable: true,
+      cb: setDirem,
+      stNum: direm,
     },
     {},
     {
@@ -298,8 +318,6 @@ const Process = () => {
     },
   ];
 
-  type Rec = { isDirEm: boolean };
-
   const columns6 = [
     {
       title: '',
@@ -321,8 +339,10 @@ const Process = () => {
       title: '',
       dataIndex: 'data3',
       // (data: DataType, index?: number) => React.HTMLAttributes<any> & React.TdHTMLAttributes<any>;
-      onCell: ({ isDirEm }: Rec) => ({
-        isDirEm,
+      onCell: ({ isEditable, stNum, cb }: Rec) => ({
+        isEditable,
+        stNum,
+        cb,
       }),
     },
     {
@@ -367,6 +387,11 @@ const Process = () => {
                     dataSource={dataSource1}
                     columns={columns1}
                     pagination={false}
+                    components={{
+                      body: {
+                        cell: EditableCell,
+                      },
+                    }}
                   />
                   {/* <NoHeaderTable dataSource={dataSource1} columns={columns1} /> */}
                 </ContentBox>
