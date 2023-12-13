@@ -1,29 +1,31 @@
 import { FC, ReactNode, useRef } from 'react';
 import styles from './Process.module.scss';
-import { Form, Input, InputRef, Table } from 'antd';
+import { Input, InputRef, Table } from 'antd';
 import ContentBox from 'components/ContentBox/ContentBox';
 
 interface EditableCellProps {
-  emIDir: boolean;
+  isDirEm: boolean;
   children: ReactNode;
 }
 
 const EditableCell: FC<EditableCellProps> = ({
-  emIDir,
+  isDirEm,
   children,
   ...restProps
 }) => {
   const inputRef = useRef<InputRef>(null);
 
-  return emIDir ? (
-    <td {...restProps}>
-      <Form.Item style={{ margin: 0 }}>
-        <Input ref={inputRef} onPressEnter={() => {}} />
-      </Form.Item>
-    </td>
-  ) : (
+  // console.table(restProps);
+
+  return (
     <td {...restProps} className="ant-table-cell">
-      {children}
+      {isDirEm ? (
+        <>
+          <Input ref={inputRef} onPressEnter={() => {}} />
+        </>
+      ) : (
+        children
+      )}
     </td>
   );
 };
@@ -193,6 +195,7 @@ const Process = () => {
       data1: <b>Directly attributable emissions (DirEm*)</b>,
       data2: 'tCO2e',
       data3: '123',
+      isDirEm: true,
     },
     {},
     {
@@ -281,6 +284,8 @@ const Process = () => {
     },
   ];
 
+  type Rec = { isDirEm: boolean };
+
   const columns6 = [
     {
       title: '',
@@ -301,12 +306,17 @@ const Process = () => {
     {
       title: '',
       dataIndex: 'data3',
+      // (data: DataType, index?: number) => React.HTMLAttributes<any> & React.TdHTMLAttributes<any>;
+      onCell: ({ isDirEm }: Rec) => ({
+        isDirEm,
+      }),
     },
     {
       title: '',
       dataIndex: 'data4',
     },
-  ];
+  ] as Parameters<typeof Table>[0]['columns'];
+
   return (
     <div className={styles.page}>
       <div className={styles.container}>
