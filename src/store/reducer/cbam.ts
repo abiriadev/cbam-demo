@@ -44,7 +44,7 @@ const cbamSlice = createSlice({
       recalcAll(state);
     },
     setEl(state, action: PayloadAction<number>) {
-      state.al = action.payload;
+      state.el = action.payload;
 
       recalcAll(state);
     },
