@@ -3,7 +3,7 @@ import styles from './SummaryProcesses.module.scss';
 import { Table } from 'antd';
 import { RootState } from 'store';
 import { useSelector } from 'react-redux';
-import { pds } from './process.ds';
+import { ProductionProcess } from './ProductionProcess';
 
 const Tab2 = () => {
   const columns1 = [
@@ -224,67 +224,7 @@ const Tab2 = () => {
                 <br />
                 <StaticHelp />
                 <br />
-                <Table
-                  id="summmaryProcessTB5"
-                  size={'small'}
-                  dataSource={pds}
-                  columns={[
-                    {
-                      title: '',
-                      dataIndex: 'idx',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd0',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd1',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd2',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd3',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd4',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd5',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd6',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd7',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd8',
-                      align: 'center',
-                    },
-                    {
-                      title: '',
-                      dataIndex: 'd9',
-                      align: 'center',
-                    },
-                  ]}
-                  pagination={false}
-                />
+                <ProductionProcess />
               </ContentBox>
             </div>
           </div>
