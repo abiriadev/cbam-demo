@@ -5,6 +5,7 @@ import type { Draft } from 'immer';
 interface CbamState {
   direm: number;
   al: number;
+  el: number;
   dse: number;
   dsee: number;
   ise: number;
@@ -14,6 +15,7 @@ interface CbamState {
 const initialState: CbamState = {
   direm: 0,
   al: 0,
+  el: 0,
   dse: 0,
   dsee: 0,
   ise: 0,
@@ -39,10 +41,15 @@ const cbamSlice = createSlice({
 
       recalcAll(state);
     },
+    setEl(state, action: PayloadAction<number>) {
+      state.al = action.payload;
+
+      recalcAll(state);
+    },
   },
 });
 
 export const {
-  actions: { setDirem, setAl },
+  actions: { setDirem, setAl, setEl },
   reducer,
 } = cbamSlice;
