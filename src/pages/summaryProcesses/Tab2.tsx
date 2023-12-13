@@ -1,7 +1,7 @@
-import ContentBox from '../../components/ContentBox/ContentBox.tsx';
+import ContentBox from '../../components/ContentBox/ContentBox';
 import styles from './SummaryProcesses.module.scss';
 import { Table } from 'antd';
-import { RootState } from 'store';
+import { RootState } from '../../store/index';
 import { useSelector } from 'react-redux';
 import { ProductionProcess } from './ProductionProcess';
 

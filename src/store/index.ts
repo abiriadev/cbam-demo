@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { createLogger } from 'redux-logger';
-import counterReducer from './reducer/count.ts';
-import authReducer from './reducer/auth.ts';
-import { reducer } from './reducer/cbam.ts';
+import counterReducer from './reducer/count';
+import authReducer from './reducer/auth';
+import { reducer } from './reducer/cbam';
 
 // react-logger
 const logger = createLogger();

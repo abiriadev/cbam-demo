@@ -1,6 +1,10 @@
 import { Table } from 'antd';
+import { RootState } from 'store';
+import { useSelector } from 'react-redux';
 
 export const ProductionProcess = () => {
+  const { direm } = useSelector((state: RootState) => state.cbam);
+
   const p1 = {
     idx: 'P1',
     d0: 'test',
