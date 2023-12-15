@@ -11,6 +11,8 @@ interface CbamState {
   ise: number;
   isee: number;
   prec: number;
+  prec_dsee: number;
+  prec_isee: number;
 }
 
 const initialState: CbamState = {
@@ -22,6 +24,8 @@ const initialState: CbamState = {
   ise: 0,
   isee: 0,
   prec: 0,
+  prec_dsee: 0,
+  prec_isee: 0,
 };
 
 const recalcAll = (state: Draft<CbamState>): void => {
