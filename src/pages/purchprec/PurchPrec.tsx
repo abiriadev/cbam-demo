@@ -148,6 +148,40 @@ const PurchPrec = () => {
     },
   ];
 
+  const columns3 = [
+    {
+      title: '',
+      dataIndex: 'idx',
+      width: '20px',
+    },
+    {
+      title: '',
+      dataIndex: 'd0',
+      width: '20px',
+    },
+    {
+      title: '',
+      dataIndex: 'd1',
+    },
+    {
+      title: '',
+      dataIndex: 'd2',
+    },
+    {
+      title: '',
+      dataIndex: 'd3',
+      onCell: ({ isEditable, stNum, cb }: Rec) => ({
+        isEditable,
+        stNum,
+        cb,
+      }),
+    },
+    {
+      title: '',
+      dataIndex: 'd4',
+    },
+  ] as Parameters<typeof Table>[0]['columns'];
+
   const dataSource2 = [
     {
       idx: <b>(a)</b>,
@@ -167,6 +201,9 @@ const PurchPrec = () => {
       d2: '',
       d3: '',
       d4: 'Default',
+      isEditable: true,
+      cb: setPrec,
+      stNum: prec,
     },
     {
       d0: 'ii',
@@ -174,6 +211,9 @@ const PurchPrec = () => {
       d2: '',
       d3: '',
       d4: 'D.2.4',
+      isEditable: true,
+      cb: setPrec,
+      stNum: prec,
     },
     {
       d0: 'iii',
@@ -267,8 +307,13 @@ const PurchPrec = () => {
                       id="cal"
                       size={'small'}
                       dataSource={dataSource3}
-                      columns={columns1}
+                      columns={columns3}
                       pagination={false}
+                      components={{
+                        body: {
+                          cell: EditableCell,
+                        },
+                      }}
                     />
                   </ContentBox>
                 </div>
