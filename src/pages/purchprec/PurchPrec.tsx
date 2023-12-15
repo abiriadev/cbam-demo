@@ -41,6 +41,9 @@ const PurchPrec = () => {
     {
       d0: '1',
       d1: 'test',
+      isEditable: true,
+      // cb: setDirem,
+      // stNum: direm,
     },
     {
       d0: '2',
@@ -99,7 +102,7 @@ const PurchPrec = () => {
         cb,
       }),
     },
-  ];
+  ] as Parameters<typeof Table>[0]['columns'];
 
   const columns2 = [
     {
@@ -221,6 +224,11 @@ const PurchPrec = () => {
                       dataSource={dataSource1}
                       columns={columns1}
                       pagination={false}
+                      components={{
+                        body: {
+                          cell: EditableCell,
+                        },
+                      }}
                     />
                   </ContentBox>
                 </div>
@@ -256,11 +264,6 @@ const PurchPrec = () => {
                       dataSource={dataSource3}
                       columns={columns1}
                       pagination={false}
-                      components={{
-                        body: {
-                          cell: EditableCell,
-                        },
-                      }}
                     />
                   </ContentBox>
                 </div>
