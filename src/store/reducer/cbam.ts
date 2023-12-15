@@ -29,11 +29,15 @@ const initialState: CbamState = {
 };
 
 const recalcAll = (state: Draft<CbamState>): void => {
-  state.dse = state.direm / state.al;
-  state.dsee = state.dse + state.prec * state.prec_dsee;
+  const d_attr = state.direm;
+  state.dse = d_attr / state.al;
+  const d_ee = d_attr + state.prec * state.prec_dsee;
+  state.dsee = d_ee / state.al;
 
-  state.ise = state.el / state.al;
-  state.isee = state.ise + state.prec * state.prec_isee;
+  const i_attr = state.el;
+  state.ise = i_attr / state.al;
+  const i_ee = i_attr + state.prec * state.prec_isee;
+  state.isee = i_ee / state.al;
 };
 
 const cbamSlice = createSlice({
