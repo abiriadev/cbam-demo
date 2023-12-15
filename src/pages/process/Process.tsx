@@ -14,7 +14,7 @@ interface Rec {
   cb: (payload: number) => AnyAction;
 }
 
-interface EditableCellProps {
+export interface EditableCellProps {
   isEditable: boolean;
   children: ReactNode;
   stNum: number;
@@ -22,7 +22,7 @@ interface EditableCellProps {
   cb: (payload: number) => AnyAction;
 }
 
-const EditableCell: FC<EditableCellProps> = ({
+export const EditableCell: FC<EditableCellProps> = ({
   isEditable,
   stNum,
   cb,
