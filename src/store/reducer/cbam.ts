@@ -60,6 +60,16 @@ const cbamSlice = createSlice({
 
       recalcAll(state);
     },
+    setPrecDsee(state, action: PayloadAction<number>) {
+      state.prec_dsee = action.payload;
+
+      recalcAll(state);
+    },
+    setPrecIsee(state, action: PayloadAction<number>) {
+      state.prec_isee = action.payload;
+
+      recalcAll(state);
+    },
   },
 });
 
