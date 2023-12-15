@@ -2,6 +2,8 @@ import { Table } from 'antd';
 import { RootState } from 'store';
 import { useSelector } from 'react-redux';
 
+const rr = (a: number) => Math.round(a * 1000) / 1000;
+
 export const ProductionProcess = () => {
   const { dsee, dse, ise, isee } = useSelector(
     (state: RootState) => state.cbam,
@@ -11,10 +13,10 @@ export const ProductionProcess = () => {
     idx: 'P1',
     d0: 'test',
     d1: 'Cement Clinker',
-    d2: dse,
-    d3: dsee,
-    d4: ise,
-    d5: isee,
+    d2: rr(dse),
+    d3: rr(dsee),
+    d4: rr(ise),
+    d5: rr(isee),
     d6: '0.065',
     d7: '0.065',
     d8: '4.40',
