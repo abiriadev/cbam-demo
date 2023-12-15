@@ -10,6 +10,7 @@ interface CbamState {
   dsee: number;
   ise: number;
   isee: number;
+  prec: number;
 }
 
 const initialState: CbamState = {
@@ -20,6 +21,7 @@ const initialState: CbamState = {
   dsee: 0,
   ise: 0,
   isee: 0,
+  prec: 0,
 };
 
 const recalcAll = (state: Draft<CbamState>): void => {
@@ -48,10 +50,15 @@ const cbamSlice = createSlice({
 
       recalcAll(state);
     },
+    setPrec(state, action: PayloadAction<number>) {
+      state.prec = action.payload;
+
+      recalcAll(state);
+    },
   },
 });
 
 export const {
-  actions: { setDirem, setAl, setEl },
+  actions: { setDirem, setAl, setEl, setPrec },
   reducer,
 } = cbamSlice;
