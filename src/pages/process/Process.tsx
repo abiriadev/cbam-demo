@@ -7,7 +7,7 @@ import { RootState } from '../../store';
 import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction } from '@reduxjs/toolkit';
 
-interface Rec {
+export interface Rec {
   isEditable: boolean;
   stNum: number;
   // const { direm } = useSelector((state: RootState) => state.cbam);

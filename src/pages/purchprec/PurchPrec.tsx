@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './PurchPrec.module.scss';
 import { Descriptions, Table } from 'antd';
 import ContentBox from '../../components/ContentBox/ContentBox';
+import { EditableCell, Rec } from '../../pages/process/Process';
 
 const PurchPrec = () => {
   const dataSource1 = [
@@ -92,6 +93,11 @@ const PurchPrec = () => {
     {
       title: '',
       dataIndex: 'd4',
+      onCell: ({ isEditable, stNum, cb }: Rec) => ({
+        isEditable,
+        stNum,
+        cb,
+      }),
     },
   ];
 
@@ -250,6 +256,11 @@ const PurchPrec = () => {
                       dataSource={dataSource3}
                       columns={columns1}
                       pagination={false}
+                      components={{
+                        body: {
+                          cell: EditableCell,
+                        },
+                      }}
                     />
                   </ContentBox>
                 </div>
