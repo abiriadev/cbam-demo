@@ -3,8 +3,13 @@ import styles from './PurchPrec.module.scss';
 import { Descriptions, Table } from 'antd';
 import ContentBox from '../../components/ContentBox/ContentBox';
 import { EditableCell, Rec } from '../../pages/process/Process';
+import { setPrec } from '../../store/reducer/cbam';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store';
 
 const PurchPrec = () => {
+  const { prec } = useSelector((state: RootState) => state.cbam);
+
   const dataSource1 = [
     {
       idx: <b>(a)</b>,
@@ -42,8 +47,8 @@ const PurchPrec = () => {
       d0: '1',
       d1: 'test',
       isEditable: true,
-      // cb: setDirem,
-      // stNum: direm,
+      cb: setPrec,
+      stNum: prec,
     },
     {
       d0: '2',
